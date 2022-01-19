@@ -1,0 +1,6 @@
+[book]
+authors = ["Monty Williams"]
+language = "en"
+multilingual = false
+src = "src"
+title = "The Adventures of Sherlock Holmes"

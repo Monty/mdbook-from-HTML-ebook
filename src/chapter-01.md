@@ -968,7 +968,7 @@ it together. It was dated at midnight of the preceding night and ran in this
 way:
 
 <p class="letter">
-&ldquo;MY DEAR MR. SHERLOCK HOLMES,&mdash;You really did it very well. You took
+    &ldquo;MY DEAR MR. SHERLOCK HOLMES,&mdash;You really did it very well. You took
 me in completely. Until after the alarm of fire, I had not a suspicion. But
 then, when I found how I had betrayed myself, I began to think. I had been
 warned against you months ago. I had been told that, if the King employed an
@@ -995,10 +995,10 @@ remain, dear Mr. Sherlock Holmes,
 
 <p class="right">
 &ldquo;Very truly yours,<br/>
-&ldquo;IRENE NORTON, *née* ADLER.&rdquo;
+&ldquo;IRENE NORTON, <em>née</em> ADLER.&rdquo;
 </p>
 
-<hr>
+---
 
 <p class="p2">
 &ldquo;What a woman&mdash;oh, what a woman!&rdquo; cried the King of Bohemia,

@@ -1,4 +1,4 @@
-<h2><a name="chap05"></a>V.<br/>THE FIVE ORANGE PIPS</h2>
+<h2>V.<br/>THE FIVE ORANGE PIPS</h2>
 
 <span style="font-size: 1.50em">W</span>hen I glance over my
 notes and records of the Sherlock Holmes cases between the years &rsquo;82 and

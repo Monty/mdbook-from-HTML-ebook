@@ -1,4 +1,4 @@
-<h2><a name="chap08"></a>VIII.<br/>THE ADVENTURE OF THE SPECKLED BAND</h2>
+<h2>VIII.<br/>THE ADVENTURE OF THE SPECKLED BAND</h2>
 
 <span style="font-size: 1.50em">O</span>n glancing over my
 notes of the seventy odd cases in which I have during the last eight years

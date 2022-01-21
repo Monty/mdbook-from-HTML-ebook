@@ -1,4 +1,4 @@
-<h2><a name="chap07"></a>VII.<br/>THE ADVENTURE OF THE BLUE CARBUNCLE</h2>
+<h2>VII.<br/>THE ADVENTURE OF THE BLUE CARBUNCLE</h2>
 
 <span style="font-size: 1.50em">I</span> had called upon my
 friend Sherlock Holmes upon the second morning after Christmas, with the

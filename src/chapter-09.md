@@ -1,4 +1,4 @@
-<h2><a name="chap09"></a>IX.<br/>THE ADVENTURE OF THE ENGINEER&rsquo;S THUMB</h2>
+<h2>IX.<br/>THE ADVENTURE OF THE ENGINEER&rsquo;S THUMB</h2>
 
 <span style="font-size: 1.50em">O</span>f all the problems
 which have been submitted to my friend, Mr. Sherlock Holmes, for solution

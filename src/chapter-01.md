@@ -1,4 +1,4 @@
-<h2><a name="chap01"></a>I.<br/>A SCANDAL IN BOHEMIA</h2>
+<h2>I.<br/>A SCANDAL IN BOHEMIA</h2>
 
 <h3>I.</h3>
 
@@ -991,16 +991,21 @@ from one whom he has cruelly wronged. I keep it only to safeguard myself, and
 to preserve a weapon which will always secure me from any steps which he might
 take in the future. I leave a photograph which he might care to possess; and I
 remain, dear Mr. Sherlock Holmes,
+</p>
 
 <p class="right">
 &ldquo;Very truly yours,<br/>
 &ldquo;IRENE NORTON, *née* ADLER.&rdquo;
+</p>
+
+<hr>
 
 <p class="p2">
 &ldquo;What a woman&mdash;oh, what a woman!&rdquo; cried the King of Bohemia,
 when we had all three read this epistle. &ldquo;Did I not tell you how quick
 and resolute she was? Would she not have made an admirable queen? Is it not a
 pity that she was not on my level?&rdquo;
+</p>
 
 &ldquo;From what I have seen of the lady, she seems, indeed, to be on a very
 different level to your Majesty,&rdquo; said Holmes coldly. &ldquo;I am sorry
@@ -1040,3 +1045,4 @@ and how the best plans of Mr. Sherlock Holmes were beaten by a woman&rsquo;s
 wit. He used to make merry over the cleverness of women, but I have not heard
 him do it of late. And when he speaks of Irene Adler, or when he refers to her
 photograph, it is always under the honourable title of *the* woman.
+</p>

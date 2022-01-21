@@ -1,4 +1,4 @@
-<h2><a name="chap02"></a>II.<br/>THE RED-HEADED LEAGUE</h2>
+<h2>II.<br/>THE RED-HEADED LEAGUE</h2>
 
 <span style="font-size: 1.50em">I</span> had
 called upon my friend, Mr. Sherlock Holmes, one day in the autumn of last year

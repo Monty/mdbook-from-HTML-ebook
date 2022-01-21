@@ -1,4 +1,4 @@
-<h2><a name="chap11"></a>XI.<br/>THE ADVENTURE OF THE BERYL CORONET</h2>
+<h2>XI.<br/>THE ADVENTURE OF THE BERYL CORONET</h2>
 
 <span style="font-size: 1.50em">&ldquo;H</span>olmes,&rdquo;
 said I as I stood one morning in our bow-window looking down the street,

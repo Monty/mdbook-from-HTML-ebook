@@ -1,4 +1,4 @@
-<h2><a name="chap03"></a>III.<br/>A CASE OF IDENTITY</h2>
+<h2>III.<br/>A CASE OF IDENTITY</h2>
 
 <span style="font-size: 1.50em">&ldquo;M</span>y dear
 fellow,&rdquo; said Sherlock Holmes as we sat on either side of the fire in his

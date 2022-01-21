@@ -391,7 +391,7 @@ spirits again; for I had quite persuaded myself that the whole affair must be
 some great hoax or fraud, though what its object might be I could not imagine.
 It seemed altogether past belief that anyone could make such a will, or that
 they would pay such a sum for doing anything so simple as copying out the
-*Encyclopædia Britannica*. Vincent Spaulding did what he could to cheer me
+<em>Encyclopædia Britannica</em> Vincent Spaulding did what he could to cheer me
 up, but by bedtime I had reasoned myself out of the whole thing. However, in
 the morning I determined to have a look at it anyhow, so I bought a penny
 bottle of ink, and with a quill-pen, and seven sheets of foolscap paper, I
@@ -701,7 +701,7 @@ words it was evident that he saw clearly not only what had happened but what
 was about to happen, while to me the whole business was still confused and
 grotesque. As I drove home to my house in Kensington I thought over it all,
 from the extraordinary story of the red-headed copier of the
-*Encyclopædia* down to the visit to Saxe-Coburg Square, and the ominous
+<em>Encyclopædia</em> down to the visit to Saxe-Coburg Square, and the ominous
 words with which he had parted from me. What was this nocturnal expedition, and
 why should I go armed? Where were we going, and what were we to do? I had the
 hint from Holmes that this smooth-faced pawnbroker&rsquo;s assistant was a
@@ -945,7 +945,7 @@ the very remarkable narrative of the Red-headed League.&rdquo;
 as we sat over a glass of whisky and soda in Baker Street, &ldquo;it was
 perfectly obvious from the first that the only possible object of this rather
 fantastic business of the advertisement of the League, and the copying of the
-*Encyclopædia*, must be to get this not over-bright pawnbroker out of the
+<em>Encyclopædia</em>, must be to get this not over-bright pawnbroker out of the
 way for a number of hours every day. It was a curious way of managing it, but,
 really, it would be difficult to suggest a better. The method was no doubt
 suggested to Clay&rsquo;s ingenious mind by the colour of his

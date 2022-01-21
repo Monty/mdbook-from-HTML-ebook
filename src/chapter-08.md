@@ -520,6 +520,7 @@ some data which may help us in this matter.&rdquo;
 It was nearly one o&rsquo;clock when Sherlock Holmes returned from his
 excursion. He held in his hand a sheet of blue paper, scrawled over with notes
 and figures.
+</p>
 
 &ldquo;I have seen the will of the deceased wife,&rdquo; said he. &ldquo;To
 determine its exact meaning I have been obliged to work out the present prices
@@ -905,6 +906,7 @@ About nine o&rsquo;clock the light among the trees was extinguished, and all
 was dark in the direction of the Manor House. Two hours passed slowly away, and
 then, suddenly, just at the stroke of eleven, a single bright light shone out
 right in front of us.
+</p>
 
 &ldquo;That is our signal,&rdquo; said Holmes, springing to his feet; &ldquo;it
 comes from the middle window.&rdquo;
@@ -1045,6 +1047,7 @@ Harrow, of how the slow process of official inquiry came to the conclusion that
 the doctor met his fate while indiscreetly playing with a dangerous pet. The
 little which I had yet to learn of the case was told me by Sherlock Holmes as
 we travelled back next day.
+</p>
 
 &ldquo;I had,&rdquo; said he, &ldquo;come to an entirely erroneous conclusion
 which shows, my dear Watson, how dangerous it always is to reason from

@@ -648,6 +648,7 @@ weather and the still more miserable ways of our fellow men.&rdquo;
 It had cleared in the morning, and the sun was shining with a subdued
 brightness through the dim veil which hangs over the great city. Sherlock
 Holmes was already at breakfast when I came down.
+</p>
 
 &ldquo;You will excuse me for not waiting for you,&rdquo; said he; &ldquo;I
 have, I foresee, a very busy day before me in looking into this case of young

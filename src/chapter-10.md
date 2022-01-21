@@ -75,14 +75,19 @@ might be of some assistance. I will call at four o&rsquo;clock in the
 afternoon, and, should you have any other engagement at that time, I hope that
 you will postpone it, as this matter is of paramount importance. Yours
 faithfully,
+</p>
 
 <p class="right">
 &ldquo;&lsquo;ROBERT ST. SIMON.&rsquo;
+</p>
+
+---
 
 <p class="p2">
 &ldquo;It is dated from Grosvenor Mansions, written with a quill pen, and the
 noble lord has had the misfortune to get a smear of ink upon the outer side of
 his right little finger,&rdquo; remarked Holmes as he folded up the epistle.
+</p>
 
 &ldquo;He says four o&rsquo;clock. It is three now. He will be here in an
 hour.&rdquo;
@@ -889,6 +894,7 @@ the explanation may be of an affair which at first sight seems to be almost
 inexplicable. Nothing could be more natural than the sequence of events as
 narrated by this lady, and nothing stranger than the result when viewed, for
 instance, by Mr. Lestrade of Scotland Yard.&rdquo;
+</p>
 
 &ldquo;You were not yourself at fault at all, then?&rdquo;
 

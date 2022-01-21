@@ -139,6 +139,7 @@ nominal services. All red-headed men who are sound in body and mind and above
 the age of twenty-one years, are eligible. Apply in person on Monday, at eleven
 o&rsquo;clock, to Duncan Ross, at the offices of the League, 7 Pope&rsquo;s
 Court, Fleet Street.&rdquo;
+</p>
 
 &ldquo;What on earth does this mean?&rdquo; I ejaculated after I had twice read
 over the extraordinary announcement.
@@ -430,6 +431,7 @@ It read in this fashion:
 
 <p class="letter">
 &ldquo;THE RED-HEADED LEAGUE IS DISSOLVED. October 9, 1890.&rdquo;
+</p>
 
 Sherlock Holmes and I surveyed this curt announcement and the rueful face
 behind it, until the comical side of the affair so completely overtopped every
@@ -954,6 +956,7 @@ man to apply for it, and together they manage to secure his absence every
 morning in the week. From the time that I heard of the assistant having come
 for half wages, it was obvious to me that he had some strong motive for
 securing the situation.&rdquo;
+</p>
 
 &ldquo;But how could you guess what the motive was?&rdquo;
 

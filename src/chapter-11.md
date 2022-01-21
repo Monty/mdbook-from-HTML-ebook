@@ -802,13 +802,18 @@ happy under your roof, and I feel that I must leave you forever. Do not worry
 about my future, for that is provided for; and, above all, do not search for
 me, for it will be fruitless labour and an ill-service to me. In life or in
 death, I am ever your loving,
+</p>
 
 <p class="right">
 &ldquo;&lsquo;MARY.&rsquo;
+</p>
+
+---
 
 <p class="p2">
 &ldquo;What could she mean by that note, Mr. Holmes? Do you think it points to
 suicide?&rdquo;
+</p>
 
 &ldquo;No, no, nothing of the kind. It is perhaps the best possible solution. I
 trust, Mr. Holder, that you are nearing the end of your troubles.&rdquo;

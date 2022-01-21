@@ -79,12 +79,17 @@ It was dated from Montague Place upon the preceding evening, and ran thus:
 should or should not accept a situation which has been offered to me as
 governess. I shall call at half-past ten to-morrow if I do not inconvenience
 you. Yours faithfully,
+</p>
 
 <p class="right">
 &ldquo;VIOLET HUNTER.&rdquo;
+</p>
+
+---
 
 <p class="p2">
 &ldquo;Do you know the young lady?&rdquo; I asked.
+</p>
 
 &ldquo;Not I.&rdquo;
 
@@ -300,15 +305,20 @@ that I must remain firm upon this point, and I only hope that the increased
 salary may recompense you for the loss. Your duties, as far as the child is
 concerned, are very light. Now do try to come, and I shall meet you with the
 dog-cart at Winchester. Let me know your train. Yours faithfully,
+</p>
 
 <p class="right">
 &ldquo;&lsquo;JEPHRO RUCASTLE.&rsquo;
+</p>
+
+---
 
 <p class="p2">
 &ldquo;That is the letter which I have just received, Mr. Holmes, and my mind
 is made up that I will accept it. I thought, however, that before taking the
 final step I should like to submit the whole matter to your
 consideration.&rdquo;
+</p>
 
 &ldquo;Well, Miss Hunter, if your mind is made up, that settles the
 question,&rdquo; said Holmes, smiling.
@@ -395,12 +405,17 @@ The summons was a brief and urgent one.
 <p class="letter">
 &ldquo;Please be at the Black Swan Hotel at Winchester at midday
 to-morrow,&rdquo; it said. &ldquo;Do come! I am at my wit&rsquo;s end.
+</p>
 
 <p class="right">
 &ldquo;HUNTER.&rdquo;
+</p>
+
+---
 
 <p class="p2">
 &ldquo;Will you come with me?&rdquo; asked Holmes, glancing up.
+</p>
 
 &ldquo;I should wish to.&rdquo;
 
@@ -422,6 +437,7 @@ shining very brightly, and yet there was an exhilarating nip in the air, which
 set an edge to a man&rsquo;s energy. All over the countryside, away to the
 rolling hills around Aldershot, the little red and grey roofs of the
 farm-steadings peeped out from amid the light green of the new foliage.
+</p>
 
 &ldquo;Are they not fresh and beautiful?&rdquo; I cried with all the enthusiasm
 of a man fresh from the fogs of Baker Street.

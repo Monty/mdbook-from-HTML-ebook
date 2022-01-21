@@ -1,9 +1,6 @@
-<div class="chapter">
-
 <h2><a name="chap04"></a> IV.<br/>THE BOSCOMBE VALLEY MYSTERY</h2>
 
-<p class="pfirst">
-<span class="dropcap" style="font-size: 1.50em">W</span>e were seated at
+<span style="font-size: 1.50em">W</span>e were seated at
 breakfast one morning, my wife and I, when the maid brought in a telegram. It
 was from Sherlock Holmes and ran in this way:
 

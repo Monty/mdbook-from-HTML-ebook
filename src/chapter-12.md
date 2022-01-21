@@ -1,9 +1,6 @@
-<div class="chapter">
-
 <h2><a name="chap12"></a>XII.<br/>THE ADVENTURE OF THE COPPER BEECHES</h2>
 
-<p class="pfirst">
-<span class="dropcap" style="font-size: 1.50em">&ldquo;T</span>o the man who
+<span style="font-size: 1.50em">&ldquo;T</span>o the man who
 loves art for its own sake,&rdquo; remarked Sherlock Holmes, tossing aside the
 advertisement sheet of *The Daily Telegraph*, &ldquo;it is frequently in
 its least important and lowliest manifestations that the keenest pleasure is to

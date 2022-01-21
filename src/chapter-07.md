@@ -1,9 +1,6 @@
-<div class="chapter">
-
 <h2><a name="chap07"></a>VII.<br/>THE ADVENTURE OF THE BLUE CARBUNCLE</h2>
 
-<p class="pfirst">
-<span class="dropcap" style="font-size: 1.50em">I</span> had called upon my
+<span style="font-size: 1.50em">I</span> had called upon my
 friend Sherlock Holmes upon the second morning after Christmas, with the
 intention of wishing him the compliments of the season. He was lounging upon
 the sofa in a purple dressing-gown, a pipe-rack within his reach upon the

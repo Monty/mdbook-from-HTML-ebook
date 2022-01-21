@@ -1,9 +1,6 @@
-<div class="chapter">
-
 <h2><a name="chap05"></a>V.<br/>THE FIVE ORANGE PIPS</h2>
 
-<p class="pfirst">
-<span class="dropcap" style="font-size: 1.50em">W</span>hen I glance over my
+<span style="font-size: 1.50em">W</span>hen I glance over my
 notes and records of the Sherlock Holmes cases between the years &rsquo;82 and
 &rsquo;90, I am faced by so many which present strange and interesting features
 that it is no easy matter to know which to choose and which to leave. Some,

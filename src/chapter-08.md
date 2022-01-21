@@ -1,9 +1,6 @@
-<div class="chapter">
-
 <h2><a name="chap08"></a>VIII.<br/>THE ADVENTURE OF THE SPECKLED BAND</h2>
 
-<p class="pfirst">
-<span class="dropcap" style="font-size: 1.50em">O</span>n glancing over my
+<span style="font-size: 1.50em">O</span>n glancing over my
 notes of the seventy odd cases in which I have during the last eight years
 studied the methods of my friend Sherlock Holmes, I find many tragic, some
 comic, a large number merely strange, but none commonplace; for, working as he

@@ -1,9 +1,6 @@
-<div class="chapter">
-
 <h2><a name="chap10"></a>X.<br/>THE ADVENTURE OF THE NOBLE BACHELOR</h2>
 
-<p class="pfirst">
-<span class="dropcap" style="font-size: 1.50em">T</span>he Lord St. Simon
+<span style="font-size: 1.50em">T</span>he Lord St. Simon
 marriage, and its curious termination, have long ceased to be a subject of
 interest in those exalted circles in which the unfortunate bridegroom moves.
 Fresh scandals have eclipsed it, and their more piquant details have drawn the

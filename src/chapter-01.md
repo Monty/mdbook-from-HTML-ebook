@@ -1,10 +1,8 @@
-<div class="chapter">
-
 <h2><a name="chap01"></a>I.<br/>A SCANDAL IN BOHEMIA</h2>
 
 <h3>I.</h3>
 
-<span class="dropcap" style="font-size: 1.50em">T</span>o Sherlock Holmes she
+<span style="font-size: 1.50em">T</span>o Sherlock Holmes she
 is always *the* woman. I have seldom heard him mention her under any other
 name. In his eyes she eclipses and predominates the whole of her sex. It was
 not that he felt any emotion akin to love for Irene Adler. All emotions, and

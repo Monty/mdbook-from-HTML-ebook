@@ -1,9 +1,6 @@
-<div class="chapter">
-
 <h2><a name="chap09"></a>IX.<br/>THE ADVENTURE OF THE ENGINEER&rsquo;S THUMB</h2>
 
-<p class="pfirst">
-<span class="dropcap" style="font-size: 1.50em">O</span>f all the problems
+<span style="font-size: 1.50em">O</span>f all the problems
 which have been submitted to my friend, Mr. Sherlock Holmes, for solution
 during the years of our intimacy, there were only two which I was the means of
 introducing to his notice&mdash;that of Mr. Hatherley&rsquo;s thumb, and that

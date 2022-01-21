@@ -1,8 +1,6 @@
-<div class="chapter">
-
 <h2><a name="chap02"></a>II.<br/>THE RED-HEADED LEAGUE</h2>
 
-<p class="pfirst"> <span class="dropcap" style="font-size: 1.50em">I</span> had
+<span style="font-size: 1.50em">I</span> had
 called upon my friend, Mr. Sherlock Holmes, one day in the autumn of last year
 and found him in deep conversation with a very stout, florid-faced, elderly
 gentleman with fiery red hair. With an apology for my intrusion, I was about to

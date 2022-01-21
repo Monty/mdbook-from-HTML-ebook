@@ -4,8 +4,7 @@ body { margin-left: 20%;
        margin-right: 20%;
        text-align: justify }
 
-h1, h2, h3, h4, h5 {text-align: center; font-style: normal; font-weight:
-normal; line-height: 1.5; margin-top: .5em; margin-bottom: .5em;}
+h1, h2, h3, h4, h5 {text-align: center; line-height: 1.5; margin-top: .5em; margin-bottom: .5em;}
 
 h1 {font-size: 300%;
     margin-top: 0.6em;
@@ -20,19 +19,10 @@ h5 {font-size: 110%;}
 
 hr {width: 80%; margin-top: 2em; margin-bottom: 2em;}
 
-div.chapter {page-break-before: always; margin-top: 4em;}
-
-p {text-indent: 1em;
-   margin-top: 0.25em;
+p {margin-top: 0.25em;
    margin-bottom: 0.25em; }
 
 .p2 {margin-top: 2em;}
-
-p.poem {text-indent: 0%;
-        margin-left: 10%;
-        font-size: 90%;
-        margin-top: 1em;
-        margin-bottom: 1em; }
 
 p.letter {text-indent: 0%;
           margin-left: 10%;
@@ -40,26 +30,9 @@ p.letter {text-indent: 0%;
           margin-top: 1em;
           margin-bottom: 1em; }
 
-p.noindent {text-indent: 0% }
-
-p.center  {text-align: center;
-           text-indent: 0em;
-           margin-top: 1em;
-           margin-bottom: 1em; }
-
 p.right {text-align: right;
          margin-right: 10%;
          margin-top: 1em;
          margin-bottom: 1em; }
-
-div.fig { display:block;
-          margin:0 auto;
-          text-align:center;
-          margin-top: 1em;
-          margin-bottom: 1em;}
-
-a:link {color:blue; text-decoration:none}
-a:visited {color:blue; text-decoration:none}
-a:hover {color:red}
 
 </style>

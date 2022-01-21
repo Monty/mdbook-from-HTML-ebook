@@ -1,9 +1,6 @@
-<div class="chapter">
-
 <h2><a name="chap06"></a>VI.<br/>THE MAN WITH THE TWISTED LIP</h2>
 
-<p class="pfirst">
-<span class="dropcap" style="font-size: 1.50em">I</span>sa Whitney, brother of
+<span style="font-size: 1.50em">I</span>sa Whitney, brother of
 the late Elias Whitney, D.D., Principal of the Theological College of St.
 George&rsquo;s, was much addicted to opium. The habit grew upon him, as I
 understand, from some foolish freak when he was at college; for having read De

@@ -1,9 +1,6 @@
-<div class="chapter">
-
 <h2><a name="chap11"></a>XI.<br/>THE ADVENTURE OF THE BERYL CORONET</h2>
 
-<p class="pfirst">
-<span class="dropcap" style="font-size: 1.50em">&ldquo;H</span>olmes,&rdquo;
+<span style="font-size: 1.50em">&ldquo;H</span>olmes,&rdquo;
 said I as I stood one morning in our bow-window looking down the street,
 &ldquo;here is a madman coming along. It seems rather sad that his relatives
 should allow him to come out alone.&rdquo;

@@ -1,9 +1,6 @@
-<div class="chapter">
-
 <h2><a name="chap03"></a>III.<br/>A CASE OF IDENTITY</h2>
 
-<p class="pfirst">
-<span class="dropcap" style="font-size: 1.50em">&ldquo;M</span>y dear
+<span style="font-size: 1.50em">&ldquo;M</span>y dear
 fellow,&rdquo; said Sherlock Holmes as we sat on either side of the fire in his
 lodgings at Baker Street, &ldquo;life is infinitely stranger than anything
 which the mind of man could invent. We would not dare to conceive the things

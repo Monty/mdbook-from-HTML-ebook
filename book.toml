@@ -7,3 +7,4 @@ title = "The Adventures of Sherlock Holmes"
 
 [output.html]
 additional-css = ["src/Gutenberg.css"]
+theme = "src/theme"

@@ -1,4 +1,4 @@
-<h2>X.<br/>THE ADVENTURE OF THE NOBLE BACHELOR</h2>
+## X.<br/>THE ADVENTURE OF THE NOBLE BACHELOR
 
 <span style="font-size: 1.50em">T</span>he Lord St. Simon
 marriage, and its curious termination, have long ceased to be a subject of

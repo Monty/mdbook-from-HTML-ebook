@@ -1,4 +1,4 @@
-<h2>V.<br/>THE FIVE ORANGE PIPS</h2>
+## V.<br/>THE FIVE ORANGE PIPS
 
 <span style="font-size: 1.50em">W</span>hen I glance over my
 notes and records of the Sherlock Holmes cases between the years &rsquo;82 and

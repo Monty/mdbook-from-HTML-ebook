@@ -1,4 +1,4 @@
-<h2>IV.<br/>THE BOSCOMBE VALLEY MYSTERY</h2>
+## IV.<br/>THE BOSCOMBE VALLEY MYSTERY
 
 <span style="font-size: 1.50em">W</span>e were seated at
 breakfast one morning, my wife and I, when the maid brought in a telegram. It

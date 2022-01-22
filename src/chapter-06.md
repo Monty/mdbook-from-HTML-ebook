@@ -1,4 +1,4 @@
-<h2>VI.<br/>THE MAN WITH THE TWISTED LIP</h2>
+## VI.<br/>THE MAN WITH THE TWISTED LIP
 
 <span style="font-size: 1.50em">I</span>sa Whitney, brother of
 the late Elias Whitney, D.D., Principal of the Theological College of St.

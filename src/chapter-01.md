@@ -1,6 +1,6 @@
-<h2>I.<br/>A SCANDAL IN BOHEMIA</h2>
+## I.<br/>A SCANDAL IN BOHEMIA
 
-<h3>I.</h3>
+##### I.
 
 <span style="font-size: 1.50em">T</span>o Sherlock Holmes she
 is always *the* woman. I have seldom heard him mention her under any other
@@ -449,7 +449,7 @@ the royal brougham rolled down the street. &ldquo;If you will be good enough to
 call to-morrow afternoon at three o&rsquo;clock I should like to chat this
 little matter over with you.&rdquo;
 
-<h3>II.</h3>
+##### II.
 
 At three o&rsquo;clock precisely I was at Baker Street, but Holmes had not yet
 returned. The landlady informed me that he had left the house shortly after
@@ -888,7 +888,7 @@ appeared to come from a slim youth in an ulster who had hurried by.
 dimly lit street. &ldquo;Now, I wonder who the deuce that could have
 been.&rdquo;
 
-<h3>III.</h3>
+##### III.
 
 I slept at Baker Street that night, and we were engaged upon our toast and
 coffee in the morning when the King of Bohemia rushed into the room.

@@ -968,7 +968,7 @@ it together. It was dated at midnight of the preceding night and ran in this
 way:
 
 <p class="letter">
-    &ldquo;MY DEAR MR. SHERLOCK HOLMES,&mdash;You really did it very well. You took
+&ldquo;MY DEAR MR. SHERLOCK HOLMES,&mdash;You really did it very well. You took
 me in completely. Until after the alarm of fire, I had not a suspicion. But
 then, when I found how I had betrayed myself, I began to think. I had been
 warned against you months ago. I had been told that, if the King employed an

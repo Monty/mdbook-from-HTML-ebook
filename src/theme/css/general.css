@@ -1,12 +1,12 @@
 /* Custom shizz */
 
-/* roboto-slab-regular - latin-ext_latin */
+/* domineregular - latin-ext_latin */
 @font-face {
-  font-family: 'Roboto Slab';
+  font-family: 'Domine';
   font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('../fonts/roboto-slab-v16-latin-ext_latin-regular.woff2') format('woff2')
+       url('../fonts/domine-v11-latin-ext_latin-regular.woff2') format('woff2')
 }
 
 /* Base styles and content styles */
@@ -19,7 +19,7 @@
 }
 
 html {
-    font-family: "Roboto Slab", "Open Sans", sans-serif;
+    font-family: "Domine", "Open Sans", sans-serif;
     color: var(--fg);
     background-color: var(--bg);
     text-size-adjust: none;

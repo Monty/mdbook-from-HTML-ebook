@@ -1,12 +1,12 @@
 /* Custom shizz */
 
-/* Libre Baskerville regular - latin-ext_latin */
+/* Merriweather Sans regular - latin-ext_latin */
 @font-face {
-  font-family: 'Libre Baskerville';
+  font-family: 'Merriweather Sans';
   font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('../fonts/libre-baskerville-v9-latin-ext_latin-regular.woff2') format('woff2')
+       url('../fonts/merriweather-sans-v14-latin-ext_latin-regular.woff2') format('woff2')
 }
 
 /* Base styles and content styles */
@@ -19,7 +19,7 @@
 }
 
 html {
-    font-family: "Libre Baskerville", "Open Sans", sans-serif;
+    font-family: "Merriweather Sans", "Open Sans", sans-serif;
     color: var(--fg);
     background-color: var(--bg);
     text-size-adjust: none;

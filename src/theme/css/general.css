@@ -1,12 +1,12 @@
 /* Custom shizz */
 
-/* domineregular - latin-ext_latin */
+/* Lemonada - latin-ext_latin */
 @font-face {
-  font-family: 'Domine';
+  font-family: 'Lemonada';
   font-style: normal;
   font-weight: 400;
   src: local(''),
-       url('../fonts/domine-v11-latin-ext_latin-regular.woff2') format('woff2')
+       url('../fonts/lemonada-v14-latin-ext_latin-regular.woff2') format('woff2')
 }
 
 /* Base styles and content styles */
@@ -19,7 +19,7 @@
 }
 
 html {
-    font-family: "Domine", "Open Sans", sans-serif;
+    font-family: "Lemonada", "Open Sans", sans-serif;
     color: var(--fg);
     background-color: var(--bg);
     text-size-adjust: none;

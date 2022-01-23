@@ -3,7 +3,7 @@ authors = ["Monty Williams"]
 language = "en"
 multilingual = false
 src = "src"
-title = "The Adventures of Sherlock Holmes"
+title = "The Adventures of Sherlock Holmes (in Lemonada font)"
 
 [output.html]
 additional-css = ["src/Gutenberg.css"]

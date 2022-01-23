@@ -1,39 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <title>
+      The Project Gutenberg eBook of Adventures of Sherlock Holmes, by A. Conan Doyle
+    </title>
+    <link rel="coverpage" href="images/cover-page.jpg" />
 <style type="text/css">
 
-body { margin-left: 20%;
-       margin-right: 20%;
-       text-align: justify }
+body {margin-left: 10%; margin-right: 10%;}
 
-h1, h2, h3, h4, h5 {text-align: center; line-height: 1.5; margin-top: .5em; margin-bottom: .5em;}
+h1,h2,h3 {text-align: center; clear: both;}
+h1 {margin: 2em auto;}
+h2 {line-height: 2em;}
+h3 {margin-top: 2em; margin-bottom: 1em;}
 
-h1 {font-size: 300%;
-    margin-top: 0.6em;
-    margin-bottom: 0.6em;
-    letter-spacing: 0.12em;
-    word-spacing: 0.2em;
-    text-indent: 0em;}
-h2 {font-size: 150%; margin-top: 2em; margin-bottom: 1em;}
-h3 {font-size: 130%; margin-top: 1em;}
-h4 {font-size: 120%;}
-h5 {font-size: 110%;}
+p {margin-top: .51em; text-align: justify; margin-bottom: .49em; text-indent: 1em;}
 
-hr {width: 80%; margin-top: 2em; margin-bottom: 2em;}
+/* General */
+blockquote {margin-left: 2em; margin-right: 2em;}
+.noi {text-indent: 0em;}
+.nomb {margin-bottom: 0em;}
+.nomt {margin-top: 0em;}
+.line-height2 {line-height: 2em;}
+.space4 {padding-right: 4em;}
+.center {text-align: center; text-indent: 0em;}
+.right {text-align: right; margin-right: 1em;}
+.smcap {font-variant: small-caps;}
+.hide {display: none;}
+.hidehand {display: inline;}
+.hidehtml {display: none;}
 
-p {text-indent: 1em;
-   margin-top: 0.25em;
-   margin-bottom: 0.25em; }
+/* Notes */
+ins {text-decoration: none; border-bottom: 1px dotted #dcdcdc;}
+cite, abbr {font-style: italic;}
 
-.p2 {margin-top: 2em;}
+.tn {width: 60%; margin: 0 20% 0 20%; background: #dcdcdc; padding: 1em;}
+ul {list-style: square;}
 
-p.letter {text-indent: 0%;
-          margin-left: 10%;
-          margin-right: 10%;
-          margin-top: 1em;
-          margin-bottom: 1em; }
+/* Horizontal rules */
+hr {width: 33%; margin: 2em auto; clear: both;}
 
-p.right {text-align: right;
-         margin-right: 10%;
-         margin-top: 1em;
-         margin-bottom: 1em; }
+hr.tb   {width: 45%; margin: 2em 27.5%;}
 
+hr.chap {width: 65%; margin: 4em 17.5%;}
+
+hr.line {width: 5%; border-width: thin; margin: 1em 47.2% 0em 47.2%;}
+
+/* Tables */
+table {margin-left: auto; margin-right: auto; border-collapse: collapse;}
+th {font-size: .8em;}
+td {vertical-align: top;}
+.tdl {text-align: left;}
+.tdr {text-align: right;}
+.tdr2 {text-align: right; padding-left: 1em;}
+.tdr3 {text-align: right; padding: 0; margin: 0;}
+.tdc {text-align: center; padding: 0; margin: 0;}
+
+/* Page numbers */
+a[title].pagenum {position: absolute; right: 2%;}
+a[title].pagenum:after {
+  content: attr(title);
+  display: inline; border-top: 1px solid; border-bottom: 1px solid;
+  font-size: x-small;
+  text-align: right;
+  padding: 1px 4px 1px 4px;
+  color: #999999;
+  background-color: inherit;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-indent: 0;
+  letter-spacing: 0;}
+
+/* Images */
+.caption, .caption2 {font-weight: bold; font-size: smaller;}
+.caption {text-align: center;}
+.caption2 {text-align: right;}
+
+.figcenter {clear: both; margin: 2em auto; text-align: center; max-width: 100%;}
+
+img {max-width: 100%; width: 100%; height: auto;}
+.fig100 {width: 100px;}
+.fig120 {width: 120px;}
+.fig296 {width: 296px;}
+.fig335 {width: 335px;}
+.fig379 {width: 379px;}
+.fig384 {width: 384px;}
+.fig400 {width: 400px;}
+.fig439 {width: 439px;}
+.fig449 {width: 449px;}
+.fig450 {width: 450px;}
+.fig504 {width: 504px;}
+
+/* Title page */
+.title {text-align: center; text-indent: 0em;}
+.mt4 {margin-top: 4em;}
+.p110 {font-size: 1.1em;}
+.p150 {font-size: 1.5em;}
+.p200 {font-size: 2em;}
+
+/* Chapters and drop caps */
+.ornate {font-family: "Old English Text MT", cursive, serif;}
+
+img.drop-cap, img.drop-cap2 {float: left; margin: 0 0.5em 0 0;}
+
+p.drop-cap:first-letter, p.drop-cap2:first-letter
+  {color: transparent; visibility: hidden;}
+p.drop-cap:first-letter {margin-left: -2em;}
+p.drop-cap2:first-letter {margin-left: -2.5em;}
+
+/* Book promotion */
+.books {width: 60%; margin: 4em 20%;}
+.hang {text-indent: -1em; padding-left: 1em; margin-left: 0em;}
+.hang2 {text-indent: -2em; padding-left: 2em; margin-left: 0em;}
+.line-height {line-height: 1.2em;}
+
+@media handheld
+{
+  body {margin: .5em; padding: 0; width: 95%;}
+
+  h1 {page-break-before: always; page-break-after: always;}
+  h2 {page-break-before: always; page-break-after: avoid;}
+  hr.chap {page-break-before: always; page-break-after: avoid;}
+
+  hr {border-width: 0px 0 0 0;}
+
+  img {max-width: 100%; width: auto; height: auto;}
+
+  p.first-para {text-indent: 0;}
+
+  img.drop-cap, img.drop-cap2 {display: none;}
+
+  p.drop-cap:first-letter, p.drop-cap2:first-letter
+    {color: inherit; visibility: visible; margin-left: 0em;}
+
+  table {width: 95%; margin-left: 2.5%; margin-right: 2.5%;}
+
+  .tn {width: 80%; margin: 0 10%; background: #dcdcdc; padding: 1em;}
+
+  .hide {display: block; page-break-after: always;}
+  .hidehand {display: none;}
+  .hidehtml {display: inline;}
+
+  .books {width: 90%; margin: 1em 5%;}
+}
 </style>
+</head>

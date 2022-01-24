@@ -6,4 +6,4 @@ src = "src"
 title = "The Adventures of Sherlock Holmes - Illustrated"
 
 [output.html]
-additional-css = ["src/Gutenberg.css"]
+additional-css = ["src/font-family.css", "src/Gutenberg.css"]

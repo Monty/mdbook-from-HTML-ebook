@@ -832,6 +832,8 @@ for me, for it will be fruitless labor and an ill-service to
 me. In life or in death, I am ever your loving</p>
 <p class="right nomt"><span class="smcap">Mary</span>.’</p></blockquote>
 
+---
+
 <p>“What could she mean by that note, Mr. Holmes? Do you think it points
 to suicide?”</p>
 

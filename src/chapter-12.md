@@ -92,6 +92,8 @@ been offered to me as governess. I shall call at half-past ten
 to-morrow, if I do not inconvenience you.</p>
 <p class="right nomt">“Yours <span class="space4">faithfully,</span>     <span class="smcap">Violet Hunter</span>.”</p></blockquote>
 
+---
+
 <p>“Do you know the young lady?” I asked.</p>
 
 <p>“Not I.”</p>
@@ -319,6 +321,8 @@ I shall meet you with the dog-cart at Winchester. Let me know
 your train.</p>
 <p class="right nomt">Yours <span class="space4">faithfully,</span>      <span class="smcap">Jephro Rucastle</span>.’</p></blockquote>
 
+---
+
 <p>“That is the letter which I have just received, Mr. Holmes, and my mind
 is made up that I will accept it. I thought,<a class="pagenum" name="Page_288" title="288"> </a> however, that before
 taking the final step I should like to submit the whole matter to your
@@ -417,6 +421,8 @@ mid-day to-morrow,” it said. “Do come! I am at my wits’
 end.</p>
 <p class="right nomt"><span class="smcap">HUNTER.</span>”</p>
 </blockquote>
+
+---
 
 <p>“Will you come with me?” asked Holmes, glancing up.</p>
 

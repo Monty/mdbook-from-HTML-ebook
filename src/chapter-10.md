@@ -91,6 +91,8 @@ of paramount importance.</p>
 <p class="right nomt">Yours <span class="space4">faithfully,</span>   <span class="smcap">St. Simon</span>.’</p>
 </blockquote>
 
+---
+
 <p>“It is dated from Grosvenor Mansions, written with a quill pen, and the
 noble lord has had the misfortune to get a smear of ink upon the outer
 side of his right little finger,” remarked Holmes, as he folded up the

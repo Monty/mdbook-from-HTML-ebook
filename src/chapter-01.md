@@ -1050,6 +1050,8 @@ Holmes, very truly yours,</p>
 <p class="right nomt"><span class="smcap">Irene Norton</span>, <i xml:lang="fr" lang="fr">n&eacute;e</i> <span class="smcap">Adler</span>.”</p>
 </blockquote>
 
+---
+
 <p><a class="pagenum" name="Page_28" title="28"> </a>
 “What a woman&mdash;oh, what a woman!” cried the King of Bohemia, when we
 had all three read this epistle. “Did I not tell you how quick and

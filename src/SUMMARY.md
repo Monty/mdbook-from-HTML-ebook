@@ -18,3 +18,4 @@
 - [THE ADVENTURE OF THE NOBLE BACHELOR](./chapter-10.md)
 - [THE ADVENTURE OF THE BERYL CORONET](./chapter-11.md)
 - [THE ADVENTURE OF THE COPPER BEECHES](./chapter-12.md)
+- [Transcriber’s Note:](./notes.md)

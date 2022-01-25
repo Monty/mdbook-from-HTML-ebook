@@ -44,62 +44,62 @@ OF<br />
 <tr>
 <td class="tdr">I.</td>
 <td class="tdl hang">&mdash;A SCANDAL IN BOHEMIA</td>
-<td class="tdr2"><a href="#i">3</a></td>
+<td class="tdr2"><a href="chapter-01.html#i">3</a></td>
 </tr>
 <tr>
 <td class="tdr">II.</td>
 <td class="tdl hang">&mdash;THE RED-HEADED LEAGUE</td>
-<td class="tdr2"><a href="#ii">29</a></td>
+<td class="tdr2"><a href="chapter-02.html#ii">29</a></td>
 </tr>
 <tr>
 <td class="tdr">   III.</td>
 <td class="tdl hang">&mdash;A CASE OF IDENTITY</td>
-<td class="tdr2"><a href="#iii">56</a></td>
+<td class="tdr2"><a href="chapter-03.html#iii">56</a></td>
 </tr>
 <tr>
 <td class="tdr">    IV.</td>
 <td class="tdl hang">&mdash;THE BOSCOMBE VALLEY MYSTERY</td>
-<td class="tdr2"><a href="#iv">76</a></td>
+<td class="tdr2"><a href="chapter-04.html#iv">76</a></td>
 </tr>
 <tr>
 <td class="tdr">     V.</td>
 <td class="tdl hang">&mdash;THE FIVE ORANGE PIPS</td>
-<td class="tdr2"><a href="#v">104</a></td>
+<td class="tdr2"><a href="chapter-05.html#v">104</a></td>
 </tr>
 <tr>
 <td class="tdr">    VI.</td>
 <td class="tdlv">&mdash;THE MAN WITH THE TWISTED LIP</td>
-<td class="tdr2"><a href="#vi">126</a></td>
+<td class="tdr2"><a href="chapter-06.html#vi">126</a></td>
 </tr>
 <tr>
 <td class="tdr">   VII.</td>
 <td class="tdl hang">&mdash;THE ADVENTURE OF THE BLUE CARBUNCLE</td>
-<td class="tdr2"><a href="#vii">153</a></td>
+<td class="tdr2"><a href="chapter-07.html#vii">153</a></td>
 </tr>
 <tr>
 <td class="tdr">  VIII.</td>
 <td class="tdl hang">&mdash;THE ADVENTURE OF THE SPECKLED BAND</td>
-<td class="tdr2"><a href="#viii">176</a></td>
+<td class="tdr2"><a href="chapter-08.html#viii">176</a></td>
 </tr>
 <tr>
 <td class="tdr">    IX.</td>
 <td class="tdl hang">&mdash;THE ADVENTURE OF THE ENGINEER’S THUMB</td>
-<td class="tdr2"><a href="#ix">205</a></td>
+<td class="tdr2"><a href="chapter-09.html#ix">205</a></td>
 </tr>
 <tr>
 <td class="tdr">     X.</td>
 <td class="tdl hang">&mdash;THE ADVENTURE OF THE NOBLE BACHELOR</td>
-<td class="tdr2"><a href="#x">229</a></td>
+<td class="tdr2"><a href="chapter-10.html#x">229</a></td>
 </tr>
 <tr>
 <td class="tdr">    XI.</td>
 <td class="tdl hang">&mdash;THE ADVENTURE OF THE BERYL CORONET</td>
-<td class="tdr2"><a href="#xi">253</a></td>
+<td class="tdr2"><a href="chapter-11.html#xi">253</a></td>
 </tr>
 <tr>
 <td class="tdr">   XII.</td>
 <td class="tdl hang">&mdash;THE ADVENTURE OF THE COPPER BEECHES</td>
-<td class="tdr2"><a href="#xii">280</a></td>
+<td class="tdr2"><a href="chapter-12.html#xii">280</a></td>
 </tr>
 </table>
 

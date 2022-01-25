@@ -115,90 +115,90 @@ OF<br />
 <tr>
 <td class="tdl hang">“A MAN ENTERED”</td>
 <td class="tdc"><i>Facing&nbsp;p.</i></td>
-<td class="tdr3"><a href="#man">8</a></td>
+<td class="tdr3"><a href="chapter-01.html#man">8</a></td>
 </tr>
 <tr>
 <td class="tdl hang">“THE DOOR WAS SHUT AND LOCKED”</td>
 <td class="tdc">″</td>
-<td class="tdr3"><a href="#door">40</a></td>
+<td class="tdr3"><a href="chapter-02.html#door">40</a></td>
 </tr>
 
 <tr>
 <td class="tdl hang">“ALL AFTERNOON HE SAT IN THE STALLS”</td>
 <td class="tdc">″</td>
-<td class="tdr3"><a href="#all">46</a></td>
+<td class="tdr3"><a href="chapter-02.html#all">46</a></td>
 </tr>
 
 <tr>
 <td class="tdl hang">“SHERLOCK HOLMES WELCOMED HER”</td>
 <td class="tdc">″</td>
-<td class="tdr3"><a href="#sherlock">60</a></td>
+<td class="tdr3"><a href="chapter-03.html#sherlock">60</a></td>
 </tr>
 
 <tr>
 <td class="tdl hang">“GLANCING ABOUT HIM LIKE A RAT IN A TRAP”</td>
 <td class="tdc">″</td>
-<td class="tdr3"><a href="#glancing">72</a></td>
+<td class="tdr3"><a href="chapter-03.html#glancing">72</a></td>
 </tr>
 
 <tr>
 <td class="tdl hang">“THEY FOUND THE BODY”</td>
 <td class="tdc">″</td>
-<td class="tdr3"><a href="#they">80</a></td>
+<td class="tdr3"><a href="chapter-04.html#they">80</a></td>
 </tr>
 
 <tr>
 <td class="tdl hang">“THE MAID SHOWED US THE BOOTS”</td>
 <td class="tdc">″</td>
-<td class="tdr3"><a href="#maid">92</a></td>
+<td class="tdr3"><a href="chapter-04.html#maid">92</a></td>
 </tr>
 
 <tr>
 <td class="tdl hang">“‘HOLMES,’ I CRIED, ‘YOU ARE TOO LATE’”</td>
 <td class="tdc">″</td>
-<td class="tdr3"><a href="#holmes2">122</a></td>
+<td class="tdr3"><a href="chapter-05.html#holmes2">122</a></td>
 </tr>
 
 <tr>
 <td class="tdl hang">“AT THE FOOT OF THE STAIRS SHE MET THIS LASCAR SCOUNDREL”</td>
 <td class="tdc">″</td>
-<td class="tdr3"><a href="#at">134</a></td>
+<td class="tdr3"><a href="chapter-06.html#at">134</a></td>
 </tr>
 
 <tr>
 <td class="tdl hang">“‘HAVE MERCY!’ HE SHRIEKED”</td>
 <td class="tdc">″</td>
-<td class="tdr3"><a href="#have">172</a></td>
+<td class="tdr3"><a href="chapter-07.html#have">172</a></td>
 </tr>
 
 <tr>
 <td class="tdl hang">“‘GOOD-BYE, AND BE BRAVE’”</td>
 <td class="tdc">″</td>
-<td class="tdr3"><a href="#good">196</a></td>
+<td class="tdr3"><a href="chapter-08.html#good">196</a></td>
 </tr>
 
 <tr>
 <td class="tdl hang">“‘NOT A WORD TO A SOUL’”</td>
 <td class="tdc">″</td>
-<td class="tdr3"><a href="#not">214</a></td>
+<td class="tdr3"><a href="chapter-09.html#not">214</a></td>
 </tr>
 
 <tr>
 <td class="tdl hang">“‘I WILL WISH YOU ALL A VERY GOOD NIGHT’”</td>
 <td class="tdc">″</td>
-<td class="tdr3"><a href="#will">250</a></td>
+<td class="tdr3"><a href="chapter-10.html#will">250</a></td>
 </tr>
 
 <tr>
 <td class="tdl hang">“I CLAPPED A PISTOL TO HIS HEAD”</td>
 <td class="tdc">″</td>
-<td class="tdr3"><a href="#clapped">278</a></td>
+<td class="tdr3"><a href="chapter-11.html#clapped">278</a></td>
 </tr>
 
 <tr>
 <td class="tdl hang">“‘I AM SO DELIGHTED THAT YOU HAVE COME’”</td>
 <td class="tdc">″</td>
-<td class="tdr3"><a href="#delighted">292</a></td>
+<td class="tdr3"><a href="chapter-12.html#delighted">292</a></td>
 </tr>
 </table>
 

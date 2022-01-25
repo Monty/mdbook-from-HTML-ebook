@@ -1,5 +1,6 @@
 I wanted to experiment with using [mdbook](https://github.com/rust-lang/mdBook)
-to add Table of Contents, search, and theme functionality to an HTML book.
+to add Table of Contents, search, and theme functionality to an HTML book. Since
+Markdown allows embedded HTML I figured it might be a simple task -- and it was.
 
 I used the HTML format of a 
 [Project Gutenberg eBook](https://www.gutenberg.org/ebooks/48320)

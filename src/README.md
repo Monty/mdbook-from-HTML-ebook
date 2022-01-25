@@ -28,14 +28,17 @@ follows:
 I then moved the images directory from the ebook to the src directory so
 image links would work correctly.
 
-Links that used to refer to page numbers in the single file won't work
-since there are now multiple files. This would be simple to fix.
-
 Other than the standard creation of a SUMMARY.md file, and adding the two
 additional-css files (font-family.css, Gutenberg.css) to book.toml
-I only made one functional change:
-To prevent text flowing around right justified paragraphs (class="right nomt")
-I added following horizontal lines (--- in chapters 1, 10, 11, and 12.)
+I only made these functional changes:
+
+* To prevent text flowing around right justified paragraphs
+(class="right nomt") I added following horizontal lines (--- in
+chapters 1, 10, 11, and 12.)
+
+* To fix broken links in CONTENTS.md that referred to page numbers
+in the single HTML file, I preceded them with their chapter numbers,
+i.e.  "chapter-02.html#ii" and "chapter-02.html#door".
 
 You can change the book to any "Web-safe" font by modifying font-family.css
 appropriately.

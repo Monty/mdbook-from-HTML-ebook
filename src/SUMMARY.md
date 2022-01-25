@@ -1,5 +1,7 @@
 # Summary
 
+[README](README.md)
+
 [About This Book](about.md)
 
 [Table of Contents](CONTENTS.md)

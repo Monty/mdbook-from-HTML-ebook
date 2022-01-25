@@ -24,12 +24,17 @@ follows:
 11459,12567w! src/chapter-12.md
 12789,12878w! src/notes.md
 ```
+I then moved the images directory from the ebook to the src directory so
+image links would work correctly.
+
+Links that used to refer to page numbers in the single file won't work
+since there are now multiple files. This would be simple to fix.
+
 Other than the standard creation of a SUMMARY.md file, and adding the two
 additional-css files (font-family.css, Gutenberg.css) to book.toml
-I only made one functional change.
-
+I only made one functional change:
 To prevent text flowing around right justified paragraphs (class="right nomt")
-I added following horizontal lines (--- in chapters 1, 10, 11, and 12)
+I added following horizontal lines (--- in chapters 1, 10, 11, and 12.)
 
 You can change the book to any installed font by modifying font-family.css
 appropriately.

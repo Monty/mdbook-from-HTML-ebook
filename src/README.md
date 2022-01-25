@@ -37,5 +37,5 @@ I only made one functional change:
 To prevent text flowing around right justified paragraphs (class="right nomt")
 I added following horizontal lines (--- in chapters 1, 10, 11, and 12.)
 
-You can change the book to any installed font by modifying font-family.css
+You can change the book to any "Web-safe" font by modifying font-family.css
 appropriately.

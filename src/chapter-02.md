@@ -1,5 +1,4 @@
 <hr class="chap" />
-
 <h2><a class="pagenum" name="Page_29" title="29"> </a>
 <a name="ii" id="ii"></a><span class="ornate">Adventure II</span><br />
 
@@ -1069,4 +1068,3 @@ so.”</p>
 little use,” he remarked. “‘L’homme c’est rien&mdash;l’oeuvre c’est
 tout,’ as Gustave Flaubert wrote to Georges Sand.”</p>
 
-<div>

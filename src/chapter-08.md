@@ -1,3 +1,4 @@
+<div>
 <hr class="chap" />
 <h2><a class="pagenum" name="Page_176" title="176"> </a>
 <a name="viii" id="viii"></a><span class="ornate">Adventure VIII</span><br />
@@ -1157,6 +1158,4 @@ snakish temper, so that it flew upon the first person it saw. In this
 way I am no doubt indirectly responsible for Dr. Grimesby Roylott’s
 death, and I cannot say that it is likely to weigh very heavily upon my
 conscience.”</p>
-
-
 

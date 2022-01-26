@@ -1,3 +1,4 @@
+<div>
 <hr class="chap" />
 <h2><a class="pagenum" name="Page_126" title="126"> </a>
 <a name="vi" id="vi"></a><span class="ornate">Adventure VI</span><br />
@@ -1056,5 +1057,3 @@ the matter up. I wish I knew how you reach your results.”</p>
 consuming an ounce of shag. I think, Watson, that if we drive to Baker
 Street we shall just be in time for breakfast.”</p>
 
-
-<div>

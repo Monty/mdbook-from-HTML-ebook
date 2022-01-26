@@ -1,5 +1,4 @@
 <hr class="chap" />
-
 <h2><a class="pagenum" name="Page_229" title="229"> </a>
 <a name="x" id="x"></a><span class="ornate">Adventure X</span><br />
 THE ADVENTURE OF THE NOBLE BACHELOR</h2>
@@ -996,6 +995,4 @@ that we may judge Lord St. Simon very mercifully, and thank our stars
 that we are never likely to find ourselves in the same position. Draw
 your chair up, and hand me my violin, for the only problem we have
 still to solve is how to while away these bleak autumnal evenings.”</p>
-
-
 

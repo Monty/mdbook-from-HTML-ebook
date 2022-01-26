@@ -1,3 +1,4 @@
+<div>
 <hr class="chap" />
 <h2><a class="pagenum" name="Page_153" title="153"> </a>
 <a name="vii" id="vii"></a><span class="ornate">Adventure VII</span><br />
@@ -939,5 +940,3 @@ If you will have the goodness to touch the bell, doctor, we will
 begin another investigation, in which, also, a bird will be the chief
 feature.”</p>
 
-
-<div>

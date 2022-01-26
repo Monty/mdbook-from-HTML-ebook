@@ -1,5 +1,4 @@
 <hr class="chap" />
-
 <h2><a class="pagenum" name="Page_280" title="280"> </a>
 <a name="xii" id="xii"></a><span class="ornate">Adventure XII</span><br />
 
@@ -1111,5 +1110,4 @@ Walsall, where I believe that she has met with considerable success.</p>
 
 
 <p class="center">THE END</p>
-
 

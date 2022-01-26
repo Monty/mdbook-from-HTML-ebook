@@ -1,5 +1,4 @@
 <hr class="chap" />
-
 <h2><a class="pagenum" name="Page_76" title="76"> </a>
 <a name="iv" id="iv"></a><span class="ornate">Adventure IV</span><br />
 THE BOSCOMBE VALLEY MYSTERY</h2>
@@ -1079,5 +1078,3 @@ interview, but he is now dead; and there is every prospect that the son
 and daughter may come to live happily together, in ignorance of the
 black cloud which rests upon their past.</p>
 
-
-<div>

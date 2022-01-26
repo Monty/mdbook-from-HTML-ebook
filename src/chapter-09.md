@@ -1,5 +1,4 @@
 <hr class="chap" />
-
 <h2><a class="pagenum" name="Page_205" title="205"> </a>
 <a name="ix" id="ix"></a><span class="ornate">Adventure IX</span><br />
 THE ADVENTURE OF THE ENGINEER’S THUMB</h2>

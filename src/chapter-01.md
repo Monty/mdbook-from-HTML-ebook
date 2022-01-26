@@ -1098,5 +1098,3 @@ I have not heard him do it of late. And when he speaks of Irene Adler,
 or when he refers to her photograph, it is always under the honorable
 title of <em>the</em> woman.</p>
 
-
-

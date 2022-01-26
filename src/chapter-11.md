@@ -1,5 +1,4 @@
 <hr class="chap" />
-
 <h2><a class="pagenum" name="Page_253" title="253"> </a>
 <a name="xi" id="xi"></a><span class="ornate">Adventure XI</span><br />
 
@@ -1079,6 +1078,4 @@ inform me where she is now.”</p>
 wherever Sir George Burnwell is. It is equally certain, too, that
 whatever her sins are, they will soon receive a more than sufficient
 punishment.”</p>
-
-
 

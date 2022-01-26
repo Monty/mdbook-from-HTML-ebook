@@ -1,3 +1,4 @@
+<div>
 <hr class="chap" />
 <h2><a class="pagenum" name="Page_104" title="104"> </a>
 <a name="v" id="v"></a><span class="ornate">Adventure V</span><br />
@@ -847,5 +848,3 @@ seen swinging in the trough of a wave, with the letters “L. S.” carved
 upon it, and that is all which we shall ever know of the fate of the
 <i>Lone Star</i>.</p>
 
-
-<div>

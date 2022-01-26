@@ -1,3 +1,4 @@
+<div>
 <hr class="chap" />
 <h2><a class="pagenum" name="Page_56" title="56"> </a>
 <a name="iii" id="iii"></a><span class="ornate">Adventure III</span><br />
@@ -765,6 +766,4 @@ tallied in every respect with that of their employ&eacute;, James Windibank.
 Persian saying, ‘There is danger for him who taketh the tiger cub, and
 danger also for whoso snatches a delusion from a woman.’ There is as
 much sense in Hafiz as in Horace, and as much knowledge of the world.”</p>
-
-
 

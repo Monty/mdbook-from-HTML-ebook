@@ -12,18 +12,18 @@ follows:
 153,204w! src/about.md
 205,410w! src/CONTENTS.md
 411,1510w! src/chapter-01.md
-1511,2582w! src/chapter-02.md
-2583,3352w! src/chapter-03.md
-3353,4435w! src/chapter-04.md
-4436,5286w! src/chapter-05.md
-5287,6346w! src/chapter-06.md
-6347,7289w! src/chapter-07.md
-7290,8451w! src/chapter-08.md
-8452,9371w! src/chapter-09.md
+1511,2581w! src/chapter-02.md
+2582,3352w! src/chapter-03.md
+3353,4434w! src/chapter-04.md
+4435,5285w! src/chapter-05.md
+5286,6346w! src/chapter-06.md
+6347,7288w! src/chapter-07.md
+7289,8451w! src/chapter-08.md
+8452,9377w! src/chapter-09.md
 9378,10376w! src/chapter-10.md
 10377,11458w! src/chapter-11.md
-11459,12567w! src/chapter-12.md
-12789,12878w! src/notes.md
+11459,12566w! src/chapter-12.md
+12789,12877w! src/notes.md
 ```
 I then moved the images directory from the ebook to the src directory so
 image links would work correctly.

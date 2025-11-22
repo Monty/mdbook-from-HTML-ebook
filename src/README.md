@@ -40,5 +40,7 @@ chapters 1, 10, 11, and 12.)
 in the single HTML file, I preceded them with their chapter numbers,
 i.e.  "chapter-02.html#ii" and "chapter-02.html#door".
 
+I added auto-deployment to GitHub pages.
+
 You can change the book to any "Web-safe" font by modifying font-family.css
 appropriately.

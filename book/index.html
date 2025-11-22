@@ -1,0 +1,234 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>README - The Adventures of Sherlock Holmes - Illustrated</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="src/font-family.css">
+        <link rel="stylesheet" href="src/Gutenberg.css">
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html" class="active">README</a></li><li class="chapter-item expanded affix "><a href="about.html">About This Book</a></li><li class="chapter-item expanded affix "><a href="CONTENTS.html">Table of Contents</a></li><li class="chapter-item expanded affix "><li class="part-title">The Adventures of Sherlock Holmes</li><li class="chapter-item expanded "><a href="chapter-01.html"><strong aria-hidden="true">1.</strong> A SCANDAL IN BOHEMIA</a></li><li class="chapter-item expanded "><a href="chapter-02.html"><strong aria-hidden="true">2.</strong> THE RED-HEADED LEAGUE</a></li><li class="chapter-item expanded "><a href="chapter-03.html"><strong aria-hidden="true">3.</strong> A CASE OF IDENTITY</a></li><li class="chapter-item expanded "><a href="chapter-04.html"><strong aria-hidden="true">4.</strong> THE BOSCOMBE VALLEY MYSTERY</a></li><li class="chapter-item expanded "><a href="chapter-05.html"><strong aria-hidden="true">5.</strong> THE FIVE ORANGE PIPS</a></li><li class="chapter-item expanded "><a href="chapter-06.html"><strong aria-hidden="true">6.</strong> THE MAN WITH THE TWISTED LIP</a></li><li class="chapter-item expanded "><a href="chapter-07.html"><strong aria-hidden="true">7.</strong> THE ADVENTURE OF THE BLUE CARBUNCLE</a></li><li class="chapter-item expanded "><a href="chapter-08.html"><strong aria-hidden="true">8.</strong> THE ADVENTURE OF THE SPECKLED BAND</a></li><li class="chapter-item expanded "><a href="chapter-09.html"><strong aria-hidden="true">9.</strong> THE ADVENTURE OF THE ENGINEER’S THUMB</a></li><li class="chapter-item expanded "><a href="chapter-10.html"><strong aria-hidden="true">10.</strong> THE ADVENTURE OF THE NOBLE BACHELOR</a></li><li class="chapter-item expanded "><a href="chapter-11.html"><strong aria-hidden="true">11.</strong> THE ADVENTURE OF THE BERYL CORONET</a></li><li class="chapter-item expanded "><a href="chapter-12.html"><strong aria-hidden="true">12.</strong> THE ADVENTURE OF THE COPPER BEECHES</a></li><li class="chapter-item expanded "><a href="notes.html"><strong aria-hidden="true">13.</strong> Transcriber’s Note:</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">The Adventures of Sherlock Holmes - Illustrated</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p>I wanted to experiment with using <a href="https://github.com/rust-lang/mdBook">mdbook</a>
+to add Table of Contents, search, and theme functionality to an HTML book. Since
+Markdown allows embedded HTML I figured it might be a simple task -- and it was.</p>
+<p>I used the HTML format of a 
+<a href="https://www.gutenberg.org/ebooks/48320">Project Gutenberg eBook</a>
+for sample content. I extracted its css and chapters into individual files as
+follows:</p>
+<pre><code>1,152w! src/Gutenberg.css
+153,204w! src/about.md
+205,410w! src/CONTENTS.md
+411,1510w! src/chapter-01.md
+1511,2581w! src/chapter-02.md
+2582,3352w! src/chapter-03.md
+3353,4434w! src/chapter-04.md
+4435,5285w! src/chapter-05.md
+5286,6346w! src/chapter-06.md
+6347,7288w! src/chapter-07.md
+7289,8451w! src/chapter-08.md
+8452,9377w! src/chapter-09.md
+9378,10376w! src/chapter-10.md
+10377,11458w! src/chapter-11.md
+11459,12566w! src/chapter-12.md
+12789,12877w! src/notes.md
+</code></pre>
+<p>I then moved the images directory from the ebook to the src directory so
+image links would work correctly.</p>
+<p>Other than the standard creation of a SUMMARY.md file, and adding the two
+additional-css files (font-family.css, Gutenberg.css) to book.toml
+I only made these functional changes:</p>
+<ul>
+<li>
+<p>To prevent text flowing around right justified paragraphs
+(class=&quot;right nomt&quot;) I added following horizontal lines (--- in
+chapters 1, 10, 11, and 12.)</p>
+</li>
+<li>
+<p>To fix broken links in CONTENTS.md that referred to page numbers
+in the single HTML file, I preceded them with their chapter numbers,
+i.e.  &quot;chapter-02.html#ii&quot; and &quot;chapter-02.html#door&quot;.</p>
+</li>
+</ul>
+<p>You can change the book to any &quot;Web-safe&quot; font by modifying font-family.css
+appropriately.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+                            <a rel="next" href="about.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+                    <a rel="next" href="about.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>

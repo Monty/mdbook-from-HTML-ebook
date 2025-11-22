@@ -1,9 +1,8 @@
 # Summary
-
-[Table of Contents](CONTENTS.md)
+[README](README.md)
 
 # The Adventures of Sherlock Holmes
-
+- [Table of Contents](./CONTENTS.md)
 - [A SCANDAL IN BOHEMIA](./chapter-01.md)
 - [THE RED-HEADED LEAGUE](./chapter-02.md)
 - [A CASE OF IDENTITY](./chapter-03.md)

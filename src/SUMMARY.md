@@ -1,9 +1,5 @@
 # Summary
 
-[README](README.md)
-
-[About This Book](about.md)
-
 [Table of Contents](CONTENTS.md)
 
 # The Adventures of Sherlock Holmes
@@ -21,3 +17,4 @@
 - [THE ADVENTURE OF THE BERYL CORONET](./chapter-11.md)
 - [THE ADVENTURE OF THE COPPER BEECHES](./chapter-12.md)
 - [Transcriber’s Note:](./notes.md)
+[About This Book](about.md)

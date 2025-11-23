@@ -1,7 +1,6 @@
 <hr class="chap" />
 <h2><a class="pagenum" name="Page_253" title="253"> </a>
 <a name="xi" id="xi"></a><span class="ornate">Adventure XI</span><br />
-
 THE ADVENTURE OF THE BERYL CORONET</h2>
 
 <div class="fig100">

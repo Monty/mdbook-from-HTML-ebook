@@ -1,7 +1,6 @@
 <hr class="chap" />
 <h2><a class="pagenum" name="Page_280" title="280"> </a>
 <a name="xii" id="xii"></a><span class="ornate">Adventure XII</span><br />
-
 THE ADVENTURE OF THE COPPER BEECHES</h2>
 
 <div class="fig100">

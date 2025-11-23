@@ -1,7 +1,6 @@
 <hr class="chap" />
 <h2><a class="pagenum" name="Page_29" title="29"> </a>
 <a name="ii" id="ii"></a><span class="ornate">Adventure II</span><br />
-
 THE RED-HEADED LEAGUE</h2>
 
 <div class="fig100">

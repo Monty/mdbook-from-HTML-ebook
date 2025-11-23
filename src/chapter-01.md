@@ -5,7 +5,6 @@
 <a name="i" id="i"></a><span class="ornate">Adventure I</span><br />
 A SCANDAL IN BOHEMIA</h2>
 
-
 <h3>I</h3>
 
 <div class="fig100">

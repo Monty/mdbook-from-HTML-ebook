@@ -2,6 +2,8 @@
 
 [Introduction](./README.md)
 
+------
+
 [Table of Contents](./CONTENTS.md)
 
 # The Adventures of Sherlock Holmes
@@ -20,5 +22,7 @@
 - [THE ADVENTURE OF THE COPPER BEECHES](./chapter-12.md)
 
 [Transcriber’s Note:](./notes.md)
+
+------
 
 [About This Book](./about.md)

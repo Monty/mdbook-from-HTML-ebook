@@ -1,8 +1,11 @@
 # Summary
-[README](README.md)
+
+[Introduction](./README.md)
+
+[Table of Contents](./CONTENTS.md)
 
 # The Adventures of Sherlock Holmes
-- [Table of Contents](./CONTENTS.md)
+
 - [A SCANDAL IN BOHEMIA](./chapter-01.md)
 - [THE RED-HEADED LEAGUE](./chapter-02.md)
 - [A CASE OF IDENTITY](./chapter-03.md)
@@ -15,5 +18,7 @@
 - [THE ADVENTURE OF THE NOBLE BACHELOR](./chapter-10.md)
 - [THE ADVENTURE OF THE BERYL CORONET](./chapter-11.md)
 - [THE ADVENTURE OF THE COPPER BEECHES](./chapter-12.md)
-- [Transcriber’s Note:](./notes.md)
-[About This Book](about.md)
+
+[Transcriber’s Note:](./notes.md)
+
+[About This Book](./about.md)

@@ -37,7 +37,7 @@ blockquote {margin-left: 2em; margin-right: 2em;}
 ins {text-decoration: none; border-bottom: 1px dotted #dcdcdc;}
 cite, abbr {font-style: italic;}
 
-.tn {width: 60%; margin: 0 20% 0 20%; background: #dcdcdc; padding: 1em;}
+.tn {width: 60%; margin: 0 20% 0 20%; padding: 1em;}
 ul {list-style: square;}
 
 /* Horizontal rules */
@@ -140,7 +140,7 @@ p.drop-cap2:first-letter {margin-left: -2.5em;}
 
   table {width: 95%; margin-left: 2.5%; margin-right: 2.5%;}
 
-  .tn {width: 80%; margin: 0 10%; background: #dcdcdc; padding: 1em;}
+  .tn {width: 80%; margin: 0 10%; padding: 1em;}
 
   .hide {display: block; page-break-after: always;}
   .hidehand {display: none;}

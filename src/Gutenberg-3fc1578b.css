@@ -46,11 +46,10 @@ blockquote { margin-left: 2em; margin-right: 2em; }
    ------------------------------------------------------------ */
 
 .tn {
-    background: var(--bg);
-    border: 1px solid var(--fg);
+    background: var(--quote-bg);
+    border: 1px solid var(--quote-border);
     border-radius: 4px;
     padding: 1em;
-
     width: 60%;
     margin: 0 20%;
 }
@@ -200,14 +199,14 @@ p.drop-cap2:first-letter { margin-left: -2.5em; }
   }
 
   /* Responsive tn */
-  .tn {
-      background: var(--bg);
-      border: 1px solid var(--fg);
-      border-radius: 4px;
-      padding: 1em;
 
-      width: 80%;
-      margin: 0 10%;
+.tn {
+    background: var(--quote-bg);
+    border: 1px solid var(--quote-border);
+    border-radius: 4px;
+    padding: 1em;
+    width: 80%;
+    margin: 0 10%;
   }
 }
 

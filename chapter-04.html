@@ -12,24 +12,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
 
-        <link rel="icon" href="favicon-de23e50b.svg">
-        <link rel="shortcut icon" href="favicon-8114d1fc.png">
-        <link rel="stylesheet" href="css/variables-8adf115d.css">
-        <link rel="stylesheet" href="css/general-2459343d.css">
-        <link rel="stylesheet" href="css/chrome-ae938929.css">
-        <link rel="stylesheet" href="css/print-9e4910d8.css" media="print">
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="fonts/fonts-9644e21d.css">
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" id="mdbook-highlight-css" href="highlight-493f70e1.css">
-        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="tomorrow-night-4c0ae647.css">
-        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="ayu-highlight-3fdfc3ac.css">
+        <link rel="stylesheet" id="highlight-css" href="highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
-        <link rel="stylesheet" href="src/font-family-50700503.css">
-        <link rel="stylesheet" href="src/Gutenberg-3fc1578b.css">
+        <link rel="stylesheet" href="src/font-family.css">
+        <link rel="stylesheet" href="src/Gutenberg.css">
+        <link rel="stylesheet" href="src/catppuccin.css">
 
 
         <!-- Provide site root and default themes to javascript -->
@@ -37,10 +39,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-59dcaa77.js";
+            window.path_to_searchindex_js = "searchindex.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-68683f6f.js"></script>
+        <script src="toc.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -54,7 +56,7 @@
             </div>
         </div>
     </div>
-    <div id="mdbook-body-container">
+    <div id="body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
             try {
@@ -83,12 +85,12 @@
             html.classList.add("js");
         </script>
 
-        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
             let sidebar = null;
-            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
@@ -103,39 +105,43 @@
             }
         </script>
 
-        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <!-- populated by js -->
             <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
             <noscript>
                 <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
             </noscript>
-            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
             </div>
         </nav>
 
-        <div id="mdbook-page-wrapper" class="page-wrapper">
+        <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                <div id="mdbook-menu-bar-hover-placeholder"></div>
-                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
-                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
-                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
                         </label>
-                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
-                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
                         </button>
-                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="latte">Latte</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="frappe">Frappé</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="macchiato">Macchiato</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mocha">Mocha</button></li>
                         </ul>
-                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
-                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
                         </button>
                     </div>
 
@@ -143,111 +149,93 @@
 
                     <div class="right-buttons">
                         <a href="print.html" title="Print this book" aria-label="Print this book">
-                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                            <i id="print-button" class="fa fa-print"></i>
                         </a>
 
                     </div>
                 </div>
 
-                <div id="mdbook-search-wrapper" class="hidden">
-                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
                         <div class="search-wrapper">
-                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
                             <div class="spinner-wrapper">
-                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                                <i class="fa fa-spinner fa-spin"></i>
                             </div>
                         </div>
                     </form>
-                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
-                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
-                        <ul id="mdbook-searchresults">
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
                         </ul>
                     </div>
                 </div>
 
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
                 <script>
-                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
-                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
-                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
                         link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
                     });
                 </script>
 
-                <div id="mdbook-content" class="content">
+                <div id="content" class="content">
                     <main>
                         <hr class="chap" />
 <h2><a class="pagenum" name="Page_76" title="76"> </a>
 <a name="iv" id="iv"></a><span class="ornate">Adventure IV</span><br />
 THE BOSCOMBE VALLEY MYSTERY</h2>
-
 <div class="fig100">
   <img class="drop-cap2" src="images/drop_w.jpg" width="100" height="102" alt="" />
 </div>
-
 <p class="first-para drop-cap2">WE were seated at breakfast one morning, my wife and I, when the maid
 brought in a telegram. It was from Sherlock Holmes, and ran in this way:</p>
-
 <p>“Have you a couple of days to spare? Have just been wired for from
 the West of England in connection with Boscombe Valley tragedy. Shall
 be glad if you will come with me. Air and scenery perfect. Leave
 Paddington by the 11.15.”</p>
-
 <p>“What do you say, dear?” said my wife, looking across at me. “Will you
 go?”</p>
-
 <p>“I really don’t know what to say. I have a fairly long list at present.”</p>
-
 <p>“Oh, Anstruther would do your work for you. You have been looking a
 little pale lately. I think that the change would do you good, and you
 are always so interested in Mr. Sherlock Holmes’s cases.”</p>
-
 <p>“I should be ungrateful if I were not, seeing what I gained through one
 of them,” I answered. “But if I am to go, I must pack at once, for I
 have only half an hour.”</p>
-
 <p>My experience of camp life in Afghanistan had at least had the effect
 of making me a prompt and ready traveller. My wants were few and
 simple, so that in less than the time stated I was in a cab with my
 valise, rattling away to Paddington Station. Sherlock Holmes was pacing
 up and down the platform, his tall, gaunt figure made even gaunter and
 taller by his long gray travelling-cloak and close-fitting cloth cap.</p>
-
 <p><a class="pagenum" name="Page_77" title="77"> </a>
 “It is really very good of you to come, Watson,” said he. “It makes a
 considerable difference to me, having some one with me on whom I can
 thoroughly rely. Local aid is always either worthless or else biassed.
 If you will keep the two corner seats I shall get the tickets.”</p>
-
 <p>We had the carriage to ourselves save for an immense litter of papers
 which Holmes had brought with him. Among these he rummaged and read,
 with intervals of note-taking and of meditation, until we were past
 Reading. Then he suddenly rolled them all into a gigantic ball, and
 tossed them up onto the rack.</p>
-
 <p>“Have you heard anything of the case?” he asked.</p>
-
 <p>“Not a word. I have not seen a paper for some days.”</p>
-
 <p>“The London press has not had very full accounts. I have just
 been looking through all the recent papers in order to master the
 particulars. It seems, from what I gather, to be one of those simple
 cases which are so extremely difficult.”</p>
-
 <p>“That sounds a little paradoxical.”</p>
-
 <p>“But it is profoundly true. Singularity is almost invariably a clew.
 The more featureless and commonplace a crime is, the more difficult is
 it to bring it home. In this case, however, they have established a
 very serious case against the son of the murdered man.”</p>
-
 <p>“It is a murder, then?”</p>
-
 <p>“Well, it is conjectured to be so. I shall take nothing for granted
 until I have the opportunity of looking personally into it. I will
 explain the state of things to you, as far as I have been able to
 understand it, in a very few words.</p>
-
 <p>“Boscombe Valley is a country district not very far from Ross, in
 Herefordshire. The largest landed proprietor in that part is a Mr. John
 Turner, who made his money in Australia, and returned some years ago to
@@ -262,11 +250,10 @@ eighteen, and Turner had an only daughter of the same age, but neither
 of them had wives living. They appear to have avoided the society of
 the neighboring English families, and to have led retired lives, though
 both the McCarthys were fond of sport, and were frequently seen at
-the race-meetings of the neighborhood. McCarthy kept two servants—a
+the race-meetings of the neighborhood. McCarthy kept two servants&mdash;a
 man and a girl. Turner had a considerable household, some half-dozen
 at the least. That is as much as I have been able to gather about the
 families. Now for the facts.</p>
-
 <p>“On June 3, that is, on Monday last, McCarthy left his house at
 Hatherley about three in the afternoon, and walked down to the Boscombe
 Pool, which is a small lake formed by the spreading out of the
@@ -274,7 +261,6 @@ stream which runs down the Boscombe Valley. He had been out with his
 serving-man in the morning at Ross, and he had told the man that he
 must hurry, as he had an appointment of importance to keep at three.
 From that appointment he never came back alive.</p>
-
 <p>“From Hatherley Farm-house to the Boscombe Pool is a quarter of a mile,
 and two people saw him as he passed over this ground. One was an old
 woman, whose name is not mentioned, and the other was William Crowder,
@@ -285,7 +271,6 @@ James McCarthy, going the same way with a gun under his arm. To the
 best of his belief, the father was actually in sight at the time, and
 the son was following him. He thought no more of the matter until he
 heard in the evening of the tragedy that had occurred.</p>
-
 <p>“The two McCarthys were seen after the time when William Crowder, the
 game-keeper, lost sight of them. The Boscombe<a class="pagenum" name="Page_79" title="79"> </a> Pool is thickly-wooded
 round, with just a fringe of grass and of reeds round the edge. A girl
@@ -313,10 +298,8 @@ of ‘Wilful Murder’ having been returned at the inquest on Tuesday,
 he was on Wednesday brought before the magistrates at Ross, who have
 referred the case to the next assizes. Those are the main facts of the
 case as they came out before the coroner and at the police-court.”</p>
-
 <p>“I could hardly imagine a more damning case,” I remarked. “If ever
 circumstantial evidence pointed to a criminal it does so here.”</p>
-
 <p>“Circumstantial evidence is a very tricky thing,” answered Holmes,
 thoughtfully. “It may seem to point very straight to one thing, but if
 you shift your own point of view a little,<a class="pagenum" name="Page_80" title="80"> </a> you may find it pointing
@@ -331,10 +314,8 @@ case in his interest. Lestrade, being rather puzzled, has referred the
 case to me, and hence it is that two middle-aged gentlemen are flying
 westward at fifty miles an hour, instead of quietly digesting their
 breakfasts at home.”</p>
-
 <p>“I am afraid,” said I, “that the facts are so obvious that you will
 find little credit to be gained out of this case.”</p>
-
 <p>“There is nothing more deceptive than an obvious fact,” he answered,
 laughing. “Besides, we may chance to hit upon some other obvious facts
 which may have been by no means obvious to Mr. Lestrade. You know me
@@ -344,9 +325,7 @@ employing, or even of understanding. To take the first example to hand,
 I very clearly perceive that in your bedroom the window is upon the
 right-hand side, and yet I question whether Mr. Lestrade would have
 noted even so self-evident a thing as that.”</p>
-
-<p>“How on earth—”</p>
-
+<p>“How on earth&mdash;”</p>
 <p>“My dear fellow, I know you well. I know the military neatness which
 characterizes you. You shave every morning, and in this season you
 shave by the sunlight; but since your shaving is less and less complete
@@ -355,19 +334,15 @@ slovenly as we get round the angle of the jaw, it is surely very clear
 that that side is less well illuminated than the other. I could not
 imagine a man of your habits looking at himself in an equal light, and
 being satisfied with such a result. I only quote this as a trivial<a class="pagenum" name="Page_81" title="81"> </a>
-example of observation and inference. Therein lies my <i xml:lang="fr" lang="fr">métier</i>, and it
+example of observation and inference. Therein lies my <i xml:lang="fr" lang="fr">m&eacute;tier</i>, and it
 is just possible that it may be of some service in the investigation
 which lies before us. There are one or two minor points which were
 brought out in the inquest, and which are worth considering.”</p>
-
 <div class="figcenter fig400"><a name="they" id="they"></a>
 <img src="images/illus080a.jpg" width="400" height="654" alt="" />
 <div class="caption">“THEY FOUND THE BODY”</div>
-
 </div>
-
 <p>“What are they?”</p>
-
 <p>“It appears that his arrest did not take place at once, but after the
 return to Hatherley Farm. On the inspector of constabulary informing
 him that he was a prisoner, he remarked that he was not surprised to
@@ -375,14 +350,10 @@ hear it, and that it was no more than his deserts. This observation of
 his had the natural <a name="effect" id="effect"></a><ins title="Original had ef-effect">
 effect</ins> of removing any traces of doubt which might
 have remained in the minds of the coroner’s jury.”</p>
-
 <p>“It was a confession,” I ejaculated.</p>
-
 <p>“No, for it was followed by a protestation of innocence.”</p>
-
 <p>“Coming on the top of such a damning series of events, it was at least
 a most suspicious remark.”</p>
-
 <p>“On the contrary,” said Holmes, “it is the brightest rift which I can
 at present see in the clouds. However innocent he might be, he could
 not be such an absolute imbecile as not to see that the circumstances
@@ -400,25 +371,19 @@ according to the little girl whose evidence is so important, to raise
 his hand as if to strike him. The self-reproach and contrition which
 are displayed in his remark appear to me to be the signs of a healthy
 mind, rather than of a guilty one.”</p>
-
 <p><a class="pagenum" name="Page_82" title="82"> </a>
 I shook my head. “Many men have been hanged on far slighter evidence,”
 I remarked.</p>
-
 <p>“So they have. And many men have been wrongfully hanged.”</p>
-
 <p>“What is the young man’s own account of the matter?”</p>
-
 <p>“It is, I am afraid, not very encouraging to his supporters, though
 there are one or two points in it which are suggestive. You will find
 it here, and may read it for yourself.”</p>
-
 <p>He picked out from his bundle a copy of the local Herefordshire paper,
 and having turned down the sheet, he pointed out the paragraph in which
 the unfortunate young man had given his own statement of what had
 occurred. I settled myself down in the corner of the carriage, and read
 it very carefully. It ran in this way:</p>
-
 <p>“Mr. James McCarthy, the only son of the deceased, was then called, and
 gave evidence as follows: ‘I had been away from home for three days at
 Bristol, and had only just returned upon the morning of last Monday,
@@ -449,80 +414,50 @@ to ask for assistance. I saw no one near my father when I returned, and
 I have no idea how he came by his injuries. He was not a popular man,
 being somewhat cold and forbidding in his manners; but he had, as far
 as I know, no active enemies. I know nothing further of the matter.’</p>
-
 <p>“The Coroner: Did your father make any statement to you before he died?</p>
-
 <p>“Witness: He mumbled a few words, but I could only catch some allusion
 to a rat.</p>
-
 <p>“The Coroner: What did you understand by that?</p>
-
 <p>“Witness: It conveyed no meaning to me. I thought that he was delirious.</p>
-
 <p>“The Coroner: What was the point upon which you and your father had
 this final quarrel?</p>
-
 <p>“Witness: I should prefer not to answer.</p>
-
 <p>“The Coroner: I am afraid that I must press it.</p>
-
 <p>“Witness: It is really impossible for me to tell you. I can assure you
 that it has nothing to do with the sad tragedy which followed.</p>
-
 <p>“The Coroner: That is for the court to decide. I need not point out to
 you that your refusal to answer will prejudice your case considerably
 in any future proceedings which may arise.</p>
-
 <p>“Witness: I must still refuse.</p>
-
 <p>“The Coroner: I understand that the cry of ‘Cooee’ was a common signal
 between you and your father?</p>
-
 <p><a class="pagenum" name="Page_84" title="84"> </a>
 “Witness: It was.</p>
-
 <p>“The Coroner: How was it, then, that he uttered it before he saw you,
 and before he even knew that you had returned from Bristol?</p>
-
 <p>“Witness (with considerable confusion): I do not know.</p>
-
 <p>“A Juryman: Did you see nothing which aroused your suspicions when you
 returned on hearing the cry, and found your father fatally injured?</p>
-
 <p>“Witness: Nothing definite.</p>
-
 <p>“The Coroner: What do you mean?</p>
-
 <p>“Witness: I was so disturbed and excited as I rushed out into the open,
 that I could think of nothing except of my father. Yet I have a vague
 impression that as I ran forward something lay upon the ground to the
 left of me. It seemed to me to be something gray in color, a coat of
 some sort, or a plaid perhaps. When I rose from my father I looked
 round for it, but it was gone.</p>
-
 <p>“‘Do you mean that it disappeared before you went for help?’</p>
-
 <p>“‘Yes, it was gone.’</p>
-
 <p>“‘You cannot say what it was?’</p>
-
 <p>“‘No, I had a feeling something was there.’</p>
-
 <p>“‘How far from the body?’</p>
-
 <p>“‘A dozen yards or so.’</p>
-
 <p>“‘And how far from the edge of the wood?’</p>
-
 <p>“‘About the same.’</p>
-
 <p>“‘Then if it was removed it was while you were within a dozen yards of
 it?’</p>
-
 <p>“‘Yes, but with my back towards it.’</p>
-
 <p>“This concluded the examination of the witness.”</p>
-
 <p>“I see,” said I, as I glanced down the column, “that the coroner in
 his concluding remarks was rather severe upon young McCarthy. He calls
 attention, and with reason, to the discrepancy about his father having
@@ -530,7 +465,6 @@ signalled to him before seeing him, also to his refusal to give details
 of his conversation with his father, and his singular account of his
 father’s<a class="pagenum" name="Page_85" title="85"> </a> dying words. They are all, as he remarks, very much against
 the son.”</p>
-
 <p>Holmes laughed softly to himself, and stretched himself out upon the
 cushioned seat. “Both you and the coroner have been at some pains,”
 said he, “to single out the very strongest points in the young man’s
@@ -538,14 +472,13 @@ favor. Don’t you see that you alternately give him credit for having
 too much imagination and too little. Too little, if he could not invent
 a cause of quarrel which would give him the sympathy of the jury;
 too much, if he evolved from his own inner consciousness anything
-so <i xml:lang="fr" lang="fr">outré</i> as a dying reference to a rat, and the incident of the
+so <i xml:lang="fr" lang="fr">outr&eacute;</i> as a dying reference to a rat, and the incident of the
 vanishing cloth. No, sir, I shall approach this case from the point of
 view that what this young man says is true, and we shall see whither
 that hypothesis will lead us. And now here is my pocket Petrarch, and
 not another word shall I say of this case until we are on the scene of
 action. We lunch at Swindon, and I see that we shall be there in twenty
 minutes.”</p>
-
 <p>It was nearly four o’clock when we at last, after passing through
 the beautiful Stroud Valley, and over the broad gleaming Severn,
 found ourselves at the pretty little country-town of Ross. A lean,
@@ -554,22 +487,17 @@ platform. In spite of the light brown dustcoat and leather-leggings
 which he wore in deference to his rustic surroundings, I had no
 difficulty in recognizing Lestrade, of Scotland Yard. With him we drove
 to the Hereford Arms, where a room had already been engaged for us.</p>
-
 <p>“I have ordered a carriage,” said Lestrade, as we sat over a cup of
 tea. “I knew your energetic nature, and that you would not be happy
 until you had been on the scene of the crime.”</p>
-
 <p>“It was very nice and complimentary of you,” Holmes answered. “It is
 entirely a question of barometric pressure.”</p>
-
 <p>Lestrade looked startled. “I do not quite follow,” he said.</p>
-
 <p><a class="pagenum" name="Page_86" title="86"> </a>
 “How is the glass? Twenty-nine, I see. No wind, and not a cloud in the
 sky. I have a caseful of cigarettes here which need smoking, and the
 sofa is very much superior to the usual country hotel abomination. I do
 not think that it is probable that I shall use the carriage to-night.”</p>
-
 <p>Lestrade laughed indulgently. “You have, no doubt, already formed your
 conclusions from the newspapers,” he said. “The case is as plain as a
 pikestaff, and the more one goes into it the plainer it becomes. Still,
@@ -577,12 +505,10 @@ of course, one can’t refuse a lady, and such a very positive one, too.
 She had heard of you, and would have your opinion, though I repeatedly
 told her that there was nothing which you could do which I had not
 already done. Why, bless my soul! here is her carriage at the door.”</p>
-
 <p>He had hardly spoken before there rushed into the room one of the most
 lovely young women that I have ever seen in my life. Her violet eyes
 shining, her lips parted, a pink flush upon her cheeks, all thought of
 her natural reserve lost in her overpowering excitement and concern.</p>
-
 <p>“Oh, Mr. Sherlock Holmes!” she cried, glancing from one to the other
 of us, and finally, with a woman’s quick intuition, fastening upon my
 companion, “I am so glad that you have come. I have driven down to tell
@@ -591,97 +517,68 @@ start upon your work knowing it, too. Never let yourself doubt upon
 that point. We have known each other since we were little children, and
 I know his faults as no one else does; but he is too tender-hearted to
 hurt a fly. Such a charge is absurd to any one who really knows him.”</p>
-
 <p>“I hope we may clear him, Miss Turner,” said Sherlock Holmes. “You may
 rely upon my doing all that I can.”</p>
-
 <p>“But you have read the evidence. You have formed some conclusion? Do
 you not see some loophole, some flaw? Do you not yourself think that he
 is innocent?”</p>
-
 <p>“I think that it is very probable.”</p>
-
 <p>“There, now!” she cried, throwing back her head, and<a class="pagenum" name="Page_87" title="87"> </a> looking defiantly
 at Lestrade. “You hear! He gives me hopes.”</p>
-
 <p>Lestrade shrugged his shoulders. “I am afraid that my colleague has
 been a little quick in forming his conclusions,” he said.</p>
-
 <p>“But he is right. Oh! I know that he is right. James never did it. And
 about his quarrel with his father, I am sure that the reason why he
 would not speak about it to the coroner was because I was concerned in
 it.”</p>
-
 <p>“In what way?” asked Holmes.</p>
-
 <p>“It is no time for me to hide anything. James and his father had many
 disagreements about me. Mr. McCarthy was very anxious that there should
 be a marriage between us. James and I have always loved each other as
 brother and <a name="sister" id="sister"></a><ins title="Original had sister">
 sister</ins>; but of course he is young, and has seen very little
-of life yet, and—and—well, he naturally did not wish to do anything
+of life yet, and&mdash;and&mdash;well, he naturally did not wish to do anything
 like that yet. So there were quarrels, and this, I am sure, was one of
 them.”</p>
-
 <p>“And your father?” asked Holmes. “Was he in favor of such a union?”</p>
-
 <p>“No, he was averse to it also. No one but Mr. McCarthy was in favor of
 it.” A quick blush passed over her fresh young face as Holmes shot one
 of his keen, questioning glances at her.</p>
-
 <p>“Thank you for this information,” said he. “May I see your father if I
 call to-morrow?”</p>
-
 <p>“I am afraid the doctor won’t allow it.”</p>
-
 <p>“The doctor?”</p>
-
 <p>“Yes, have you not heard? Poor father has never been strong for years
 back, but this has broken him down completely. He has taken to his bed,
 and Dr. Willows says that he is a wreck, and that his nervous system is
 shattered. Mr. McCarthy was the only man alive who had known dad in the
 old days in Victoria.”</p>
-
 <p>“Ha! In Victoria! That is important.”</p>
-
 <p>“Yes, at the mines.”</p>
-
 <p><a class="pagenum" name="Page_88" title="88"> </a>
 “Quite so; at the gold-mines, where, as I understand, Mr. Turner made
 his money.”</p>
-
 <p>“Yes, certainly.”</p>
-
 <p>“Thank you, Miss Turner. You have been of material assistance to me.”</p>
-
 <p>“You will tell me if you have any news to-morrow. No doubt you will go
 to the prison to see James. Oh, if you do, Mr. Holmes, do tell him that
 I know him to be innocent.”</p>
-
 <p>“I will, Miss Turner.”</p>
-
 <p>“I must go home now, for dad is very ill, and he misses me so if I
 leave him. Good-bye, and God help you in your undertaking.” She hurried
 from the room as impulsively as she had entered, and we heard the
 wheels of her carriage rattle off down the street.</p>
-
 <p>“I am ashamed of you, Holmes,” said Lestrade, with dignity, after a few
 minutes’ silence. “Why should you raise up hopes which you are bound to
 disappoint? I am not over-tender of heart, but I call it cruel.”</p>
-
 <p>“I think that I see my way to clearing James McCarthy,” said Holmes.
 “Have you an order to see him in prison?”</p>
-
 <p>“Yes, but only for you and me.”</p>
-
 <p>“Then I shall reconsider my resolution about going out. We have still
 time to take a train to Hereford and see him to-night?”</p>
-
 <p>“Ample.”</p>
-
 <p>“Then let us do so. Watson, I fear that you will find it very slow, but
 I shall only be away a couple of hours.”</p>
-
 <p>I walked down to the station with them, and then wandered through the
 streets of the little town, finally returning to the hotel, where I
 lay upon the sofa and tried to interest myself in a yellow-backed
@@ -719,32 +616,24 @@ and improbabilities the whole thing was! I did not wonder at Lestrade’s
 opinion, and yet I had so much faith in Sherlock Holmes’s insight that
 I could not lose hope as long as every fresh fact seemed to strengthen
 his conviction of young McCarthy’s innocence.</p>
-
 <p>It was late before Sherlock Holmes returned. He came back alone, for
 Lestrade was staying in lodgings in the town.</p>
-
 <p><a class="pagenum" name="Page_90" title="90"> </a>
 “The glass still keeps very high,” he remarked, as he sat down. “It is
 of importance that it should not rain before we are able to go over the
 ground. On the other hand, a man should be at his very best and keenest
 for such nice work as that, and I did not wish to do it when fagged by
 a long journey. I have seen young McCarthy.”</p>
-
 <p>“And what did you learn from him?”</p>
-
 <p>“Nothing.”</p>
-
 <p>“Could he throw no light?”</p>
-
 <p>“None at all. I was inclined to think at one time that he knew who had
 done it, and was screening him or her, but I am convinced now that he
 is as puzzled as every one else. He is not a very quick-witted youth,
 though comely to look at, and, I should think, sound at heart.”</p>
-
 <p>“I cannot admire his taste,” I remarked, “if it is indeed a fact that
 he was averse to a marriage with so charming a young lady as this Miss
 Turner.”</p>
-
 <p>“Ah, thereby hangs a rather painful tale. This fellow is madly,
 insanely in love with her, but some two years ago, when he was only a
 lad, and before he really knew her, for she had been away five years at
@@ -766,9 +655,7 @@ him over utterly, and has written to him to say that she has a husband
 already in the Bermuda Dockyard, so that there is really no tie between
 them. I think that that bit of news has consoled young McCarthy for all
 that he has suffered.”</p>
-
 <p>“But if he is innocent, who has done it?”</p>
-
 <p>“Ah! who? I would call your attention very particularly to two points.
 One is that the murdered man had an appointment with some one at the
 Pool, and that the some one could not have been his son, for his son
@@ -777,27 +664,20 @@ the murdered man was heard to cry ‘Cooee!’ before he knew that his son
 had returned. Those are the crucial points upon which the case depends.
 And now let us talk about George Meredith, if you please, and we shall
 leave all minor matters until to-morrow.”</p>
-
 <p>There was no rain, as Holmes had foretold, and the morning broke
 bright and cloudless. At nine o’clock Lestrade called for us with the
 carriage, and we set off for Hatherley Farm and the Boscombe Pool.</p>
-
 <p>“There is serious news this morning,” Lestrade observed. “It is said
 that Mr. Turner, of the Hall, is so ill that his life is despaired of.”</p>
-
 <p>“An elderly man, I presume?” said Holmes.</p>
-
 <p>“About sixty; but his constitution has been shattered by his life
 abroad, and he has been in failing health for some time. This business
 has had a very bad effect upon him. He was an old friend of McCarthy’s,
 and, I may add, a great benefactor to him, for I have learned that he
 gave him Hatherley Farm rent free.”</p>
-
 <p>“Indeed! That is interesting,” said Holmes.</p>
-
 <p>“Oh yes! In a hundred other ways he has helped him. Everybody about
 here speaks of his kindness to him.”</p>
-
 <p>“Really! Does it not strike you as a little singular that this
 McCarthy, who appears to have had little of his own, and to have been
 under such obligations to Turner, should still<a class="pagenum" name="Page_92" title="92"> </a> talk of marrying his
@@ -806,26 +686,19 @@ and that in such a very cocksure manner, as if it were merely a case of
 a proposal and all else would follow? It is the more strange, since we
 know that Turner himself was averse to the idea. The daughter told us
 as much. Do you not deduce something from that?”</p>
-
 <p>“We have got to the deductions and the inferences,” said Lestrade,
 winking at me. “I find it hard enough to tackle facts, Holmes, without
 flying away after theories and fancies.”</p>
-
 <p>“You are right,” said Holmes, demurely; “you do find it very hard to
 tackle the facts.”</p>
-
 <p>“Anyhow, I have grasped one fact which you seem to find it difficult to
 get hold of,” replied Lestrade, with some warmth.</p>
-
-<p>“And that is—”</p>
-
+<p>“And that is&mdash;”</p>
 <p>“That McCarthy, senior, met his death from McCarthy, junior, and that
 all theories to the contrary are the merest moonshine.”</p>
-
 <p>“Well, moonshine is a brighter thing than fog,” said Holmes, laughing.
 “But I am very much mistaken if this is not Hatherley Farm upon the
 left.”</p>
-
 <p>“Yes, that is it.” It was a wide-spread, comfortable-looking building,
 two-storied, slate roofed, with great yellow blotches of lichen upon
 the gray walls. The drawn blinds and the smokeless chimneys, however,
@@ -836,13 +709,10 @@ death, and also a pair of the son’s, though not the pair which he had
 then had. Having measured these very carefully from seven or eight
 different points, Holmes desired to be led to the court-yard, from
 which we all followed the winding track which led to Boscombe Pool.</p>
-
 <div class="figcenter fig449"><a name="maid" id="maid"></a>
 <img src="images/illus092a.jpg" width="449" height="400" alt="" />
 <div class="caption">“THE MAID SHOWED US THE BOOTS.”</div>
-
 </div>
-
 <p>Sherlock Holmes was transformed when he was hot upon such a scent
 <a name="as" id="as"></a><ins title="Original has at">as</ins> this. Men who had only known the quiet thinker and logician of
 Baker Street would have failed to recognize him. His face flushed and
@@ -859,11 +729,10 @@ the woods to the Boscombe Pool. It was damp, marshy ground, as is all
 that district, and there were marks of many feet, both upon the path
 and amid the short grass which bounded it on either side. Sometimes
 Holmes would hurry on, sometimes stop dead, and once he made quite a
-little <i xml:lang="fr" lang="fr">détour</i> into the meadow. Lestrade and I walked behind him, the
+little <i xml:lang="fr" lang="fr">d&eacute;tour</i> into the meadow. Lestrade and I walked behind him, the
 detective indifferent and contemptuous, while I watched my friend with
 the interest which sprang from the conviction that every one of his
 actions was directed towards a definite end.</p>
-
 <p>The Boscombe Pool, which is a little reed-girt sheet of water some
 fifty yards across, is situated at the boundary between the Hatherley
 Farm and the private park of the wealthy Mr. Turner. Above the woods
@@ -878,13 +747,10 @@ the fall of the stricken man. To Holmes, as I could see by his eager
 face and peering eyes, very many other things were to be read upon the
 trampled grass. He ran round, like a dog who is picking up a scent, and
 then turned upon my companion.</p>
-
 <p><a class="pagenum" name="Page_94" title="94"> </a>
 “What did you go into the Pool for?” he asked.</p>
-
 <p>“I fished about with a rake. I thought there might be some weapon or
-other trace. But how on earth—”</p>
-
+other trace. But how on earth&mdash;”</p>
 <p>“Oh, tut, tut! I have no time! That left foot of yours with its inward
 twist is all over the place. A mole could trace it, and there it
 vanishes among the reeds. Oh, how simple it would all have been had I
@@ -900,7 +766,7 @@ story. He ran when he saw his father on the ground. Then here are the
 father’s feet as he paced up and down. What is this, then? It is the
 butt-end of the gun as the son stood listening. And this? Ha, ha! What
 have we here? Tiptoes! tiptoes! Square, too, quite unusual boots! They
-come, they go, they come again—of course that was for the cloak.
+come, they go, they come again&mdash;of course that was for the cloak.
 Now where did they come from?” He ran up and down, sometimes losing,
 sometimes finding the track until we were well within the edge of the
 wood, and under the shadow of a great beech, the largest tree in the
@@ -913,84 +779,59 @@ tree as far as he could reach. A jagged stone was lying among the moss,
 and this also he carefully examined and retained. Then he followed a
 pathway through the wood until he came to the high-road, where all
 traces were lost.</p>
-
 <p>“It has been a case of considerable interest,” he remarked,<a class="pagenum" name="Page_95" title="95"> </a> returning
 to his natural manner. “I fancy that this gray house on the right must
 be the lodge. I think that I will go in and have a word with Moran, and
 perhaps write a little note. Having done that, we may drive back to our
 luncheon. You may walk to the cab, and I shall be with you presently.”</p>
-
 <p>It was about ten minutes before we regained our cab, and drove back
 into Ross, Holmes still carrying with him the stone which he had picked
 up in the wood.</p>
-
 <p>“This may interest you, Lestrade,” he remarked, holding it out. “The
 murder was done with it.”</p>
-
 <p>“I see no marks.”</p>
-
 <p>“There are none.”</p>
-
 <p>“How do you know, then?”</p>
-
 <p>“The grass was growing under it. It had only lain there a few days.
 There was no sign of a place whence it had been taken. It corresponds
 with the injuries. There is no sign of any other weapon.”</p>
-
 <p>“And the murderer?”</p>
-
 <p>“Is a tall man, left-handed, limps with the right leg, wears
 thick-soled shooting-boots and a gray cloak, smokes Indian cigars, uses
 a cigar-holder, and carries a blunt penknife in his pocket. There are
 several other indications, but these may be enough to aid us in our
 search.”</p>
-
 <p>Lestrade laughed. “I am afraid that I am still a sceptic,” he said.
 “Theories are all very well, but we have to deal with a hard-headed
 British jury.”</p>
-
 <p>“<i xml:lang="fr" lang="fr">Nous verrons</i>,” answered Holmes, calmly. “You work your own method,
 and I shall work mine. I shall be busy this afternoon, and shall
 probably return to London by the evening train.”</p>
-
 <p>“And leave your case unfinished?”</p>
-
 <p>“No, finished.”</p>
-
 <p>“But the mystery?”</p>
-
 <p>“It is solved.”</p>
-
 <p>“Who was the criminal, then?”</p>
-
 <p>“The gentleman I describe.”</p>
-
 <p><a class="pagenum" name="Page_96" title="96"> </a>
 “But who is he?”</p>
-
 <p>“Surely it would not be difficult to find out. This is not such a
 populous neighborhood.”</p>
-
 <p>Lestrade shrugged his shoulders. “I am a practical man,” he said,
 “and I really cannot undertake to go about the country looking
 for a left-handed gentleman with a game-leg. I should become the
 laughing-stock of Scotland Yard.”</p>
-
 <p>“All right,” said Holmes, quietly. “I have given you the chance. Here
 are your lodgings. Good-bye. I shall drop you a line before I leave.”</p>
-
 <p>Having left Lestrade at his rooms, we drove to our hotel, where we
 found lunch upon the table. Holmes was silent and buried in thought
 with a pained expression upon his face, as one who finds himself in a
 perplexing position.</p>
-
 <p>“Look here, Watson,” he said, when the cloth was cleared; “just sit
 down in this chair and let me preach to you for a little. I don’t quite
 know what to do, and I should value your advice. Light a cigar, and let
 me expound.”</p>
-
 <p>“Pray do so.”</p>
-
 <p>“Well, now, in considering this case there are two points about young
 McCarthy’s narrative which struck us both instantly, although they
 impressed me in his favor and you against him. One was the fact that
@@ -999,9 +840,7 @@ him. The other was his singular dying reference to a rat. He mumbled
 several words, you understand, but that was all that caught the son’s
 ear. Now from this double point our research must commence, and we will
 begin it by presuming that what the lad says is absolutely true.”</p>
-
 <p>“What of this ‘Cooee!’ then?”</p>
-
 <p>“Well, obviously it could not have been meant for the son. The son, as
 far as he knew, was in Bristol. It was mere chance that he was within
 ear-shot. The ‘Cooee!’ was meant to attract the attention of whoever
@@ -1009,61 +848,41 @@ it was that he had the appointment with. But ‘Cooee’ is a distinctly
 Australian cry, and one which is used between Australians. There is a
 strong<a class="pagenum" name="Page_97" title="97"> </a> presumption that the person whom McCarthy expected to meet him
 at Boscombe Pool was some one who had been in Australia.”</p>
-
 <p>“What of the rat, then?”</p>
-
 <p>Sherlock Holmes took a folded paper from his pocket and flattened it
 out on the table. “This is a map of the Colony of Victoria,” he said.
 “I wired to Bristol for it last night.” He put his hand over part of
 the map. “What do you read?” he asked.</p>
-
 <p>“ARAT,” I read.</p>
-
 <p>“And now?” He raised his hand.</p>
-
 <p>“BALLARAT.”</p>
-
 <p>“Quite so. That was the word the man uttered, and of which his son only
 caught the last two syllables. He was trying to utter the name of his
 murderer. So-and-so, of Ballarat.”</p>
-
 <p>“It is wonderful!” I exclaimed.</p>
-
 <p>“It is obvious. And now, you see, I had narrowed the field down
 considerably. The possession of a gray garment was a third point
 which, granting the son’s statement to be correct, was a certainty. We
 have come now out of mere vagueness to the definite conception of an
 Australian from Ballarat with a gray cloak.”</p>
-
 <p>“Certainly.”</p>
-
 <p>“And one who was at home in the district, for the Pool can only be
 approached by the farm or by the estate, where strangers could hardly
 wander.”</p>
-
 <p>“Quite so.”</p>
-
 <p>“Then comes our expedition of to-day. By an examination of the ground I
 gained the trifling details which I gave to that imbecile Lestrade, as
 to the personality of the criminal.”</p>
-
 <p>“But how did you gain them?”</p>
-
 <p>“You know my method. It is founded upon the observance of trifles.”</p>
-
 <p>“His height I know that you might roughly judge from the length of his
 stride. His boots, too, might be told from their traces.”</p>
-
 <p><a class="pagenum" name="Page_98" title="98"> </a>
 “Yes, they were peculiar boots.”</p>
-
 <p>“But his lameness?”</p>
-
 <p>“The impression of his right foot was always less distinct than his
-left. He put less weight upon it. Why? Because he limped—he was lame.”</p>
-
+left. He put less weight upon it. Why? Because he limped&mdash;he was lame.”</p>
 <p>“But his left-handedness.”</p>
-
 <p>“You were yourself struck by the nature of the injury as recorded
 by the surgeon at the inquest. The blow was struck from immediately
 behind, and yet was upon the left side. Now, how can that be unless it
@@ -1076,21 +895,16 @@ different varieties of pipe, cigar, and cigarette tobacco. Having found
 the ash, I then looked round and discovered the stump among the moss
 where he had tossed it. It was an Indian cigar, of the variety which
 are rolled in Rotterdam.”</p>
-
 <p>“And the cigar-holder?”</p>
-
 <p>“I could see that the end had not been in his mouth. Therefore he used
 a holder. The tip had been cut off, not bitten off, but the cut was not
 a clean one, so I deduced a blunt pen-knife.”</p>
-
 <p>“Holmes,” I said, “you have drawn a net round this man from which he
 cannot escape, and you have saved an innocent human life as truly as
 if you had cut the cord which was hanging him. I see the direction in
-which all this points. The culprit is—”</p>
-
+which all this points. The culprit is&mdash;”</p>
 <p>“Mr. John Turner,” cried the hotel waiter, opening the door of our
 sitting-room, and ushering in a visitor.</p>
-
 <p>The man who entered was a strange and impressive figure. His slow,
 limping step and bowed shoulders gave the appearance of decrepitude,
 and yet his hard, deep-lined, craggy features, and his enormous
@@ -1101,59 +915,43 @@ appearance, but his face was of an ashen white, while his lips and the
 corners of his nostrils were tinged with a shade of blue. It was clear
 to me at a glance that he was in the grip of some deadly and chronic
 disease.</p>
-
 <p>“Pray sit down on the sofa,” said Holmes, gently. “You had my note?”</p>
-
 <p>“Yes, the lodge-keeper brought it up. You said that you wished to see
 me here to avoid scandal.”</p>
-
 <p>“I thought people would talk if I went to the Hall.”</p>
-
 <p>“And why did you wish to see me?” He looked across at my companion with
 despair in his weary eyes, as though his question was already answered.</p>
-
 <p>“Yes,” said Holmes, answering the look rather than the words. “It is
 so. I know all about McCarthy.”</p>
-
 <p>The old man sank his face in his hands. “God help me!” he cried. “But I
 would not have let the young man come to harm. I give you my word that
 I would have spoken out if it went against him at the Assizes.”</p>
-
 <p>“I am glad to hear you say so,” said Holmes, gravely.</p>
-
 <p>“I would have spoken now had it not been for my dear girl. It would
-break her heart—it will break her heart when she hears that I am
+break her heart&mdash;it will break her heart when she hears that I am
 arrested.”</p>
-
 <p>“It may not come to that,” said Holmes.</p>
-
 <p>“What!”</p>
-
 <p>“I am no official agent. I understand that it was your daughter who
 required my presence here, and I am acting in her interests. Young
 McCarthy must be got off, however.”</p>
-
 <p>“I am a dying man,” said old Turner. “I have had diabetes for years. My
 doctor says it is a question whether I shall live a month. Yet I would
 rather die under my own roof than in a jail.”</p>
-
 <p>Holmes rose and sat down at the table with his pen in his hand and a
 bundle of paper before him. “Just tell us the<a class="pagenum" name="Page_100" title="100"> </a> truth,” he said. “I
 shall jot down the facts. You will sign it, and Watson here can witness
 it. Then I could produce your confession at the last extremity to save
 young McCarthy. I promise you that I shall not use it unless it is
 absolutely needed.”</p>
-
 <p>“It’s as well,” said the old man; “it’s a question whether I shall live
 to the Assizes, so it matters little to me, but I should wish to spare
 Alice the shock. And now I will make the thing clear to you; it has
 been a long time in the acting, but will not take me long to tell.</p>
-
 <p>“You didn’t know this dead man, McCarthy. He was a devil incarnate. I
 tell you that. God keep you out of the clutches of such a man as he.
 His grip has been upon me these twenty years, and he has blasted my
 life. I’ll tell you first how I came to be in his power.</p>
-
 <p>“It was in the early sixties at the diggings. I was a young chap then,
 hot-blooded and reckless, ready to turn my hand at anything; I got
 among bad companions, took to drink, had no luck with my claim, took to
@@ -1162,7 +960,6 @@ robber. There were six of us, and we had a wild, free life of it,
 sticking up a station from time to time, or stopping the wagons on the
 road to the diggings. Black Jack of Ballarat was the name I went under,
 and our party is still remembered in the colony as the Ballarat Gang.</p>
-
 <p>“One day a gold convoy came down from Ballarat to Melbourne, and we
 lay in wait for it and attacked it. There were six troopers and six of
 us, so it was a close thing, but we emptied four of their saddles at
@@ -1181,15 +978,12 @@ she was just a baby her wee hand seemed to lead me down the right path
 as nothing else had ever done. In a word, I turned over a new leaf, and
 did my best to make up for the past. All was going well when McCarthy
 laid his grip upon me.</p>
-
 <p>“I had gone up to town about an investment, and I met him in Regent
 Street with hardly a coat to his back or a boot to his foot.</p>
-
 <p>“‘Here we are, Jack,’ says he, touching me on the arm; ‘we’ll be as
 good as a family to you. There’s two of us, me and my son, and you can
-have the keeping of us. If you don’t—it’s a fine, law-abiding country
+have the keeping of us. If you don’t&mdash;it’s a fine, law-abiding country
 is England, and there’s always a policeman within hail.’</p>
-
 <p>“Well, down they came to the West country, there was no shaking them
 off, and there they have lived rent free on my best land ever since.
 There was no rest for me, no peace, no forgetfulness; turn where I
@@ -1198,7 +992,6 @@ as Alice grew up, for he soon saw I was more afraid of her knowing my
 past than of the police. Whatever he wanted he must have, and whatever
 it was I gave him without question, land, money, houses, until at last
 he asked a thing which I could not give. He asked for Alice.</p>
-
 <p>“His son, you see, had grown up, and so had my girl, and as I was known
 to be in weak health, it seemed a fine stroke to him that his lad
 should step into the whole property. But there I was firm. I would not
@@ -1206,7 +999,6 @@ have his cursed stock mixed with mine; not that I had any dislike to
 the lad, but his blood was in him, and that was enough. I stood firm.
 McCarthy threatened. I braved him to do his worst. We were to meet at
 the Pool midway between our houses to talk it over.</p>
-
 <p><a class="pagenum" name="Page_102" title="102"> </a>
 “When I went down there I found him talking with his son, so I smoked
 a cigar, and waited behind a tree until he should be alone. But as I
@@ -1226,30 +1018,24 @@ he had been some foul and venomous beast. His cry brought back his son;
 but I had gained the cover of the wood, though I was forced to go back
 to fetch the cloak which I had dropped in my flight. That is the true
 story, gentlemen, of all that occurred.”</p>
-
 <p>“Well, it is not for me to judge you,” said Holmes, as the old man
 signed the statement which had been drawn out. “I pray that we may
 never be exposed to such a temptation.”</p>
-
 <p>“I pray not, sir. And what do you intend to do?”</p>
-
 <p>“In view of your health, nothing. You are yourself aware that you will
 soon have to answer for your deed at a higher court than the Assizes.
 I will keep your confession, and, if McCarthy is condemned, I shall be
 forced to use it. If not, it shall never be seen by mortal eye; and
 your secret, whether you be alive or dead, shall be safe with us.”</p>
-
 <p>“Farewell, then,” said the old man, solemnly. “Your own death-beds,
 when they come, will be the easier for the thought of the peace which
 you have given to mine.” Tottering and shaking in all his giant frame,
 he stumbled slowly from the room.</p>
-
 <p><a class="pagenum" name="Page_103" title="103"> </a>
 “God help us!” said Holmes, after a long silence. “Why does fate play
 such tricks with poor, helpless worms? I never hear of such a case as
 this that I do not think of Baxter’s words, and say, ‘There, but for
 the grace of God, goes Sherlock Holmes.’”</p>
-
 <p>James McCarthy was acquitted at the Assizes, on the strength of a
 number of objections which had been drawn out by Holmes, and submitted
 to the defending counsel. Old Turner lived for seven months after our
@@ -1257,17 +1043,16 @@ interview, but he is now dead; and there is every prospect that the son
 and daughter may come to live happily together, in ignorance of the
 black cloud which rests upon their past.</p>
 
-
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                             <a rel="prev" href="chapter-03.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
-                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                                <i class="fa fa-angle-left"></i>
                             </a>
 
                             <a rel="next prefetch" href="chapter-05.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                                <i class="fa fa-angle-right"></i>
                             </a>
 
                         <div style="clear: both"></div>
@@ -1277,21 +1062,16 @@ black cloud which rests upon their past.</p>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                     <a rel="prev" href="chapter-03.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
-                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                        <i class="fa fa-angle-left"></i>
                     </a>
 
                     <a rel="next prefetch" href="chapter-05.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                        <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
 
         </div>
 
-        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
-        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
-        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
-        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
-        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
 
 
 
@@ -1300,13 +1080,13 @@ black cloud which rests upon their past.</p>
         </script>
 
 
-        <script src="elasticlunr-ef4e11c1.min.js"></script>
-        <script src="mark-09e88c2c.min.js"></script>
-        <script src="searcher-c2a407aa.js"></script>
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
 
-        <script src="clipboard-1626706a.min.js"></script>
-        <script src="highlight-abc7f01d.js"></script>
-        <script src="book-a0b12cfe.js"></script>
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
 

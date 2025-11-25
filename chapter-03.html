@@ -12,24 +12,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
 
-        <link rel="icon" href="favicon-de23e50b.svg">
-        <link rel="shortcut icon" href="favicon-8114d1fc.png">
-        <link rel="stylesheet" href="css/variables-8adf115d.css">
-        <link rel="stylesheet" href="css/general-2459343d.css">
-        <link rel="stylesheet" href="css/chrome-ae938929.css">
-        <link rel="stylesheet" href="css/print-9e4910d8.css" media="print">
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="fonts/fonts-9644e21d.css">
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" id="mdbook-highlight-css" href="highlight-493f70e1.css">
-        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="tomorrow-night-4c0ae647.css">
-        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="ayu-highlight-3fdfc3ac.css">
+        <link rel="stylesheet" id="highlight-css" href="highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
-        <link rel="stylesheet" href="src/font-family-50700503.css">
-        <link rel="stylesheet" href="src/Gutenberg-3fc1578b.css">
+        <link rel="stylesheet" href="src/font-family.css">
+        <link rel="stylesheet" href="src/Gutenberg.css">
+        <link rel="stylesheet" href="src/catppuccin.css">
 
 
         <!-- Provide site root and default themes to javascript -->
@@ -37,10 +39,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex-59dcaa77.js";
+            window.path_to_searchindex_js = "searchindex.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-68683f6f.js"></script>
+        <script src="toc.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -54,7 +56,7 @@
             </div>
         </div>
     </div>
-    <div id="mdbook-body-container">
+    <div id="body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
             try {
@@ -83,12 +85,12 @@
             html.classList.add("js");
         </script>
 
-        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
             let sidebar = null;
-            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
@@ -103,39 +105,43 @@
             }
         </script>
 
-        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <!-- populated by js -->
             <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
             <noscript>
                 <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
             </noscript>
-            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
             </div>
         </nav>
 
-        <div id="mdbook-page-wrapper" class="page-wrapper">
+        <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                <div id="mdbook-menu-bar-hover-placeholder"></div>
-                <div id="mdbook-menu-bar" class="menu-bar sticky">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
-                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
-                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
                         </label>
-                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
-                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
                         </button>
-                        <ul id="mdbook-theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-default_theme">Auto</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-light">Light</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-rust">Rust</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-coal">Coal</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-navy">Navy</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="mdbook-theme-ayu">Ayu</button></li>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="latte">Latte</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="frappe">Frappé</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="macchiato">Macchiato</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mocha">Mocha</button></li>
                         </ul>
-                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
-                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
                         </button>
                     </div>
 
@@ -143,49 +149,47 @@
 
                     <div class="right-buttons">
                         <a href="print.html" title="Print this book" aria-label="Print this book">
-                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                            <i id="print-button" class="fa fa-print"></i>
                         </a>
 
                     </div>
                 </div>
 
-                <div id="mdbook-search-wrapper" class="hidden">
-                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
                         <div class="search-wrapper">
-                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
                             <div class="spinner-wrapper">
-                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
+                                <i class="fa fa-spinner fa-spin"></i>
                             </div>
                         </div>
                     </form>
-                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
-                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
-                        <ul id="mdbook-searchresults">
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
                         </ul>
                     </div>
                 </div>
 
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
                 <script>
-                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
-                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
-                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
                         link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
                     });
                 </script>
 
-                <div id="mdbook-content" class="content">
+                <div id="content" class="content">
                     <main>
                         <div>
 <hr class="chap" />
 <h2><a class="pagenum" name="Page_56" title="56"> </a>
 <a name="iii" id="iii"></a><span class="ornate">Adventure III</span><br />
 A CASE OF IDENTITY</h2>
-
 <div class="fig100">
   <img class="drop-cap2" src="images/drop_m.jpg" width="100" height="99" alt="" />
 </div>
-
 <p class="first-para drop-cap2">“MY dear fellow,” said Sherlock Holmes, as we sat on either side of
 the fire in his lodgings at Baker Street, “life is infinitely stranger
 than anything which the mind of man could invent. We would not dare to
@@ -194,37 +198,32 @@ If we could fly out of that window hand in hand, hover over this great
 city, gently remove the roofs, and peep in at the queer things which
 are going on, the strange coincidences, the plannings, the cross-purposes,
 the wonderful chains of events, working through generations,
-and leading to the most <i xml:lang="fr" lang="fr">outré</i> results, it would make all fiction
+and leading to the most <i xml:lang="fr" lang="fr">outr&eacute;</i> results, it would make all fiction
 with its conventionalities and foreseen conclusions most stale and
 unprofitable.”</p>
-
 <p>“And yet I am not convinced of it,” I answered. “The cases which come
 to light in the papers are, as a rule, bald enough, and vulgar enough.
 We have in our police reports realism pushed to its extreme limits,
 and yet the result is, it must be confessed, neither fascinating nor
 artistic.”</p>
-
 </div>
-
 <p>“A certain selection and discretion must be used in producing a
 realistic effect,” remarked Holmes. “This is wanting in the police
 report, where more stress is laid, perhaps, upon the platitudes of the
 magistrate than upon the details, which to an observer contain the
 vital essence of the whole matter. Depend upon it there is nothing so
 unnatural as the commonplace.”</p>
-
 <p>I smiled and shook my head. “I can quite understand you thinking so,”
 I said. “Of course, in your position of unofficial<a class="pagenum" name="Page_57" title="57"> </a> adviser and helper
 to everybody who is absolutely puzzled, throughout three continents,
 you are brought in contact with all that is strange and bizarre. But
-here”—I picked up the morning paper from the ground—“let us put it
+here”&mdash;I picked up the morning paper from the ground&mdash;“let us put it
 to a practical test. Here is the first heading upon which I come. ‘A
 husband’s cruelty to his wife.’ There is half a column of print, but
 I know without reading it that it is all perfectly familiar to me.
 There is, of course, the other woman, the drink, the push, the blow,
 the bruise, the sympathetic sister or landlady. The crudest of writers
 could invent nothing more crude.”</p>
-
 <p>“Indeed, your example is an unfortunate one for your argument,”
 said Holmes, taking the paper and glancing his eye down it. “This
 is the Dundas separation case, and, as it happens, I was engaged in
@@ -235,26 +234,20 @@ taking out his false teeth and hurling them at his wife, which, you
 will allow, is not an action likely to occur to the imagination of the
 average story-teller. Take a pinch of snuff, doctor, and acknowledge
 that I have scored over you in your example.”</p>
-
 <p>He held out his snuffbox of old gold, with a great amethyst in the
 centre of the lid. Its splendor was in such contrast to his homely ways
 and simple life that I could not help commenting upon it.</p>
-
 <p>“Ah,” said he, “I forgot that I had not seen you for some weeks. It is
 a little souvenir from the King of Bohemia in return for my assistance
 in the case of the Irene Adler papers.”</p>
-
 <p>“And the ring?” I asked, glancing at a remarkable brilliant which
 sparkled upon his finger.</p>
-
 <p>“It was from the reigning family of Holland, though the matter in which
 I served them was of such delicacy that I cannot confide it even to
 you, who have been good enough to chronicle one or two of my little
 problems.”</p>
-
 <p><a class="pagenum" name="Page_58" title="58"> </a>
 “And have you any on hand just now?” I asked, with interest.</p>
-
 <p>“Some ten or twelve, but none which present any feature of interest.
 They are important, you understand, without being interesting. Indeed,
 I have found that it is usually in unimportant matters that there is
@@ -266,7 +259,6 @@ matter which has been referred to me from Marseilles, there is nothing
 which presents any features of interest. It is possible, however, that
 I may have something better before very many minutes are over, for this
 is one of my clients, or I am much mistaken.”</p>
-
 <p>He had risen from his chair, and was standing between the parted
 blinds, gazing down into the dull, neutral-tinted London street.
 Looking over his shoulder, I saw that on the pavement opposite there
@@ -278,7 +270,6 @@ our windows, while her body oscillated backward and forward, and her
 fingers fidgetted with her glove buttons. Suddenly, with a plunge, as
 of the swimmer who leaves the bank, she hurried across the road, and we
 heard the sharp clang of the bell.</p>
-
 <p>“I have seen those symptoms before,” said Holmes, throwing his
 cigarette into the fire. “Oscillation upon the pavement always means an
 <i xml:lang="fr" lang="fr">affaire de cœur</i>. She would like advice, but is not sure that the
@@ -288,7 +279,6 @@ longer oscillates, and the usual symptom is a broken bell wire. Here we
 may take it that there is a love matter, but that the maiden<a class="pagenum" name="Page_59" title="59"> </a> is not so
 much angry as perplexed, or grieved. But here she comes in person to
 resolve our doubts.”</p>
-
 <p>As he spoke there was a tap at the door, and the boy in buttons entered
 to announce Miss Mary Sutherland, while the lady herself loomed behind
 his small black figure like a full-sailed merchant-man behind a tiny
@@ -296,77 +286,60 @@ pilot boat. Sherlock Holmes welcomed her with the easy courtesy for
 which he was remarkable, and having closed the door, and bowed her into
 an arm-chair, he looked her over in the minute, and yet abstracted
 fashion which was peculiar to him.</p>
-
 <p>“Do you not find,” he said, “that with your short sight it is a little
 trying to do so much type-writing?”</p>
-
 <p>“I did at first,” she answered, “but now I know where the letters
 are without looking.” Then, suddenly realizing the full purport of
 his words, she gave a violent start and looked up, with fear and
 astonishment upon her broad, good-humored face. “You’ve heard about me,
 Mr. Holmes,” she cried, “else how could you know all that?”</p>
-
 <p>“Never mind,” said Holmes, laughing; “it is my business to know things.
 Perhaps I have trained myself to see what others overlook. If not, why
 should you come to consult me?”</p>
-
 <p>“I came to you, sir, because I heard of you from Mrs. Etherege, whose
 husband you found so easy when the police and every one had given him
 up for dead. Oh, Mr. Holmes, I wish you would do as much for me. I’m
 not rich, but still I have a hundred a year in my own right, besides
 the little that I make by the machine, and I would give it all to know
 what has become of Mr. Hosmer Angel.”</p>
-
 <p>“Why did you come away to consult me in such a hurry?” asked Sherlock
 Holmes, with his finger-tips together, and his eyes to the ceiling.</p>
-
 <p>Again a startled look came over the somewhat vacuous face of Miss Mary
 Sutherland. “Yes, I did bang out of the house,” she said, “for it
-made me angry to see the easy way in which Mr. Windibank—that is, my
-father—took it all. He would not go to the police, and he would not
+made me angry to see the easy way in which Mr. Windibank&mdash;that is, my
+father&mdash;took it all. He would not go to the police, and he would not
 go to you, and so at<a class="pagenum" name="Page_60" title="60"> </a> last, as he would do nothing, and kept on saying
 that there was no harm done, it made me mad, and I just on with my
 things and came right away to you.”</p>
-
 <p>“Your father,” said Holmes, “your step-father, surely, since the name
 is different.”</p>
-
 <p>“Yes, my step-father. I call him father, though it sounds funny, too,
 for he is only five years and two months older than myself.”</p>
-
 <p>“And your mother is alive?”</p>
-
 <p>“Oh yes, mother is alive and well. I wasn’t best pleased, Mr. Holmes,
 when she married again so soon after father’s death, and a man who was
 nearly fifteen years younger than herself. Father was a plumber in the
 Tottenham Court Road, and he left a tidy business behind him, which
 mother carried on with Mr. Hardy, the foreman; but when Mr. Windibank
 came he made her sell the business, for he was very superior, being a
-traveller in wines. They got £4700 for the goodwill and interest, which
+traveller in wines. They got &pound;4700 for the goodwill and interest, which
 wasn’t near as much as father could have got if he had been alive.”</p>
-
 <p>I had expected to see Sherlock Holmes impatient under this rambling and
 inconsequential narrative, but, on the contrary, he had listened with
 the greatest concentration of attention.</p>
-
 <p>“Your own little income,” he asked, “does it come out of the business?”</p>
-
 <p>“Oh no, sir. It is quite separate, and was left me by my Uncle Ned
 in Auckland. It is in New Zealand stock, paying 4-1/2 per cent. Two
 thousand five hundred pounds was the amount, but I can only touch the
 interest.”</p>
-
 <p>“You interest me extremely,” said Holmes. “And since you draw so large
 a sum as a hundred a year, with what you earn into the bargain, you no
 doubt travel a little, and indulge yourself in every way. I believe
-that a single lady can get on very nicely upon an income of about £60.”</p>
-
+that a single lady can get on very nicely upon an income of about &pound;60.”</p>
 <div class="figcenter fig450"><a name="sherlock" id="sherlock"></a>
 <img src="images/illus060a.jpg" width="450" height="533" alt="" />
 <div class="caption">“SHERLOCK HOLMES WELCOMED HER”</div>
-
 </div>
-
 <p>“I could do with much less than that, Mr. Holmes, but you understand
 that as long as I live at home I don’t wish to be a burden to them, and
 so they have the use of the money just<a class="pagenum" name="Page_61" title="61"> </a> while I am staying with them. Of
@@ -374,12 +347,10 @@ course, that is only just for the time. Mr. Windibank draws my interest
 every quarter, and pays it over to mother, and I find that I can do
 pretty well with what I earn at type-writing. It brings me twopence a
 sheet, and I can often do from fifteen to twenty sheets in a day.”</p>
-
 <p>“You have made your position very clear to me,” said Holmes. “This is
 my friend, Dr. Watson, before whom you can speak as freely as before
 myself. Kindly tell us now all about your connection with Mr. Hosmer
 Angel.”</p>
-
 <p>A flush stole over Miss Sutherland’s face, and she picked nervously at
 the fringe of her jacket. “I met him first at the gasfitters’ ball,”
 she said. “They used to send father tickets when he was alive, and then
@@ -394,58 +365,40 @@ out of the drawer. At last, when nothing else would do, he went off
 to France upon the business of the firm, but we went, mother and I,
 with Mr. Hardy, who used to be our foreman, and it was there I met Mr.
 Hosmer Angel.”</p>
-
 <p>“I suppose,” said Holmes, “that when Mr. Windibank came back from
 France he was very annoyed at your having gone to the ball.”</p>
-
 <p>“Oh, well, he was very good about it. He laughed, I remember, and
 shrugged his shoulders, and said there was no use denying anything to a
 woman, for she would have her way.”</p>
-
 <p>“I see. Then at the gasfitters’ ball you met, as I understand, a
 gentleman called Mr. Hosmer Angel.”</p>
-
 <p>“Yes, sir. I met him that night, and he called next day to<a class="pagenum" name="Page_62" title="62"> </a> ask if we
-had got home all safe, and after that we met him—that is to say, Mr.
+had got home all safe, and after that we met him&mdash;that is to say, Mr.
 Holmes, I met him twice for walks, but after that father came back
 again, and Mr. Hosmer Angel could not come to the house any more.”</p>
-
 <p>“No?”</p>
-
 <p>“Well, you know, father didn’t like anything of the sort. He wouldn’t
 have any visitors if he could help it, and he used to say that a woman
 should be happy in her own family circle. But then, as I used to say to
 mother, a woman wants her own circle to begin with, and I had not got
 mine yet.”</p>
-
 <p>“But how about Mr. Hosmer Angel? Did he make no attempt to see you?”</p>
-
 <p>“Well, father was going off to France again in a week, and Hosmer wrote
 and said that it would be safer and better not to see each other until
 he had gone. We could write in the mean time, and he used to write
 every day. I took the letters in in the morning, so there was no need
 for father to know.”</p>
-
 <p>“Were you engaged to the gentleman at this time?”</p>
-
 <p>“Oh yes, Mr. Holmes. We were engaged after the first walk that we
-took. Hosmer—Mr. Angel—was a cashier in an office in Leadenhall
-Street—and—”</p>
-
+took. Hosmer&mdash;Mr. Angel&mdash;was a cashier in an office in Leadenhall
+Street&mdash;and&mdash;”</p>
 <p>“What office?”</p>
-
 <p>“That’s the worst of it, Mr. Holmes, I don’t know.”</p>
-
 <p>“Where did he live, then?”</p>
-
 <p>“He slept on the premises.”</p>
-
 <p>“And you don’t know his address?”</p>
-
-<p>“No—except that it was Leadenhall Street.”</p>
-
+<p>“No&mdash;except that it was Leadenhall Street.”</p>
 <p>“Where did you address your letters, then?”</p>
-
 <p>“To the Leadenhall Street Post-office, to be left till called for. He
 said that if they were sent to the office he would be chaffed by all
 the other clerks about having letters from a lady, so I offered to
@@ -454,11 +407,9 @@ said that when I wrote them they seemed to come from me, but when they
 were type-written he always felt that the machine had come between us.
 That<a class="pagenum" name="Page_63" title="63"> </a> will just show you how fond he was of me, Mr. Holmes, and the
 little things that he would think of.”</p>
-
 <p>“It was most suggestive,” said Holmes. “It has long been an axiom of
 mine that the little things are infinitely the most important. Can you
 remember any other little things about Mr. Hosmer Angel?”</p>
-
 <p>“He was a very shy man, Mr. Holmes. He would rather walk with me in
 the evening than in the daylight, for he said that he hated to be
 conspicuous. Very retiring and gentlemanly he was. Even his voice was
@@ -467,10 +418,8 @@ told me, and it had left him with a weak throat, and a hesitating,
 whispering fashion of speech. He was always well dressed, very neat and
 plain, but his eyes were weak, just as mine are, and he wore tinted
 glasses against the glare.”</p>
-
 <p>“Well, and what happened when Mr. Windibank, your step-father, returned
 to France?”</p>
-
 <p>“Mr. Hosmer Angel came to the house again, and proposed that we should
 marry before father came back. He was in dreadful earnest, and made
 me swear, with my hands on the Testament, that whatever happened I
@@ -485,15 +434,11 @@ his leave, as he was only a few years older than me; but I didn’t want
 to do anything on the sly, so I wrote to father at Bordeaux, where the
 company has its French offices, but the letter came back to me on the
 very morning of the wedding.”</p>
-
 <p>“It missed him, then?”</p>
-
 <p>“Yes, sir; for he had started to England just before it arrived.”</p>
-
 <p><a class="pagenum" name="Page_64" title="64"> </a>
 “Ha! that was unfortunate. Your wedding was arranged, then, for the
 Friday. Was it to be in church?”</p>
-
 <p>“Yes, sir, but very quietly. It was to be at St. Saviour’s, near King’s
 Cross, and we were to have breakfast afterwards at the St. Pancras
 Hotel. Hosmer came for us in a hansom, but as there were two of us, he
@@ -505,33 +450,23 @@ looked, there was no one there! The cabman said that he could not
 imagine what had become of him, for he had seen him get in with his own
 eyes. That was last Friday, Mr. Holmes, and I have never seen or heard
 anything since then to throw any light upon what became of him.”</p>
-
 <p>“It seems to me that you have been very shamefully treated,” said
 Holmes.</p>
-
 <p>“Oh no, sir! He was too good and kind to leave me so. Why, all the
 morning he was saying to me that, whatever happened, I was to be true;
 and that even if something quite unforeseen occurred to separate
 us, I was always to remember that I was pledged to him, and that he
 would claim his pledge sooner or later. It seemed strange talk for a
 wedding-morning, but what has happened since gives a meaning to it.”</p>
-
 <p>“Most certainly it does. Your own opinion is, then, that some
 unforeseen catastrophe has occurred to him?”</p>
-
 <p>“Yes, sir. I believe that he foresaw some danger, or else he would not
 have talked so. And then I think that what he foresaw happened.”</p>
-
 <p>“But you have no notion as to what it could have been?”</p>
-
 <p>“None.”</p>
-
 <p>“One more question. How did your mother take the matter?”</p>
-
 <p>“She was angry, and said that I was never to speak of the matter again.”</p>
-
 <p>“And your father? Did you tell him?”</p>
-
 <p><a class="pagenum" name="Page_65" title="65"> </a>
 “Yes; and he seemed to think, with me, that something had happened, and
 that I should hear of Hosmer again. As he said, what interest could any
@@ -543,71 +478,53 @@ mine. And yet, what could have happened? And why could he not write?
 Oh, it drives me half-mad to think of! and I can’t sleep a wink at
 night.” She pulled a little handkerchief out of her muff, and began to
 sob heavily into it.</p>
-
 <p>“I shall glance into the case for you,” said Holmes, rising; “and I
 have no doubt that we shall reach some definite result. Let the weight
 of the matter rest upon me now, and do not let your mind dwell upon
 it further. Above all, try to let Mr. Hosmer Angel vanish from your
 memory, as he has done from your life.”</p>
-
 <p>“Then you don’t think I’ll see him again?”</p>
-
 <p>“I fear not.”</p>
-
 <p>“Then what has happened to him?”</p>
-
 <p>“You will leave that question in my hands. I should like an accurate
 description of him, and any letters of his which you can spare.”</p>
-
 <p>“I advertised for him in last Saturday’s <cite>Chronicle</cite>,” said she. “Here
 is the slip, and here are four letters from him.”</p>
-
 <p>“Thank you. And your address?”</p>
-
 <p>“No. 31 Lyon Place, Camberwell.”</p>
-
 <p>“Mr. Angel’s address you never had, I understand. Where is your
 father’s place of business?”</p>
-
 <p>“He travels for Westhouse &amp; Marbank, the great claret importers of
 Fenchurch Street.”</p>
-
 <p>“Thank you. You have made your statement very clearly. You will leave
 the papers here, and remember the advice which I have given you. Let
 the whole incident be a sealed book, and do not allow it to affect your
 life.”</p>
-
 <p>“You are very kind, Mr. Holmes, but I cannot do that. I<a class="pagenum" name="Page_66" title="66"> </a> shall be true
 to Hosmer. He shall find me ready when he comes back.”</p>
-
 <p>For all the preposterous hat and the vacuous face, there was something
 noble in the simple faith of our visitor which compelled our respect.
 She laid her little bundle of papers upon the table, and went her way,
 with a promise to come again whenever she might be summoned.</p>
-
 <p>Sherlock Holmes sat silent for a few minutes with his finger-tips still
 pressed together, his legs stretched out in front of him, and his gaze
 directed upward to the ceiling. Then he took down from the rack the
 old and oily clay pipe, which was to him as a counsellor, and, having
 lit it, he leaned back in his chair, with the thick blue cloud-wreaths
 spinning up from him, and a look of infinite languor in his face.</p>
-
 <p>“Quite an interesting study, that maiden,” he observed. “I found her
 more interesting than her little problem, which, by the way, is rather
 a trite one. You will find parallel cases, if you consult my index, in
 Andover in ’77, and there was something of the sort at The Hague last
 year. Old as is the idea, however, there were one or two details which
 were new to me. But the maiden herself was most instructive.”</p>
-
 <p>“You appeared to read a good deal upon her which was quite invisible to
 me,” I remarked.</p>
-
 <p>“Not invisible, but unnoticed, Watson. You did not know where to look,
 and so you missed all that was important. I can never bring you to
 realize the importance of sleeves, the suggestiveness of thumb-nails,
 or the great issues that may hang from a boot-lace. Now, what did you
 gather from that woman’s appearance? Describe it.”</p>
-
 <p>“Well, she had a slate-colored, broad-brimmed straw hat, with a feather
 of a brickish red. Her jacket was black, with black beads sewn upon it,
 and a fringe of little black jet ornaments. Her dress was brown, rather
@@ -616,9 +533,7 @@ sleeves. Her gloves were grayish, and were worn through at the right
 forefinger. Her boots I didn’t observe. She had small, round,<a class="pagenum" name="Page_67" title="67"> </a> hanging
 gold ear-rings, and a general air of being fairly well-to-do, in a
 vulgar, comfortable, easy-going way.”</p>
-
 <p>Sherlock Holmes clapped his hands softly together and chuckled.</p>
-
 <p>“’Pon my word, Watson, you are coming along wonderfully. You have
 really done very well indeed. It is true that you have missed
 everything of importance, but you have hit upon the method, and you
@@ -634,9 +549,7 @@ farthest from the thumb, instead of being right across the broadest
 part, as this was. I then glanced at her face, and observing the dint
 of a pince-nez at either side of her nose, I ventured a remark upon
 short sight and type-writing, which seemed to surprise her.”</p>
-
 <p>“It surprised me.”</p>
-
 <p>“But, surely, it was very obvious. I was then much surprised and
 interested on glancing down to observe that, though the boots which she
 was wearing were not unlike each other, they were really odd ones; the
@@ -646,10 +559,8 @@ other at the first, third, and fifth. Now, when you see that a young
 lady, otherwise neatly dressed, has come away from home with odd boots,
 half-buttoned, it is no great deduction to say that she came away in a
 hurry.”</p>
-
 <p>“And what else?” I asked, keenly interested, as I always was, by my
 friend’s incisive reasoning.</p>
-
 <p>“I noted, in passing, that she had written a note before leaving home,
 but after being fully dressed. You observed<a class="pagenum" name="Page_68" title="68"> </a> that her right glove was
 torn at the forefinger, but you did not apparently see that both glove
@@ -658,7 +569,6 @@ and dipped her pen too deep. It must have been this morning, or the
 mark would not remain clear upon the finger. All this is amusing,
 though rather elementary, but I must go back to business, Watson. Would
 you mind reading me the advertised description of Mr. Hosmer Angel?”</p>
-
 <p>I held the little printed slip to the light. “Missing,” it said, “on
 the morning of the 14th, a gentleman named Hosmer Angel. About 5 ft. 7
 in. in height; strongly built, sallow complexion, black hair, a little
@@ -668,28 +578,21 @@ black frock-coat faced with silk, black waistcoat, gold Albert chain,
 and gray Harris tweed trousers, with brown gaiters over elastic-sided
 boots. Known to have been employed in an office in Leadenhall Street.
 Anybody bringing,” etc., etc.</p>
-
 <p>“That will do,” said Holmes. “As to the letters,” he continued,
 glancing over them, “they are very commonplace. Absolutely no clew
 in them to Mr. Angel, save that he quotes Balzac once. There is one
 remarkable point, however, which will no doubt strike you.”</p>
-
 <p>“They are type-written,” I remarked.</p>
-
 <p>“Not only that, but the signature is type-written. Look at the neat
 little ‘Hosmer Angel’ at the bottom. There is a date, you see, but no
 superscription except Leadenhall Street, which is rather vague. The
-point about the signature is very suggestive—in fact, we may call it
+point about the signature is very suggestive&mdash;in fact, we may call it
 conclusive.”</p>
-
 <p>“Of what?”</p>
-
 <p>“My dear fellow, is it possible you do not see how strongly it bears
 upon the case?”</p>
-
 <p>“I cannot say that I do, unless it were that he wished to be able to
 deny his signature if an action for breach of promise were instituted.”</p>
-
 <p>“No, that was not the point. However, I shall write two<a class="pagenum" name="Page_69" title="69"> </a> letters, which
 should settle the matter. One is to a firm in the city, the other is
 to the young lady’s step-father, Mr. Windibank, asking him whether he
@@ -697,7 +600,6 @@ could meet us here at six o’clock to-morrow evening. It is just as well
 that we should do business with the male relatives. And now, doctor, we
 can do nothing until the answers to those letters come, so we may put
 our little problem upon the shelf for the interim.”</p>
-
 <p>I had had so many reasons to believe in my friend’s subtle powers of
 reasoning, and extraordinary energy in action, that I felt that he must
 have some solid grounds for the assured and easy demeanor with which he
@@ -707,56 +609,44 @@ and of the Irene Adler photograph; but when I looked back to the weird
 business of the Sign of Four, and the extraordinary circumstances
 connected with the Study in Scarlet, I felt that it would be a strange
 tangle indeed which he could not unravel.</p>
-
 <p>I left him then, still puffing at his black clay pipe, with the
 conviction that when I came again on the next evening I would find that
 he held in his hands all the clews which would lead up to the identity
 of the disappearing bridegroom of Miss Mary Sutherland.</p>
-
 <p>A professional case of great gravity was engaging my own attention at
 the time, and the whole of next day I was busy at the bedside of the
 sufferer. It was not until close upon six o’clock that I found myself
 free, and was able to spring into a hansom and drive to Baker Street,
-half afraid that I might be too late to assist at the <i xml:lang="fr" lang="fr">dénouement</i>
+half afraid that I might be too late to assist at the <i xml:lang="fr" lang="fr">d&eacute;nouement</i>
 of the little mystery. I found Sherlock Holmes alone, however, half
 asleep, with his long, thin form curled up in the recesses of his
 arm-chair. A formidable array of bottles and test-tubes, with the
 pungent cleanly smell of hydrochloric acid, told me that he had spent
 his day in the chemical work which was so dear to him.</p>
-
 <p>“Well, have you solved it?” I asked, as I entered.</p>
-
 <p>“Yes. It was the bisulphate of baryta.”</p>
-
 <p><a class="pagenum" name="Page_70" title="70"> </a>
 “No, no, the mystery!” I cried.</p>
-
 <p>“Oh, that! I thought of the salt that I have been working upon. There
 was never any mystery in the matter, though, as I said yesterday, some
 of the details are of interest. The only drawback is that there is no
 law, I fear, that can touch the scoundrel.”</p>
-
 <p>“Who was he, then, and what was his object in deserting Miss
 Sutherland?”</p>
-
 <p>The question was hardly out of my mouth, and Holmes had not yet opened
 his lips to reply, when we heard a heavy footfall in the passage, and a
 tap at the door.</p>
-
 <p>“This is the girl’s step-father, Mr. James Windibank,” said Holmes. “He
 has written to me to say that he would be here at six. Come in!”</p>
-
 <p>The man who entered was a sturdy, middle-sized fellow, some thirty
 years of age, clean shaven, and sallow skinned, with a bland,
 insinuating manner, and a pair of wonderfully sharp and penetrating
 gray eyes. He shot a questioning glance at each of us, placed his shiny
 top hat upon the sideboard, and with a slight bow sidled down into the
 nearest chair.</p>
-
 <p>“Good-evening, Mr. James Windibank,” said Holmes. “I think that this
 type-written letter is from you, in which you made an appointment with
 me for six o’clock?”</p>
-
 <p>“Yes, sir. I am afraid that I am a little late, but I am not quite my
 own master, you know. I am sorry that Miss Sutherland has troubled you
 about this little matter, for I think it is far better not to wash
@@ -767,14 +657,11 @@ mind on a point. Of course, I did not mind you so much, as you are not
 connected with the official police, but it is not pleasant to have a
 family misfortune like this noised abroad. Besides, it is a useless
 expense, for how could you possibly find this Hosmer Angel?”</p>
-
 <p><a class="pagenum" name="Page_71" title="71"> </a>
 “On the contrary,” said Holmes, quietly; “I have every reason to
 believe that I will succeed in discovering Mr. Hosmer Angel.”</p>
-
 <p>Mr. Windibank gave a violent start, and dropped his gloves. “I am
 delighted to hear it,” he said.</p>
-
 <p>“It is a curious thing,” remarked Holmes, “that a type-writer has
 really quite as much individuality as a man’s handwriting. Unless they
 are quite new, no two of them write exactly alike. Some letters get
@@ -783,11 +670,9 @@ in this note of yours, Mr. Windibank, that in every case there is some
 little slurring over of the ‘e,’ and a slight defect in the tail of the
 ‘r.’ There are fourteen other characteristics, but those are the more
 obvious.”</p>
-
 <p>“We do all our correspondence with this machine at the office, and no
 doubt it is a little worn,” our visitor answered, glancing keenly at
 Holmes with his bright little eyes.</p>
-
 <p>“And now I will show you what is really a very interesting study,
 Mr. Windibank,” Holmes continued. “I think of writing another little
 monograph some of these days on the type-writer and its relation to
@@ -797,38 +682,30 @@ They are all type-written. In each case, not only are the ‘e’s’ slurred
 and the ‘r’s’ tailless, but you will observe, if you care to use my
 magnifying lens, that the fourteen other characteristics to which I
 have alluded are there as well.”</p>
-
 <p>Mr. Windibank sprang out of his chair, and picked up his hat. “I cannot
 waste time over this sort of fantastic talk, Mr. Holmes,” he said. “If
 you can catch the man, catch him, and let me know when you have done
 it.”</p>
-
 <p>“Certainly,” said Holmes, stepping over and turning the key in the
 door. “I let you know, then, that I have caught him!”</p>
-
 <p>“What! where?” shouted Mr. Windibank, turning white to his lips, and
 glancing about him like a rat in a trap.</p>
-
 <p><a class="pagenum" name="Page_72" title="72"> </a>
-“Oh, it won’t do—really it won’t,” said Holmes, suavely. “There is no
+“Oh, it won’t do&mdash;really it won’t,” said Holmes, suavely. “There is no
 possible getting out of it, Mr. Windibank. It is quite too transparent,
 and it was a very bad compliment when you said that it was impossible
 for me to solve so simple a question. That’s right! Sit down, and let
 us talk it over.”</p>
-
 <p>Our visitor collapsed into a chair, with a ghastly face, and a glitter
-of moisture on his brow. “It—it’s not actionable,” he stammered.</p>
-
+of moisture on his brow. “It&mdash;it’s not actionable,” he stammered.</p>
 <p>“I am very much afraid that it is not. But between ourselves,
 Windibank, it was as cruel and selfish and heartless a trick in a petty
 way as ever came before me. Now, let me just run over the course of
 events, and you will contradict me if I go wrong.”</p>
-
 <p>The man sat huddled up in his chair, with his head sunk upon his
 breast, like one who is utterly crushed. Holmes stuck his feet up on
 the corner of the mantel-piece, and, leaning back with his hands in his
 pockets, began talking, rather to himself, as it seemed, than to us.</p>
-
 <p>“The man married a woman very much older than himself for her money,”
 said he, “and he enjoyed the use of the money of the daughter as long
 as she lived with them. It was a considerable sum, for people in their
@@ -850,16 +727,12 @@ the face with a mustache and a pair of bushy whiskers, sunk that clear
 voice into an insinuating whisper, and doubly secure on account of the
 girl’s short sight, he appears as Mr. Hosmer Angel, and keeps off other
 lovers by making love himself.”</p>
-
 <div class="figcenter fig400"><a name="glancing" id="glancing"></a>
 <img src="images/illus072a.jpg" width="400" height="492" alt="" />
 <div class="caption">“GLANCING ABOUT HIM LIKE A RAT IN A TRAP”</div>
-
 </div>
-
 <p>“It was only a joke at first,” groaned our visitor. “We never thought
 that she would have been so carried away.”</p>
-
 <p>“Very likely not. However that may be, the young lady was very
 decidedly carried away, and having quite made up her mind that her
 step-father was in France, the suspicion of treachery never for
@@ -883,36 +756,30 @@ to another man. As far as the church door he brought her, and then, as
 he could go no farther, he conveniently vanished away by the old trick
 of stepping in at one door of a four-wheeler, and out at the other. I
 think that that was the chain of events, Mr. Windibank!”</p>
-
 <p>Our visitor had recovered something of his assurance while<a class="pagenum" name="Page_74" title="74"> </a> Holmes had
 been talking, and he rose from his chair now with a cold sneer upon his
 pale face.</p>
-
 <p>“It may be so, or it may not, Mr. Holmes,” said he, “but if you are so
 very sharp you ought to be sharp enough to know that it is you who are
 breaking the law now, and not me. I have done nothing actionable from
 the first, but as long as you keep that door locked you lay yourself
 open to an action for assault and illegal constraint.”</p>
-
 <p>“The law cannot, as you say, touch you,” said Holmes, unlocking and
 throwing open the door, “yet there never was a man who deserved
 punishment more. If the young lady has a brother or a friend, he ought
 to lay a whip across your shoulders. By Jove!” he continued, flushing
 up at the sight of the bitter sneer upon the man’s face, “it is not
 part of my duties to my client, but here’s a hunting crop handy, and I
-think I shall just treat myself to—” He took two swift steps to the
+think I shall just treat myself to&mdash;” He took two swift steps to the
 whip, but before he could grasp it there was a wild clatter of steps
 upon the stairs, the heavy hall door banged, and from the window we
 could see Mr. James Windibank running at the top of his speed down the
 road.</p>
-
 <p>“There’s a cold-blooded scoundrel!” said Holmes, laughing, as he threw
 himself down into his chair once more. “That fellow will rise from
 crime to crime until he does something very bad, and ends on a gallows.
 The case has, in some respects, been not entirely devoid of interest.”</p>
-
 <p>“I cannot now entirely see all the steps of your reasoning,” I remarked.</p>
-
 <p>“Well, of course it was obvious from the first that this Mr. Hosmer
 Angel must have some strong object for his curious conduct, and it was
 equally clear that the only man who really profited by the incident,
@@ -925,13 +792,11 @@ in type-writing his signature, which, of course, inferred that his
 handwriting was so familiar to her that she would recognize even the
 smallest sample of it. You see all these isolated facts, together with
 many minor ones, all pointed in the same direction.”</p>
-
 <p>“And how did you verify them?”</p>
-
 <p>“Having once spotted my man, it was easy to get corroboration. I
 knew the firm for which this man worked. Having taken the printed
 description, I eliminated everything from it which could be the result
-of a disguise—the whiskers, the glasses, the voice, and I sent it
+of a disguise&mdash;the whiskers, the glasses, the voice, and I sent it
 to the firm, with a request that they would inform me whether it
 answered to the description of any of their travellers. I had already
 noticed the peculiarities of the type-writer, and I wrote to the man
@@ -939,27 +804,24 @@ himself at his business address, asking him if he would come here. As
 I expected, his reply was type-written, and revealed the same trivial
 but characteristic defects. The same post brought me a letter from
 Westhouse &amp; Marbank, of Fenchurch Street, to say that the description
-tallied in every respect with that of their employé, James Windibank.
+tallied in every respect with that of their employ&eacute;, James Windibank.
 <i xml:lang="fr" lang="fr">Voila tout!</i>”</p>
-
 <p>“And Miss Sutherland?”</p>
-
 <p>“If I tell her she will not believe me. You may remember the old
 Persian saying, ‘There is danger for him who taketh the tiger cub, and
 danger also for whoso snatches a delusion from a woman.’ There is as
 much sense in Hafiz as in Horace, and as much knowledge of the world.”</p>
-
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                             <a rel="prev" href="chapter-02.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
-                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                                <i class="fa fa-angle-left"></i>
                             </a>
 
                             <a rel="next prefetch" href="chapter-04.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                                <i class="fa fa-angle-right"></i>
                             </a>
 
                         <div style="clear: both"></div>
@@ -969,21 +831,16 @@ much sense in Hafiz as in Horace, and as much knowledge of the world.”</p>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                     <a rel="prev" href="chapter-02.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
-                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
+                        <i class="fa fa-angle-left"></i>
                     </a>
 
                     <a rel="next prefetch" href="chapter-04.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                        <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
 
         </div>
 
-        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
-        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
-        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
-        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
-        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
 
 
 
@@ -992,13 +849,13 @@ much sense in Hafiz as in Horace, and as much knowledge of the world.”</p>
         </script>
 
 
-        <script src="elasticlunr-ef4e11c1.min.js"></script>
-        <script src="mark-09e88c2c.min.js"></script>
-        <script src="searcher-c2a407aa.js"></script>
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
 
-        <script src="clipboard-1626706a.min.js"></script>
-        <script src="highlight-abc7f01d.js"></script>
-        <script src="book-a0b12cfe.js"></script>
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
 

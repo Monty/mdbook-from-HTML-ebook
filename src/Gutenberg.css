@@ -54,6 +54,14 @@ blockquote { margin-left: 2em; margin-right: 2em; }
     margin: 0 20%;
 }
 
+/* Modern mobile override */
+@media (max-width: 700px) {
+    .tn {
+        width: 100%;
+        margin: 0;
+    }
+}
+
 /* Lists */
 ul { list-style: square; }
 
@@ -169,48 +177,3 @@ p.drop-cap2:first-letter { margin-left: -2.5em; }
 .hang2 { text-indent: -2em; padding-left: 2em; margin-left: 0; }
 .line-height { line-height: 1.2em; }
 
-/* ------------------------------------------------------------
-   Mobile (old "handheld" media query left in place,
-   but cleaned; iPhones/iPads ignore @media handheld)
-   ------------------------------------------------------------ */
-
-@media handheld {
-
-  body { margin: .5em; padding: 0; width: 95%; }
-
-  img { max-width: 100%; width: auto; height: auto; }
-
-  p.first-para { text-indent: 0; }
-
-  img.drop-cap,
-  img.drop-cap2 { display: none; }
-
-  p.drop-cap:first-letter,
-  p.drop-cap2:first-letter {
-      color: inherit;
-      visibility: visible;
-      margin-left: 0;
-  }
-
-  table {
-      width: 95%;
-      margin-left: 2.5%;
-      margin-right: 2.5%;
-  }
-
-  /* Responsive tn */
-
-.tn {
-    background: var(--quote-bg);
-    border: 1px solid var(--quote-border);
-    border-radius: 4px;
-    padding: 1em;
-    width: 80%;
-    margin: 0 10%;
-  }
-}
-
-/* (Removed: EPUB-specific page break hacks)
-   (Removed: duplicate hide/hidehand/hidehtml)
-   (Removed: invalid trailing bracket)
-*/

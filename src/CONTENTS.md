@@ -68,7 +68,7 @@ OF<br />
 </tr>
 <tr>
 <td class="tdr">    VI.</td>
-<td class="tdlv">&mdash;THE MAN WITH THE TWISTED LIP</td>
+<td class="tdl hang">&mdash;THE MAN WITH THE TWISTED LIP</td>
 <td class="tdr2"><a href="chapter-06.html#vi">126</a></td>
 </tr>
 <tr>

@@ -12,26 +12,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
 
-        <link rel="icon" href="favicon.svg">
-        <link rel="shortcut icon" href="favicon.png">
-        <link rel="stylesheet" href="css/variables.css">
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/chrome.css">
-        <link rel="stylesheet" href="css/print.css" media="print">
+        <link rel="icon" href="favicon-de23e50b.svg">
+        <link rel="shortcut icon" href="favicon-8114d1fc.png">
+        <link rel="stylesheet" href="css/variables-8adf115d.css">
+        <link rel="stylesheet" href="css/general-2459343d.css">
+        <link rel="stylesheet" href="css/chrome-ae938929.css">
+        <link rel="stylesheet" href="css/print-9e4910d8.css" media="print">
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="fonts/fonts-9644e21d.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" id="highlight-css" href="highlight.css">
-        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
-        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
+        <link rel="stylesheet" id="mdbook-highlight-css" href="highlight-493f70e1.css">
+        <link rel="stylesheet" id="mdbook-tomorrow-night-css" href="tomorrow-night-4c0ae647.css">
+        <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="ayu-highlight-3fdfc3ac.css">
 
         <!-- Custom theme stylesheets -->
-        <link rel="stylesheet" href="src/font-family.css">
-        <link rel="stylesheet" href="src/Gutenberg.css">
-        <link rel="stylesheet" href="src/catppuccin.css">
+        <link rel="stylesheet" href="src/font-family-50700503.css">
+        <link rel="stylesheet" href="src/Gutenberg-217b342c.css">
+        <link rel="stylesheet" href="src/catppuccin-59297a51.css">
 
 
         <!-- Provide site root and default themes to javascript -->
@@ -39,10 +38,10 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "searchindex.js";
+            window.path_to_searchindex_js = "searchindex-59dcaa77.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc.js"></script>
+        <script src="toc-1101832a.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -56,7 +55,7 @@
             </div>
         </div>
     </div>
-    <div id="body-container">
+    <div id="mdbook-body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
             try {
@@ -85,12 +84,12 @@
             html.classList.add("js");
         </script>
 
-        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+        <input type="checkbox" id="mdbook-sidebar-toggle-anchor" class="hidden">
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
             let sidebar = null;
-            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            const sidebar_toggle = document.getElementById("mdbook-sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
@@ -105,28 +104,28 @@
             }
         </script>
 
-        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+        <nav id="mdbook-sidebar" class="sidebar" aria-label="Table of contents">
             <!-- populated by js -->
             <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
             <noscript>
                 <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
             </noscript>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+            <div id="mdbook-sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
             </div>
         </nav>
 
-        <div id="page-wrapper" class="page-wrapper">
+        <div id="mdbook-page-wrapper" class="page-wrapper">
 
             <div class="page">
-                <div id="menu-bar-hover-placeholder"></div>
-                <div id="menu-bar" class="menu-bar sticky">
+                <div id="mdbook-menu-bar-hover-placeholder"></div>
+                <div id="mdbook-menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
-                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
-                            <i class="fa fa-bars"></i>
+                        <label id="mdbook-sidebar-toggle" class="icon-button" for="mdbook-sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="mdbook-sidebar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></span>
                         </label>
-                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
-                            <i class="fa fa-paint-brush"></i>
+                        <button id="mdbook-theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="mdbook-theme-list">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M371.3 367.1c27.3-3.9 51.9-19.4 67.2-42.9L600.2 74.1c12.6-19.5 9.4-45.3-7.6-61.2S549.7-4.4 531.1 9.6L294.4 187.2c-24 18-38.2 46.1-38.4 76.1L371.3 367.1zm-19.6 25.4l-116-104.4C175.9 290.3 128 339.6 128 400c0 3.9 .2 7.8 .6 11.6c1.8 17.5-10.2 36.4-27.8 36.4H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H240c61.9 0 112-50.1 112-112c0-2.5-.1-5-.2-7.5z"/></svg></span>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
                             <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
@@ -140,8 +139,8 @@
                             <li role="none"><button role="menuitem" class="theme" id="macchiato">Macchiato</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="mocha">Mocha</button></li>
                         </ul>
-                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
-                            <i class="fa fa-search"></i>
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352c79.5 0 144-64.5 144-144s-64.5-144-144-144S64 128.5 64 208s64.5 144 144 144z"/></svg></span>
                         </button>
                     </div>
 
@@ -149,47 +148,49 @@
 
                     <div class="right-buttons">
                         <a href="print.html" title="Print this book" aria-label="Print this book">
-                            <i id="print-button" class="fa fa-print"></i>
+                            <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
                         </a>
 
                     </div>
                 </div>
 
-                <div id="search-wrapper" class="hidden">
-                    <form id="searchbar-outer" class="searchbar-outer">
+                <div id="mdbook-search-wrapper" class="hidden">
+                    <form id="mdbook-searchbar-outer" class="searchbar-outer">
                         <div class="search-wrapper">
-                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <input type="search" id="mdbook-searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="mdbook-searchresults-outer" aria-describedby="searchresults-header">
                             <div class="spinner-wrapper">
-                                <i class="fa fa-spinner fa-spin"></i>
+                                <span class=fa-svg id="fa-spin"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M304 48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zm0 416c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM48 304c26.5 0 48-21.5 48-48s-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48zm464-48c0-26.5-21.5-48-48-48s-48 21.5-48 48s21.5 48 48 48s48-21.5 48-48zM142.9 437c18.7-18.7 18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zm0-294.2c18.7-18.7 18.7-49.1 0-67.9S93.7 56.2 75 75s-18.7 49.1 0 67.9s49.1 18.7 67.9 0zM369.1 437c18.7 18.7 49.1 18.7 67.9 0s18.7-49.1 0-67.9s-49.1-18.7-67.9 0s-18.7 49.1 0 67.9z"/></svg></span>
                             </div>
                         </div>
                     </form>
-                    <div id="searchresults-outer" class="searchresults-outer hidden">
-                        <div id="searchresults-header" class="searchresults-header"></div>
-                        <ul id="searchresults">
+                    <div id="mdbook-searchresults-outer" class="searchresults-outer hidden">
+                        <div id="mdbook-searchresults-header" class="searchresults-header"></div>
+                        <ul id="mdbook-searchresults">
                         </ul>
                     </div>
                 </div>
 
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
                 <script>
-                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
-                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
-                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                    document.getElementById('mdbook-sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('mdbook-sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#mdbook-sidebar a')).forEach(function(link) {
                         link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
                     });
                 </script>
 
-                <div id="content" class="content">
+                <div id="mdbook-content" class="content">
                     <main>
                         <div>
 <hr class="chap" />
 <h2><a class="pagenum" name="Page_104" title="104"> </a>
 <a name="v" id="v"></a><span class="ornate">Adventure V</span><br />
 THE FIVE ORANGE PIPS</h2>
+
 <div class="fig100">
   <img class="drop-cap2" src="images/drop_w.jpg" width="100" height="102" alt="" />
 </div>
+
 <p class="first-para drop-cap2">WHEN I glance over my notes and records of the Sherlock Holmes cases
 between the years ’82 and ’90, I am faced by so many which present
 strange and interesting features that it is no easy matter to know
@@ -206,6 +207,7 @@ its details and so startling in its results that I am tempted to give
 some account of it, in spite of the fact that there are points in
 connection with it which never have been, and probably never will be,
 entirely cleared up.</p>
+
 <p>The year ’87 furnished us with a long series of cases of greater
 or less interest, of which I retain the records. Among my headings
 under this one twelve months I find an account of the adventure of
@@ -216,12 +218,14 @@ the singular adventures of the Grice Patersons in the island of Uffa,
 and<a class="pagenum" name="Page_105" title="105"> </a> finally of the Camberwell poisoning case. In the latter, as may
 be remembered, Sherlock Holmes was able, by winding up the dead man’s
 watch, to prove that it had been wound up two hours before, and that
-therefore the deceased had gone to bed within that time&mdash;a deduction
+therefore the deceased had gone to bed within that time—a deduction
 which was of the greatest importance in clearing up the case. All these
 I may sketch out at some future date, but none of them present such
 singular features as the strange train of circumstances which I have
 now taken up my pen to describe.</p>
+
 </div>
+
 <p>It was in the latter days of September, and the equinoctial gales had
 set in with exceptional violence. All day the wind had screamed and the
 rain had beaten against the windows, so that even here in the heart
@@ -237,18 +241,24 @@ gale from without seemed to blend with the text, and the splash of the
 rain to lengthen out into the long swash of the sea waves. My wife was
 on a visit to her mother’s, and for a few days I was a dweller once
 more in my old quarters at Baker Street.</p>
+
 <p>“Why,” said I, glancing up at my companion, “that was surely the bell.
 Who could come to-night? Some friend of yours, perhaps?”</p>
+
 <p>“Except yourself I have none,” he answered. “I do not encourage
 visitors.”</p>
+
 <p>“A client, then?”</p>
+
 <p>“If so, it is a serious case. Nothing less would bring a man out on
 such a day and at such an hour. But I take it that it is more likely to
 be some crony of the landlady’s.”</p>
+
 <p>Sherlock Holmes was wrong in his conjecture, however, for<a class="pagenum" name="Page_106" title="106"> </a> there came
 a step in the passage and a tapping at the door. He stretched out his
 long arm to turn the lamp away from himself and towards the vacant
 chair upon which a new-comer must sit. “Come in!” said he.</p>
+
 <p>The man who entered was young, some two-and-twenty at the outside,
 well-groomed and trimly clad, with something of refinement and delicacy
 in his bearing. The steaming umbrella which he held in his hand, and
@@ -256,53 +266,79 @@ his long shining waterproof told of the fierce weather through which he
 had come. He looked about him anxiously in the glare of the lamp, and
 I could see that his face was pale and his eyes heavy, like those of a
 man who is weighed down with some great anxiety.</p>
+
 <p>“I owe you an apology,” he said, raising his golden <i xml:lang="fr" lang="fr">pince-nez</i> to his
 eyes. “I trust that I am not intruding. I fear that I have brought some
 traces of the storm and rain into your snug chamber.”</p>
+
 <p>“Give me your coat and umbrella,” said Holmes. “They may rest here
 on the hook, and will be dry presently. You have come up from the
 south-west, I see.”</p>
+
 <p>“Yes, from Horsham.”</p>
+
 <p>“That clay and chalk mixture which I see upon your toe-caps is quite
 distinctive.”</p>
+
 <p>“I have come for advice.”</p>
+
 <p>“That is easily got.”</p>
+
 <p>“And help.”</p>
+
 <p>“That is not always so easy.”</p>
+
 <p>“I have heard of you, Mr. Holmes. I heard from Major Prendergast how
 you saved him in the Tankerville Club Scandal.”</p>
+
 <p>“Ah, of course. He was wrongfully accused of cheating at cards.”</p>
+
 <p>“He said that you could solve anything.”</p>
+
 <p>“He said too much.”</p>
+
 <p>“That you are never beaten.”</p>
-<p>“I have been beaten four times&mdash;three times by men, and once by a
+
+<p>“I have been beaten four times—three times by men, and once by a
 woman.”</p>
+
 <p><a class="pagenum" name="Page_107" title="107"> </a>
 “But what is that compared with the number of your successes?”</p>
+
 <p>“It is true that I have been generally successful.”</p>
+
 <p>“Then you may be so with me.”</p>
+
 <p>“I beg that you will draw your chair up to the fire, and favor me with
 some details as to your case.”</p>
+
 <p>“It is no ordinary one.”</p>
+
 <p>“None of those which come to me are. I am the last court of appeal.”</p>
+
 <p>“And yet I question, sir, whether, in all your experience, you have
 ever listened to a more mysterious and inexplicable chain of events
 than those which have happened in my own family.”</p>
+
 <p>“You fill me with interest,” said Holmes. “Pray give us the essential
 facts from the commencement, and I can afterwards question you as to
 those details which seem to me to be most important.”</p>
+
 <p>The young man pulled his chair up, and pushed his wet feet out towards
 the blaze.</p>
+
 <p>“My name,” said he, “is John Openshaw, but my own affairs have, as far
 as I can understand it, little to do with this awful business. It is an
 hereditary matter; so in order to give you an idea of the facts, I must
 go back to the commencement of the affair.</p>
-<p>“You must know that my grandfather had two sons&mdash;my uncle Elias and
+
+<p>“You must know that my grandfather had two sons—my uncle Elias and
 my father Joseph. My father had a small factory at Coventry, which
 he enlarged at the time of the invention of bicycling. He was the
 patentee of the Openshaw unbreakable tire, and his business met with
 such success that he was able to sell it, and to retire upon a handsome
 competence.</p>
+
 <p>“My uncle Elias emigrated to America when he was a young man, and
 became a planter in Florida, where he was reported to have done
 very well. At the time of the war he fought in Jackson’s army, and
@@ -320,6 +356,7 @@ fields round his house, and there he would take his exercise, though
 very often for weeks on end he would never leave his room. He drank
 a great deal of brandy, and smoked very heavily, but he would see no
 society, and did not want any friends, not even his own brother.</p>
+
 <p>“He didn’t mind me, in fact, he took a fancy to me, for at the time
 when he saw me first I was a youngster of twelve or so. This would be
 in the year 1878, after he had been eight or nine years in England. He
@@ -335,7 +372,8 @@ locked, and which he would never permit either me or anyone else to
 enter. With a boy’s curiosity I have peeped through the key-hole, but
 I was never able to see more than such a collection of old trunks and
 bundles as would be expected in such a room.</p>
-<p>“One day&mdash;it was in March, 1883&mdash;a letter with a foreign stamp lay
+
+<p>“One day—it was in March, 1883—a letter with a foreign stamp lay
 upon the table in front of the Colonel’s plate. It was not a common
 thing for him to receive letters, for his bills<a class="pagenum" name="Page_109" title="109"> </a> were all paid in
 ready money, and he had no friends of any sort. ‘From India!’ said he,
@@ -346,7 +384,9 @@ was struck from my lips at the sight of his face. His lip had fallen,
 his eyes were protruding, his skin the color of putty, and he glared at
 the envelope which he still held in his trembling hand. ‘K. K. K.!’ he
 shrieked, and then, ‘My God, my God, my sins have overtaken me!’</p>
+
 <p>“‘What is it, uncle?’ I cried.</p>
+
 <p>“‘Death,’ said he, and rising from the table he retired to his room,
 leaving me palpitating with horror. I took up the envelope, and saw
 scrawled in red ink upon the inner flap, just above the gum, the letter
@@ -355,15 +395,18 @@ pips. What could be the reason of his overpowering terror? I left the
 breakfast-table, and as I ascended the stair I met him coming down with
 an old rusty key, which must have belonged to the attic, in one hand,
 and a small brass box, like a cash-box, in the other.</p>
+
 <p>“‘They may do what they like, but I’ll checkmate them still,’ said he,
 with an oath. ‘Tell Mary that I shall want a fire in my room to-day,
 and send down to Fordham, the Horsham lawyer.’</p>
+
 <p>“I did as he ordered, and when the lawyer arrived I was asked to step
 up to the room. The fire was burning brightly, and in the grate there
 was a mass of black, fluffy ashes, as of burned paper, while the brass
 box stood open and empty beside it. As I glanced at the box I noticed,
 with a start, that upon the lid were printed the treble K which I had
 read in the morning upon the envelope.</p>
+
 <p>“‘I wish you, John,’ said my uncle, ‘to witness my will. I leave
 my estate, with all its advantages and all its disadvantages to my
 brother, your father, whence it will, no doubt, descend to you. If you
@@ -371,6 +414,7 @@ can enjoy it in peace, well and good! If you find you cannot, take my
 advice, my boy, and leave it<a class="pagenum" name="Page_110" title="110"> </a> to your deadliest enemy. I am sorry to
 give you such a two-edged thing, but I can’t say what turn things are
 going to take. Kindly sign the paper where Mr. Fordham shows you.’</p>
+
 <p>“I signed the paper as directed, and the lawyer took it away with him.
 The singular incident made, as you may think, the deepest impression
 upon me, and I pondered over it, and turned it every way in my mind
@@ -389,6 +433,7 @@ tumultuously in at the door, and lock and bar it behind him, like a man
 who can brazen it out no longer against the terror which lies at the
 roots of his soul. At such times I have seen his face, even on a cold
 day, glisten with moisture, as though it were new raised from a basin.</p>
+
 <p>“Well, to come to an end of the matter, Mr. Holmes, and not to abuse
 your patience, there came a night when he made one of those drunken
 sallies from which he never came back. We found him, when we went to
@@ -399,14 +444,18 @@ known eccentricity, brought in a verdict of suicide. But I, who knew
 how he winced from the very thought of death, had much ado to persuade
 myself that he had gone out of his way to meet it. The matter passed,
 however, and my father<a class="pagenum" name="Page_111" title="111"> </a> entered into possession of the estate, and of
-some &pound;14,000, which lay to his credit at the bank.”</p>
+some £14,000, which lay to his credit at the bank.”</p>
+
 <p>“One moment,” Holmes interposed. “Your statement is, I foresee, one
 of the most remarkable to which I have ever listened. Let me have the
 date of the reception by your uncle of the letter, and the date of his
 supposed suicide.”</p>
+
 <p>“The latter arrived on March 10, 1883. His death was seven weeks later,
 upon the night of May 2d.”</p>
+
 <p>“Thank you. Pray proceed.”</p>
+
 <p>“When my father took over the Horsham property, he, at my request, made
 a careful examination of the attic, which had been always locked up. We
 found the brass box there, although its contents had been destroyed. On
@@ -422,6 +471,7 @@ date during the reconstruction of the Southern States, and were mostly
 concerned with politics, for he had evidently taken a strong part in
 opposing the carpet-bag politicians who had been sent down from the
 North.</p>
+
 <p>“Well, it was the beginning of ’84 when my father came to live at
 Horsham, and all went as well as possible with us until the January
 of ’85. On the fourth day after the new year I heard my father give a
@@ -431,27 +481,42 @@ orange pips in the outstretched palm of the other one. He had always
 laughed at what he called my cock-and-a-bull story about the Colonel,
 but he looked very scared and puzzled now that the same thing had come
 upon himself.</p>
+
 <p><a class="pagenum" name="Page_112" title="112"> </a>
 “‘Why, what on earth does this mean, John?’ he stammered.</p>
+
 <p>“My heart had turned to lead. ‘It is K. K. K.,’ said I.</p>
+
 <p>“He looked inside the envelope. ‘So it is,’ he cried. ‘Here are the
 very letters. But what is this written above them?’</p>
+
 <p>“‘Put the papers on the sundial,’ I read, peeping over his shoulder.</p>
+
 <p>“‘What papers? What sundial?’ he asked.</p>
+
 <p>“‘The sundial in the garden. There is no other,’ said I; ‘but the
 papers must be those that are destroyed.’</p>
+
 <p>“‘Pooh!’ said he, gripping hard at his courage. ‘We are in a civilized
 land here, and we can’t have tomfoolery of this kind. Where does the
 thing come from?’</p>
+
 <p>“‘From Dundee,’ I answered, glancing at the post-mark.</p>
+
 <p>“‘Some preposterous practical joke,’ said he. ‘What have I to do with
 sundials and papers? I shall take no notice of such nonsense.’</p>
+
 <p>“‘I should certainly speak to the police,’ I said.</p>
+
 <p>“‘And be laughed at for my pains. Nothing of the sort.’</p>
+
 <p>“‘Then let me do so?’</p>
+
 <p>“‘No, I forbid you. I won’t have a fuss made about such nonsense.’</p>
+
 <p>“It was in vain to argue with him, for he was a very obstinate man. I
 went about, however, with a heart which was full of forebodings.</p>
+
 <p>“On the third day after the coming of the letter my father went from
 home to visit an old friend of his, Major Freebody, who is in command
 of one of the forts upon Portsdown Hill. I was glad that he should go,
@@ -470,52 +535,73 @@ idea of murder. There were no signs of violence, no footmarks, no
 robbery, no record of strangers having been seen upon the roads. And
 yet I need not tell you that my mind was far from at ease, and that I
 was wellnigh certain that some foul plot had been woven round him.</p>
+
 <p>“In this sinister way I came into my inheritance. You will ask me why
 I did not dispose of it? I answer, because I was well convinced that
 our troubles were in some way dependent upon an incident in my uncle’s
 life, and that the danger would be as pressing in one house as in
 another.</p>
+
 <p>“It was in January, ’85, that my poor father met his end, and two years
 and eight months have elapsed since then. During that time I have lived
 happily at Horsham, and I had begun to hope that this curse had passed
 away from the family, and that it had ended with the last generation. I
 had begun to take comfort too soon, however; yesterday morning the blow
 fell in the very shape in which it had come upon my father.”</p>
+
 <p>The young man took from his waistcoat a crumpled envelope, and, turning
 to the table, he shook out upon it five little dried orange pips.</p>
-<p>“This is the envelope,” he continued. “The post-mark is London&mdash;eastern
+
+<p>“This is the envelope,” he continued. “The post-mark is London—eastern
 division. Within are the very words which were upon my father’s last
 message: ‘K. K. K.’; and then ‘Put the papers on the sundial.’”</p>
+
 <p>“What have you done?” asked Holmes.</p>
+
 <p>“Nothing.”</p>
+
 <p>“Nothing?”</p>
-<p>“To tell the truth”&mdash;he sank his face into his thin, white<a class="pagenum" name="Page_114" title="114"> </a> hands&mdash;“I
+
+<p>“To tell the truth”—he sank his face into his thin, white<a class="pagenum" name="Page_114" title="114"> </a> hands—“I
 have felt helpless. I have felt like one of those poor rabbits when
 the snake is writhing towards it. I seem to be in the grasp of some
 resistless, inexorable evil, which no foresight and no precautions can
 guard against.”</p>
+
 <p>“Tut! tut!” cried Sherlock Holmes. “You must act, man, or you are lost.
 Nothing but energy can save you. This is no time for despair.”</p>
+
 <p>“I have seen the police.”</p>
+
 <p>“Ah!”</p>
+
 <p>“But they listened to my story with a smile. I am convinced that the
 inspector has formed the opinion that the letters are all practical
 jokes, and that the deaths of my relations were really accidents, as
 the jury stated, and were not to be connected with the warnings.”</p>
+
 <p>Holmes shook his clenched hands in the air. “Incredible imbecility!” he
 cried.</p>
+
 <p>“They have, however, allowed me a policeman, who may remain in the
 house with me.”</p>
+
 <p>“Has he come with you to-night?”</p>
+
 <p>“No. His orders were to stay in the house.”</p>
+
 <p>Again Holmes raved in the air.</p>
+
 <p>“Why did you come to me?” he said; “and, above all, why did you not
 come at once?”</p>
+
 <p>“I did not know. It was only to-day that I spoke to Major Prendergast
 about my troubles, and was advised by him to come to you.”</p>
+
 <p>“It is really two days since you had the letter. We should have acted
 before this. You have no further evidence, I suppose, than that which
-you have placed before us&mdash;no suggestive detail which might help us?”</p>
+you have placed before us—no suggestive detail which might help us?”</p>
+
 <p>“There is one thing,” said John Openshaw. He rummaged in his coat
 pocket, and drawing out a piece of discolored, blue-tinted paper, he
 laid it out upon the table. “I have some remembrance,” said he, “that
@@ -527,21 +613,30 @@ fluttered out from among the others, and in that way have escaped
 destruction. Beyond the mention of pips, I do not see that it helps us
 much. I think myself that it is a page from some private diary. The
 writing is undoubtedly my uncle’s.”</p>
+
 <p>Holmes moved the lamp, and we both bent over the sheet of paper, which
 showed by its ragged edge that it had indeed been torn from a book. It
 was headed, “March, 1869,” and beneath were the following enigmatical
 notices:</p>
+
 <p>“4th. Hudson came. Same old platform.</p>
+
 <p>“7th. Set the pips on McCauley, Paramore, and John Swain, of St.
 Augustine.</p>
+
 <p>“9th. McCauley cleared.</p>
+
 <p>“10th. John Swain cleared.</p>
+
 <p>“12th. Visited Paramore. All well.”</p>
+
 <p>“Thank you!” said Holmes, folding up the paper, and returning it to
 our visitor. “And now you must on no account lose another instant. We
 cannot spare time even to discuss what you have told me. You must get
 home instantly and act.”</p>
+
 <p>“What shall I do?”</p>
+
 <p>“There is but one thing to do. It must be done at once. You must put
 this piece of paper which you have shown us into the brass box which
 you have described. You must also put in a note to say that all the
@@ -549,46 +644,65 @@ other papers were burned by your uncle, and that this is the only
 one which remains. You must assert that in such words as will carry
 conviction with them. Having done this, you must at once put the box
 out upon the sundial, as directed. Do you understand?”</p>
+
 <p>“Entirely.”</p>
+
 <p>“Do not think of revenge, or anything of the sort, at present. I think
 that we may gain that by means of the law; but we have our web to
 weave, while theirs is already woven. The first consideration is to
 remove the pressing danger which<a class="pagenum" name="Page_116" title="116"> </a> threatens you. The second is to clear
 up the mystery and to punish the guilty parties.”</p>
+
 <p>“I thank you,” said the young man, rising, and pulling on his overcoat.
 “You have given me fresh life and hope. I shall certainly do as you
 advise.”</p>
+
 <p>“Do not lose an instant. And, above all, take care of yourself in the
 meanwhile, for I do not think that there can be a doubt that you are
 threatened by a very real and imminent danger. How do you go back?”</p>
+
 <p>“By train from Waterloo.”</p>
+
 <p>“It is not yet nine. The streets will be crowded, so I trust that you
 may be in safety. And yet you cannot guard yourself too closely.”</p>
+
 <p>“I am armed.”</p>
+
 <p>“That is well. To-morrow I shall set to work upon your case.”</p>
+
 <p>“I shall see you at Horsham, then?”</p>
+
 <p>“No, your secret lies in London. It is there that I shall seek it.”</p>
+
 <p>“Then I shall call upon you in a day, or in two days, with news as to
 the box and the papers. I shall take your advice in every particular.”
 He shook hands with us, and took his leave. Outside the wind still
 screamed, and the rain splashed and pattered against the windows.
 This strange, wild story seemed to have come to us from amid the mad
-elements&mdash;blown in upon us like a sheet of sea-weed in a gale&mdash;and now
+elements—blown in upon us like a sheet of sea-weed in a gale—and now
 to have been reabsorbed by them once more.</p>
+
 <p>Sherlock Holmes sat for some time in silence, with his head sunk
 forward and his eyes bent upon the red glow of the fire. Then he lit
 his pipe, and leaning back in his chair he watched the blue smoke-rings
 as they chased each other up to the ceiling.</p>
+
 <p>“I think, Watson,” he remarked at last, “that of all our cases we have
 had none more fantastic than this.”</p>
+
 <p>“Save, perhaps, the Sign of Four.”</p>
+
 <p>“Well, yes. Save, perhaps, that. And yet this John Openshaw<a class="pagenum" name="Page_117" title="117"> </a> seems to
 me to be walking amid even greater perils than did the Sholtos.”</p>
+
 <p>“But have you,” I asked, “formed any definite conception as to what
 these perils are?”</p>
+
 <p>“There can be no question as to their nature,” he answered.</p>
+
 <p>“Then what are they? Who is this K. K. K., and why does he pursue this
 unhappy family?”</p>
+
 <p>Sherlock Holmes closed his eyes and placed his elbows upon the arms
 of his chair, with his finger-tips together. “The ideal reasoner,” he
 remarked, “would, when he had once been shown a single fact in all
@@ -604,12 +718,13 @@ aid of their senses. To carry the art, however, to its highest pitch,
 it is necessary that the reasoner should be able to utilize all the
 facts which have come to his knowledge; and this in itself implies,
 as you will readily see, a possession of all knowledge, which, even
-in these days of free education and encyclop&aelig;dias, is a somewhat rare
+in these days of free education and encyclopædias, is a somewhat rare
 accomplishment. It is not so impossible, however, that a man should
 possess all knowledge which is likely to be useful to him in his work,
 and this I have endeavored in my case to do. If I remember rightly, you
 on one occasion, in the early days of our friendship, defined my limits
 in a very precise fashion.”</p>
+
 <p>“Yes,” I answered, laughing. “It was a singular document. Philosophy,
 astronomy, and politics were marked at zero, I remember. Botany
 variable, geology profound as regards the mud-stains from any region
@@ -617,13 +732,14 @@ within fifty miles of town, chemistry eccentric, anatomy unsystematic,
 sensational<a class="pagenum" name="Page_118" title="118"> </a> literature and crime records unique, violin-player, boxer,
 swordsman, lawyer, and self-poisoner by cocaine and tobacco. Those, I
 think, were the main points of my analysis.”</p>
+
 <p>Holmes grinned at the last item. “Well,” he said, “I say now, as I said
 then, that a man should keep his little brain-attic stocked with all
 the furniture that he is likely to use, and the rest he can put away
 in the lumber-room of his library, where he can get it if he wants
 it. Now, for such a case as the one which has been submitted to us
 to-night, we need certainly to muster all our resources. Kindly hand
-me down the letter K of the American Encyclop&aelig;dia which stands upon
+me down the letter K of the American Encyclopædia which stands upon
 the shelf beside you. Thank you. Now let us consider the situation,
 and see what may be deduced from it. In the first place, we may start
 with a strong presumption that Colonel Openshaw had some very strong
@@ -636,20 +752,28 @@ of some one or something which drove him from America. As to what it
 was he feared, we can only deduce that by considering the formidable
 letters which were received by himself and his successors. Did you
 remark the post-marks of those letters?”</p>
+
 <p>“The first was from Pondicherry, the second from Dundee, and the third
 from London.”</p>
+
 <p>“From East London. What do you deduce from that?”</p>
+
 <p>“They are all seaports. That the writer was on board of a ship.”</p>
+
 <p>“Excellent. We have already a clew. There can be no doubt that the
-probability&mdash;the strong probability&mdash;is that the writer was on board
+probability—the strong probability—is that the writer was on board
 of a ship. And now let us consider another point. In the case of
 Pondicherry, seven weeks elapsed between the threat and its fulfilment,
 in Dundee it was only some three or four days. Does that suggest
 anything?”</p>
+
 <p><a class="pagenum" name="Page_119" title="119"> </a>
 “A greater distance to travel.”</p>
+
 <p>“But the letter had also a greater distance to come.”</p>
+
 <p>“Then I do not see the point.”</p>
+
 <p>“There is at least a presumption that the vessel in which the man
 or men are is a sailing-ship. It looks as if they always sent their
 singular warning or token before them when starting upon their mission.
@@ -659,13 +783,17 @@ have arrived almost as soon as their letter. But as a matter of fact
 seven weeks elapsed. I think that those seven weeks represented the
 difference between the mail-boat which brought the letter, and the
 sailing-vessel which brought the writer.”</p>
+
 <p>“It is possible.”</p>
+
 <p>“More than that. It is probable. And now you see the deadly urgency of
 this new case, and why I urged young Openshaw to caution. The blow has
 always fallen at the end of the time which it would take the senders to
 travel the distance. But this one comes from London, and therefore we
 cannot count upon delay.”</p>
+
 <p>“Good God!” I cried; “what can it mean, this relentless persecution?”</p>
+
 <p>“The papers which Openshaw carried are obviously of vital importance
 to the person or persons in the sailing-ship. I think that it is quite
 clear that there must be more than one of them. A single man could not
@@ -674,11 +802,15 @@ jury. There must have been several in it, and they must have been men
 of resource and determination. Their papers they mean to have, be the
 holder of them who it may. In this way you see K. K. K. ceases to be
 the initials of an individual, and becomes the badge of a society.”</p>
+
 <p>“But of what society?”</p>
-<p>“Have you never&mdash;” said Sherlock Holmes, bending forward and sinking
-his voice&mdash;“have you never heard of the Ku Klux Klan?”</p>
+
+<p>“Have you never—” said Sherlock Holmes, bending forward and sinking
+his voice—“have you never heard of the Ku Klux Klan?”</p>
+
 <p><a class="pagenum" name="Page_120" title="120"> </a>
 “I never have.”</p>
+
 <p>Holmes turned over the leaves of the book upon his knee. “Here it
 is,” said he, presently, “‘Ku Klux Klan. A name derived from the
 fanciful resemblance to the sound produced by cocking a rifle. This
@@ -690,7 +822,7 @@ for political purposes, principally for the terrorizing of the negro
 voters, and the murdering and driving from the country of those who
 were opposed to its views. Its outrages were usually preceded by
 a warning sent to the marked man in some fantastic but generally
-recognized shape&mdash;a sprig of oak-leaves in some parts, melon seeds or
+recognized shape—a sprig of oak-leaves in some parts, melon seeds or
 orange pips in others. On receiving this the victim might either openly
 abjure his former ways, or might fly from the country. If he braved the
 matter out, death would unfailingly come upon him, and usually in some
@@ -703,6 +835,7 @@ United States Government and of the better classes of the community in
 the South. Eventually, in the year 1869, the movement rather suddenly
 collapsed, although there have been sporadic outbreaks of the same sort
 since that date.’</p>
+
 <p>“You will observe,” said Holmes, laying down the volume, “that the
 sudden breaking up of the society was coincident with the disappearance
 of Openshaw from America with their papers. It may well have been cause
@@ -711,9 +844,11 @@ more implacable spirits upon their track. You can understand that this
 register and diary may implicate some of the first men in the<a class="pagenum" name="Page_121" title="121"> </a> South,
 and that there may be many who will not sleep easy at night until it is
 recovered.”</p>
-<p>“Then the page we have seen&mdash;”</p>
+
+<p>“Then the page we have seen—”</p>
+
 <p>“Is such as we might expect. It ran, if I remember right, ‘sent the
-pips to A, B, and C,’&mdash;that is, sent the society’s warning to them.
+pips to A, B, and C,’—that is, sent the society’s warning to them.
 Then there are successive entries that A and B cleared, or left the
 country, and finally that C was visited, with, I fear, a sinister
 result for C. Well, I think, Doctor, that we may let some light into
@@ -722,24 +857,34 @@ in the mean time is to do what I have told him. There is nothing more
 to be said or to be done to-night, so hand me over my violin, and let
 us try to forget for half an hour the miserable weather and the still
 more miserable ways of our fellow-men.”</p>
+
 <hr class="tb" />
 <p>It had cleared in the morning, and the sun was shining with a subdued
 brightness through the dim veil which hangs over the great city.
 Sherlock Holmes was already at breakfast when I came down.</p>
+
 <p>“You will excuse me for not waiting for you,” said he; “I have, I
 foresee, a very busy day before me in looking into this case of young
 Openshaw’s.”</p>
+
 <p>“What steps will you take?” I asked.</p>
+
 <p>“It will very much depend upon the results of my first inquiries. I may
 have to go down to Horsham, after all.”</p>
+
 <p>“You will not go there first?”</p>
+
 <p>“No, I shall commence with the city. Just ring the bell, and the maid
 will bring up your coffee.”</p>
+
 <p>As I waited, I lifted the unopened newspaper from the table and glanced
 my eye over it. It rested upon a heading which sent a chill to my heart.</p>
+
 <p>“Holmes,” I cried, “you are too late.”</p>
+
 <p>“Ah!” said he, laying down his cup, “I feared as much. How was it
 done?” He spoke calmly, but I could see that he was deeply moved.</p>
+
 <p><a class="pagenum" name="Page_122" title="122"> </a>
 “My eye caught the name of Openshaw, and the heading, ‘Tragedy near
 Waterloo Bridge.’ Here is the account: ‘Between nine and ten last
@@ -759,59 +904,83 @@ of violence, and there can be no doubt that the deceased had been
 the victim of an unfortunate accident, which should have the effect
 of calling the attention of the authorities to the condition of the
 river-side landing-stages.’”</p>
+
 <p>We sat in silence for some minutes, Holmes more depressed and shaken
 than I had ever seen him.</p>
+
 <p>“That hurts my pride, Watson,” he said, at last. “It is a petty
 feeling, no doubt, but it hurts my pride. It becomes a personal matter
 with me now, and, if God sends me health, I shall set my hand upon this
 gang. That he should come to me for help, and that I should send him
-away to his death&mdash;!” He sprang from his chair and paced about the room
+away to his death—!” He sprang from his chair and paced about the room
 in uncontrollable agitation, with a flush upon his sallow cheeks, and a
 nervous clasping and unclasping of his long, thin hands.</p>
+
 <p>“They must be cunning devils,” he exclaimed, at last. “How could they
 have decoyed him down there? The Embankment is not on the direct line
 to the station. The bridge, no doubt, was too crowded, even on such a
 night, for their<a class="pagenum" name="Page_123" title="123"> </a> purpose. Well, Watson, we shall see who will win in
 the long run. I am going out now!”</p>
+
 <div class="figcenter fig439"><a name="holmes2" id="holmes2"></a>
 <img src="images/illus122a.jpg" width="439" height="400" alt="" />
 <div class="caption">“‘HOLMES,’ I CRIED, ‘YOU ARE TOO LATE’”</div>
+
 </div>
+
 <p>“To the police?”</p>
+
 <p>“No; I shall be my own police. When I have spun the web they may take
 the flies, but not before.”</p>
+
 <p>All day I was engaged in my professional work, and it was late in the
 evening before I returned to Baker Street. Sherlock Holmes had not come
 back yet. It was nearly ten o’clock before he entered, looking pale
 and worn. He walked up to the sideboard, and, tearing a piece from the
 loaf, he devoured it voraciously, washing it down with a long draught
 of water.</p>
+
 <p>“You are hungry,” I remarked.</p>
+
 <p>“Starving. It had escaped my memory. I have had nothing since
 breakfast.”</p>
+
 <p>“Nothing?”</p>
+
 <p>“Not a bite. I had no time to think of it.”</p>
+
 <p>“And how have you succeeded?”</p>
+
 <p>“Well.”</p>
+
 <p>“You have a clew?”</p>
+
 <p>“I have them in the hollow of my hand. Young Openshaw shall not long
 remain unavenged. Why, Watson, let us put their own devilish trade-mark
 upon them. It is well thought of!”</p>
+
 <p>“What do you mean?”</p>
+
 <p>He took an orange from the cupboard, and, tearing it to pieces, he
 squeezed out the pips upon the table. Of these he took five, and thrust
 them into an envelope. On the inside of the flap he wrote “S. H. for J.
 O.” Then he sealed it and addressed it to “Captain James Calhoun, Bark
 <i>Lone Star</i>, Savannah, Georgia.”</p>
+
 <p>“That will await him when he enters port,” said he, chuckling. “It may
 give him a sleepless night. He will find it as sure a precursor of his
 fate as Openshaw did before him.”</p>
+
 <p>“And who is this Captain Calhoun?”</p>
+
 <p>“The leader of the gang. I shall have the others, but he first.”</p>
+
 <p><a class="pagenum" name="Page_124" title="124"> </a>
 “How did you trace it, then?”</p>
+
 <p>He took a large sheet of paper from his pocket, all covered with dates
 and names.</p>
+
 <p>“I have spent the whole day,” said he, “over Lloyd’s registers and the
 files of the old papers, following the future career of every vessel
 which touched at Pondicherry in January and February in ’83. There
@@ -820,22 +989,30 @@ those months. Of these, one, the <i>Lone Star</i>, instantly attracted my
 attention, since, although it was reported as having cleared from
 London, the name is that which is given to one of the States of the
 Union.”</p>
+
 <p>“Texas, I think.”</p>
+
 <p>“I was not and am not sure which; but I knew that the ship must have an
 American origin.”</p>
+
 <p>“What then?”</p>
+
 <p>“I searched the Dundee records, and when I found that the bark <i>Lone
 Star</i> was there in January, ’85, my suspicion became a certainty. I
 then inquired as to the vessels which lay at present in the port of
 London.”</p>
+
 <p>“Yes?”</p>
+
 <p>“The <i>Lone Star</i> had arrived here last week. I went down to the Albert
 Dock, and found that she had been taken down the river by the early
 tide this morning, homeward bound to Savannah. I wired to Gravesend,
 and learned that she had passed some time ago; and as the wind is
 easterly, I have no doubt that she is now past the Goodwins, and not
 very far from the Isle of Wight.”</p>
+
 <p>“What will you do, then?”</p>
+
 <p>“Oh, I have my hand upon him. He and the two mates, are, as I learn,
 the only native-born Americans in the ship. The others are Finns and
 Germans. I know, also, that they were all three away from the ship last
@@ -844,6 +1021,7 @@ the time that their sailing-ship reaches Savannah the mail-boat will
 have carried this letter, and the cable will have informed the<a class="pagenum" name="Page_125" title="125"> </a> police
 of Savannah that these three gentlemen are badly wanted here upon a
 charge of murder.”</p>
+
 <p>There is ever a flaw, however, in the best laid of human plans, and
 the murderers of John Openshaw were never to receive the orange pips
 which would show them that another, as cunning and as resolute as
@@ -855,16 +1033,17 @@ seen swinging in the trough of a wave, with the letters “L. S.” carved
 upon it, and that is all which we shall ever know of the fate of the
 <i>Lone Star</i>.</p>
 
+
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                             <a rel="prev" href="chapter-04.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
-                                <i class="fa fa-angle-left"></i>
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                             </a>
 
                             <a rel="next prefetch" href="chapter-06.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                             </a>
 
                         <div style="clear: both"></div>
@@ -874,16 +1053,21 @@ upon it, and that is all which we shall ever know of the fate of the
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                     <a rel="prev" href="chapter-04.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
-                        <i class="fa fa-angle-left"></i>
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                     </a>
 
                     <a rel="next prefetch" href="chapter-06.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                     </a>
             </nav>
 
         </div>
 
+        <template id=fa-eye><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M288 32c-80.8 0-145.5 36.8-192.6 80.6C48.6 156 17.3 208 2.5 243.7c-3.3 7.9-3.3 16.7 0 24.6C17.3 304 48.6 356 95.4 399.4C142.5 443.2 207.2 480 288 480s145.5-36.8 192.6-80.6c46.8-43.5 78.1-95.4 93-131.1c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C433.5 68.8 368.8 32 288 32zM432 256c0 79.5-64.5 144-144 144s-144-64.5-144-144s64.5-144 144-144s144 64.5 144 144zM288 192c0 35.3-28.7 64-64 64c-11.5 0-22.3-3-31.6-8.4c-.2 2.8-.4 5.5-.4 8.4c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6z"/></svg></span></template>
+        <template id=fa-eye-slash><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M38.8 5.1C28.4-3.1 13.3-1.2 5.1 9.2S-1.2 34.7 9.2 42.9l592 464c10.4 8.2 25.5 6.3 33.7-4.1s6.3-25.5-4.1-33.7L525.6 386.7c39.6-40.6 66.4-86.1 79.9-118.4c3.3-7.9 3.3-16.7 0-24.6c-14.9-35.7-46.2-87.7-93-131.1C465.5 68.8 400.8 32 320 32c-68.2 0-125 26.3-169.3 60.8L38.8 5.1zM223.1 149.5C248.6 126.2 282.7 112 320 112c79.5 0 144 64.5 144 144c0 24.9-6.3 48.3-17.4 68.7L408 294.5c5.2-11.8 8-24.8 8-38.5c0-53-43-96-96-96c-2.8 0-5.6 .1-8.4 .4c5.3 9.3 8.4 20.1 8.4 31.6c0 10.2-2.4 19.8-6.6 28.3l-90.3-70.8zm223.1 298L373 389.9c-16.4 6.5-34.3 10.1-53 10.1c-79.5 0-144-64.5-144-144c0-6.9 .5-13.6 1.4-20.2L83.1 161.5C60.3 191.2 44 220.8 34.5 243.7c-3.3 7.9-3.3 16.7 0 24.6c14.9 35.7 46.2 87.7 93 131.1C174.5 443.2 239.2 480 320 480c47.8 0 89.9-12.9 126.2-32.5z"/></svg></span></template>
+        <template id=fa-copy><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M502.6 70.63l-61.25-61.25C435.4 3.371 427.2 0 418.7 0H255.1c-35.35 0-64 28.66-64 64l.0195 256C192 355.4 220.7 384 256 384h192c35.2 0 64-28.8 64-64V93.25C512 84.77 508.6 76.63 502.6 70.63zM464 320c0 8.836-7.164 16-16 16H255.1c-8.838 0-16-7.164-16-16L239.1 64.13c0-8.836 7.164-16 16-16h128L384 96c0 17.67 14.33 32 32 32h47.1V320zM272 448c0 8.836-7.164 16-16 16H63.1c-8.838 0-16-7.164-16-16L47.98 192.1c0-8.836 7.164-16 16-16H160V128H63.99c-35.35 0-64 28.65-64 64l.0098 256C.002 483.3 28.66 512 64 512h192c35.2 0 64-28.8 64-64v-32h-47.1L272 448z"/></svg></span></template>
+        <template id=fa-play><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg></span></template>
+        <template id=fa-clock-rotate-left><span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M75 75L41 41C25.9 25.9 0 36.6 0 57.9V168c0 13.3 10.7 24 24 24H134.1c21.4 0 32.1-25.9 17-41l-30.8-30.8C155 85.5 203 64 256 64c106 0 192 86 192 192s-86 192-192 192c-40.8 0-78.6-12.7-109.7-34.4c-14.5-10.1-34.4-6.6-44.6 7.9s-6.6 34.4 7.9 44.6C151.2 495 201.7 512 256 512c141.4 0 256-114.6 256-256S397.4 0 256 0C185.3 0 121.3 28.7 75 75zm181 53c-13.3 0-24 10.7-24 24V256c0 6.4 2.5 12.5 7 17l72 72c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-65-65V152c0-13.3-10.7-24-24-24z"/></svg></span></template>
 
 
 
@@ -892,13 +1076,13 @@ upon it, and that is all which we shall ever know of the fate of the
         </script>
 
 
-        <script src="elasticlunr.min.js"></script>
-        <script src="mark.min.js"></script>
-        <script src="searcher.js"></script>
+        <script src="elasticlunr-ef4e11c1.min.js"></script>
+        <script src="mark-09e88c2c.min.js"></script>
+        <script src="searcher-c2a407aa.js"></script>
 
-        <script src="clipboard.min.js"></script>
-        <script src="highlight.js"></script>
-        <script src="book.js"></script>
+        <script src="clipboard-1626706a.min.js"></script>
+        <script src="highlight-abc7f01d.js"></script>
+        <script src="book-a0b12cfe.js"></script>
 
         <!-- Custom JS scripts -->
 
